@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,768">
+  <displayList>
+    <text id="n0_prtz" name="n0" xy="216,188" size="413,44" fontSize="25" color="#cc0000" autoSize="none" text="请跟您的角色起一个响亮的名字："/>
+    <text id="n1_prtz" name="name_input" xy="332,277" size="303,63" input="true" fontSize="25" color="#cc0000" autoSize="none" text="请输入："/>
+    <component id="n2_prtz" name="ok_btn" src="prtz1" xy="376,393"/>
+  </displayList>
+</component>

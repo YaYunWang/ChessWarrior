@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,768">
+  <displayList>
+    <image id="n0_bmzq" name="n0" src="bmzq1" xy="0,0" size="1024,768"/>
+    <text id="n1_bmzq" name="n1" xy="204,244" size="121,38" fontSize="25" color="#ff0000" autoSize="none" text="用户名："/>
+    <text id="n2_bmzq" name="n2" xy="206,312" size="121,38" fontSize="25" color="#ff0000" autoSize="none" text="密码："/>
+    <text id="n3_bmzq" name="user_name" xy="346,247" size="272,32" input="true" fontSize="25" color="#ff0000" autoSize="none" text="请输入用户名..."/>
+    <text id="n4_bmzq" name="pass_word" xy="351,311" size="272,32" input="true" fontSize="25" color="#ff0000" autoSize="none" text="请输入密码..."/>
+    <component id="n6_lwee" name="login" src="lwee4" xy="290,390"/>
+  </displayList>
+</component>

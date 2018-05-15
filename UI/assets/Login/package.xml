@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="3a5vs7od" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="bmzq0" name="LoginUIPanel.xml" path="/" exported="true"/>
+    <image id="bmzq1" name="uipanel_bg.jpg" path="/"/>
+    <component id="lwee4" name="Button1.xml" path="/"/>
+  </resources>
+  <publish name="Login"/>
+</packageDescription>
