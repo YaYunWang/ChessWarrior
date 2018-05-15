@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Table>
+	<Row ID="21010001" Name="X形素材" IsRadio="0" Script="ToolItem" MaxAmount="1000000" Photo="22010001" Type="1" SubType="0" Color="2" BindType="1" CanSell="1" SellItem="21090001" SellValue="20" IsUse="0" HrefEvent="91000001" NeedLog="1"/>
+	<Row ID="21010002" Name="O形素材" IsRadio="0" Script="ToolItem" MaxAmount="1000000" Photo="22010001" Type="1" SubType="0" Color="2" BindType="1" CanSell="1" SellItem="21090001" SellValue="20" IsUse="0" HrefEvent="91000001" NeedLog="1"/>
+	<Row ID="21010003" Name="V形素材" IsRadio="0" Script="ToolItem" MaxAmount="1000000" Photo="22010001" Type="1" SubType="0" Color="2" BindType="1" CanSell="1" SellItem="21090001" SellValue="20" IsUse="0" HrefEvent="91000001" NeedLog="1"/>
+	<Row ID="21010004" Name="Z形素材" IsRadio="0" Script="ToolItem" MaxAmount="1000000" Photo="22010001" Type="1" SubType="0" Color="3" BindType="1" CanSell="1" SellItem="21090001" SellValue="50" IsUse="0" HrefEvent="91000001" NeedLog="1"/>
+	<Row ID="21010005" Name="M形素材" IsRadio="0" Script="ToolItem" MaxAmount="1000000" Photo="22010001" Type="1" SubType="0" Color="4" BindType="1" CanSell="1" SellItem="21090001" SellValue="100" IsUse="0" HrefEvent="91000001" NeedLog="1"/>
+	<Row ID="21010006" Name="水晶" IsRadio="0" Script="ToolItem" MaxAmount="1000000" Photo="22010001" Type="1" SubType="0" Color="5" BindType="1" CanSell="1" SellItem="21090001" SellValue="1000" IsUse="0" HrefEvent="91000001" NeedLog="1"/>
+	<Row ID="21090001" Name="金币" IsRadio="0" Script="ToolItem" MaxAmount="2100000000" Photo="22090001" Type="9" SubType="0" Color="5" BindType="1" CanSell="0" IsUse="1" UseType="2" UseArgs="1" HrefEvent="91000001" NeedLog="1"/>
+	<Row ID="21090002" Name="经验" IsRadio="0" Script="ToolItem" MaxAmount="2100000000" Photo="22090002" Type="9" SubType="0" Color="5" BindType="1" CanSell="0" IsUse="1" UseType="2" UseArgs="2" HrefEvent="91000001" NeedLog="1"/>
+</Table>

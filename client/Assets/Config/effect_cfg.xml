@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Table>
+	<Row ID="8200007" AssetName="100006" FollowPosition="True" FollowRotation="True" FollowScale="False" LocalPosition="0,0,0" LocalRotation="0,0,0" LocalScale="1,1,1" Priority="2" InitFollowRotation="True" Audio="0"/>
+	<Row ID="8200008" AssetName="100007" FollowPosition="True" FollowRotation="True" FollowScale="False" LocalPosition="0,0,0" LocalRotation="0,0,0" LocalScale="1,1,1" Priority="2" InitFollowRotation="True" Audio="0"/>
+	<Row ID="8200009" AssetName="100008" FollowPosition="True" FollowRotation="True" FollowScale="False" LocalPosition="0,0.1,0" LocalRotation="0,0,0" LocalScale="1,1,1" Priority="2" InitFollowRotation="True" Audio="0"/>
+	<Row ID="8200010" AssetName="100009" FollowPosition="True" FollowRotation="True" FollowScale="False" LocalPosition="0,0.1,0" LocalRotation="0,0,0" LocalScale="1,1,1" Priority="2" InitFollowRotation="True" Audio="0"/>
+	<Row ID="8200011" AssetName="100010" FollowPosition="True" FollowRotation="True" FollowScale="False" LocalPosition="0,0.1,0" LocalRotation="0,0,0" LocalScale="1,1,1" Priority="2" InitFollowRotation="True" Audio="0"/>
+	<Row ID="8200012" AssetName="100011" FollowPosition="True" FollowRotation="True" FollowScale="False" LocalPosition="0,0,0" LocalRotation="0,0,0" LocalScale="1,1,1" Priority="2" InitFollowRotation="True" Audio="0"/>
+</Table>

@@ -1,0 +1,5 @@
+<Table>
+  <Row ID="9" AssetName="zhucheng" Loop="True" Volume="1" Priority="1" Fadein="2000" Fadeout="2000" />
+  <Row ID="10" AssetName="senlin" Loop="True" Volume="1" Priority="1" Fadein="2000" Fadeout="2000" />
+  <Row ID="11" AssetName="ceshi1" Loop="True" Volume="1" Priority="1" Fadein="2000" Fadeout="2000" />
+</Table>

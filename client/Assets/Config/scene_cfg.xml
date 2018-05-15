@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Table>
+	<Row ID="1" Name="主城站台" AssetPath="city" SceneType="1" BGM="10" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="100" Name="圣光训练所" AssetPath="church" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,15"/>
+	<Row ID="101" Name="熔岩沙漠1" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="102" Name="熔岩沙漠2" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="103" Name="熔岩沙漠3" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="104" Name="寒冰平原1" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="105" Name="寒冰平原2" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="106" Name="寒冰平原3" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="107" Name="死亡之谷1" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="108" Name="死亡之谷2" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="109" Name="死亡之谷3" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="110" Name="死亡之谷4" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="111" Name="寂静之森1" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="112" Name="寂静之森2" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="113" Name="寂静之森3" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="114" Name="寂静之森4" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="110" Name="天幕牢笼1" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="116" Name="天幕牢笼2" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="117" Name="天幕牢笼3" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="118" Name="天幕牢笼4" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="119" Name="天幕牢笼5" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="110" Name="惩戒裁判所1" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="121" Name="惩戒裁判所2" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="122" Name="惩戒裁判所3" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="123" Name="惩戒裁判所4" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="124" Name="惩戒裁判所5" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="125" Name="圣魔峰1" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="126" Name="圣魔峰2" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="127" Name="圣魔峰3" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="128" Name="圣魔峰4" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="129" Name="圣魔峰5" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+	<Row ID="130" Name="圣魔峰6" AssetPath="town" SceneType="2" BGM="11" GridWidth="1.6" BornGrid="0,0,0" PlaySpeed=".5" BossBornGrid="0,0,10"/>
+</Table>

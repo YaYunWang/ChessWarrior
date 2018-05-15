@@ -1,0 +1,16 @@
+<Table>
+  <Row ID="2000001" Data="2={&quot;Speed&quot;:6.0,&quot;VAcceleration&quot;:-25.0}" />
+  <Row ID="5056001" Data="2={&quot;Speed&quot;:12.0,&quot;VAcceleration&quot;:-80.0}" />
+  <Row ID="520101" Data="1={&quot;Speed&quot;:20.0}" />
+  <Row ID="5202001" Data="1={&quot;Speed&quot;:15.0}" />
+  <Row ID="5203001" Data="1={&quot;Speed&quot;:15.0}" />
+  <Row ID="5204001" Data="1={&quot;Speed&quot;:15.0}" />
+  <Row ID="5206001" Data="1={&quot;Speed&quot;:3.0}" />
+  <Row ID="520701" Data="1={&quot;Speed&quot;:4.0}" />
+  <Row ID="521301" Data="3={&quot;Speed&quot;:10.0,&quot;p0&quot;:{&quot;x&quot;:0.0,&quot;y&quot;:0.0,&quot;z&quot;:0.0},&quot;p1&quot;:{&quot;x&quot;:-3.0,&quot;y&quot;:1.0,&quot;z&quot;:1.659907341003418},&quot;p2&quot;:{&quot;x&quot;:-3.0,&quot;y&quot;:1.0,&quot;z&quot;:5.578788757324219},&quot;p3&quot;:{&quot;x&quot;:0.0,&quot;y&quot;:0.0,&quot;z&quot;:8.0}}" />
+  <Row ID="521302" Data="3={&quot;Speed&quot;:10.0,&quot;p0&quot;:{&quot;x&quot;:0.0,&quot;y&quot;:0.0,&quot;z&quot;:0.0},&quot;p1&quot;:{&quot;x&quot;:3.0,&quot;y&quot;:1.0,&quot;z&quot;:1.659907341003418},&quot;p2&quot;:{&quot;x&quot;:3.0,&quot;y&quot;:1.0,&quot;z&quot;:5.578788757324219},&quot;p3&quot;:{&quot;x&quot;:0.0,&quot;y&quot;:0.0,&quot;z&quot;:8.0}}" />
+  <Row ID="5306001" Data="1={&quot;Speed&quot;:15.0}" />
+  <Row ID="511801" Data="2={&quot;Speed&quot;:15.0,&quot;VAcceleration&quot;:-79.0}" />
+  <Row ID="2000002" Data="2={&quot;Speed&quot;:15.020000457763672,&quot;VAcceleration&quot;:-11.300000190734864}" />
+  <Row ID="2000003" Data="2={&quot;Speed&quot;:20.0,&quot;VAcceleration&quot;:-33.0}" />
+</Table>
