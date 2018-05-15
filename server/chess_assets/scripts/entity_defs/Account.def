@@ -1,0 +1,35 @@
+<root>
+	<Properties>
+		<RoleType>
+			<Type>	INT16	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</RoleType>
+
+		<RoleName>
+			<Type>	UNICODE	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<DatabaseLength> 256 </DatabaseLength>
+			<Persistent>	true	</Persistent>
+		</RoleName>
+	</Properties>
+
+	<ClientMethods>
+		<ReNameResult>
+			<Arg> INT16 </Arg>
+		</ReNameResult>
+	</ClientMethods>
+
+	<BaseMethods>
+		<ReCreateAccountRequest>
+			<Arg> INT16 </Arg>
+			<Arg> UNICODE </Arg>
+			<Exposed/>
+		</ReCreateAccountRequest>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>
