@@ -19,6 +19,8 @@ namespace KBEngine
 		public EntityBaseEntityCall_AccountBase baseEntityCall = null;
 		public EntityCellEntityCall_AccountBase cellEntityCall = null;
 
+		public CHESS_INFO_LIST MineChess = new CHESS_INFO_LIST();
+		public virtual void onMineChessChanged(CHESS_INFO_LIST oldValue) {}
 		public string RoleName = "";
 		public virtual void onRoleNameChanged(string oldValue) {}
 		public Int16 RoleType = 0;
@@ -145,6 +147,22 @@ namespace KBEngine
 
 				switch(prop.properUtype)
 				{
+					case 3:
+						CHESS_INFO_LIST oldval_MineChess = MineChess;
+						MineChess = ((DATATYPE_CHESS_INFO_LIST)EntityDef.id2datatypes[23]).createFromStreamEx(stream);
+
+						if(prop.isBase())
+						{
+							if(inited)
+								onMineChessChanged(oldval_MineChess);
+						}
+						else
+						{
+							if(inWorld)
+								onMineChessChanged(oldval_MineChess);
+						}
+
+						break;
 					case 2:
 						string oldval_RoleName = RoleName;
 						RoleName = stream.readUnicode();
@@ -223,8 +241,29 @@ namespace KBEngine
 			ScriptModule sm = EntityDef.moduledefs["Account"];
 			Dictionary<UInt16, Property> pdatas = sm.idpropertys;
 
+			CHESS_INFO_LIST oldval_MineChess = MineChess;
+			Property prop_MineChess = pdatas[4];
+			if(prop_MineChess.isBase())
+			{
+				if(inited && !inWorld)
+					onMineChessChanged(oldval_MineChess);
+			}
+			else
+			{
+				if(inWorld)
+				{
+					if(prop_MineChess.isOwnerOnly() && !isPlayer())
+					{
+					}
+					else
+					{
+						onMineChessChanged(oldval_MineChess);
+					}
+				}
+			}
+
 			string oldval_RoleName = RoleName;
-			Property prop_RoleName = pdatas[4];
+			Property prop_RoleName = pdatas[5];
 			if(prop_RoleName.isBase())
 			{
 				if(inited && !inWorld)
@@ -245,7 +284,7 @@ namespace KBEngine
 			}
 
 			Int16 oldval_RoleType = RoleType;
-			Property prop_RoleType = pdatas[5];
+			Property prop_RoleType = pdatas[6];
 			if(prop_RoleType.isBase())
 			{
 				if(inited && !inWorld)

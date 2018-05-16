@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Table>
+	<Row ID="0" Error="成功"/>
+	<Row ID="1" Error="服务器没有准备好"/>
+	
+	<Row ID="2" Error="服务器负载过重"/>
+	<Row ID="3" Error="非法登录"/>
+	<Row ID="4" Error="用户名或者密码不正确"/>
+	<Row ID="5" Error="用户名不正确"/>
+	<Row ID="6" Error="密码不正确"/>
+	<Row ID="7" Error="创建账号失败（已经存在一个相同的账号）"/>
+	<Row ID="8" Error="操作过于繁忙(例如：在服务器前一次请求未执行完毕的情况下连续N次创建账号)"/>
+	<Row ID="9" Error="当前账号在另一处登录了"/>
+	<Row ID="10" Error="账号已登陆"/>
+	<Row ID="11" Error="与客户端关联的proxy在服务器上已经销毁"/>
+	<Row ID="12" Error="EntityDefs不匹配"/>
+	<Row ID="13" Error="服务器正在关闭中"/>
+	<Row ID="14" Error="Email地址错误"/>
+	<Row ID="15" Error="账号被冻结"/>
+	<Row ID="16" Error="账号已过期"/>
+	<Row ID="17" Error="账号未激活"/>
+	<Row ID="18" Error="与服务端的版本不匹配"/>
+	<Row ID="19" Error="操作失败"/>
+	<Row ID="20" Error="服务器正在启动中"/>
+	<Row ID="21" Error="未开放账号注册功能"/>
+	
+	<Row ID="22" Error="不能使用email地址"/>
+	<Row ID="23" Error="找不到此账号"/>
+	<Row ID="24" Error="数据库错误(请检查dbmgr日志和DB)"/>
+	<Row ID="25" Error="用户自定义错误码1"/>
+	
+	<Row ID="34" Error="用户自定义错误码10"/>
+	<Row ID="35" Error="本地处理，通常为某件事情不由第三方处理而是由KBE服务器处理"/>
+	<Row ID="36" Error="未开放账号重置密码功能"/>
+	<Row ID="37" Error="当前账号在其他服务器登陆了"/>
+</Table>

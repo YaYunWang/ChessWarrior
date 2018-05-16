@@ -23,7 +23,7 @@ public class LoginUIPanel : GUIBase
 
 		if (string.IsNullOrEmpty(usename) || string.IsNullOrEmpty(password))
 		{
-			DebugLogger.Log("帐号密码为空，不能登录.");
+			EmitNumberManager.Emit(EmitNumberType.EmitNumberTypeServerErrorCode, "帐号密码为空，不能登录.");
 			return;
 		}
 

@@ -122,11 +122,24 @@ namespace KBEngine
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), property(spaceID / 40002).");
 
+			Property pAccount_MineChess = new Property();
+			pAccount_MineChess.name = "MineChess";
+			pAccount_MineChess.properUtype = 3;
+			pAccount_MineChess.properFlags = 32;
+			pAccount_MineChess.aliasID = 4;
+			pAccount_MineChess.defaultVal = EntityDef.id2datatypes[23].parseDefaultValStr("");
+			pAccountModule.propertys["MineChess"] = pAccount_MineChess; 
+
+			pAccountModule.usePropertyDescrAlias = true;
+			pAccountModule.idpropertys[(UInt16)pAccount_MineChess.aliasID] = pAccount_MineChess;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), property(MineChess / 3).");
+
 			Property pAccount_RoleName = new Property();
 			pAccount_RoleName.name = "RoleName";
 			pAccount_RoleName.properUtype = 2;
 			pAccount_RoleName.properFlags = 32;
-			pAccount_RoleName.aliasID = 4;
+			pAccount_RoleName.aliasID = 5;
 			string Account_RoleName_defval = "";
 			pAccount_RoleName.defaultVal = Account_RoleName_defval;
 			pAccountModule.propertys["RoleName"] = pAccount_RoleName; 
@@ -140,7 +153,7 @@ namespace KBEngine
 			pAccount_RoleType.name = "RoleType";
 			pAccount_RoleType.properUtype = 1;
 			pAccount_RoleType.properFlags = 32;
-			pAccount_RoleType.aliasID = 5;
+			pAccount_RoleType.aliasID = 6;
 			Int16 Account_RoleType_defval;
 			Int16.TryParse("0", out Account_RoleType_defval);
 			pAccount_RoleType.defaultVal = Account_RoleType_defval;
@@ -414,6 +427,24 @@ namespace KBEngine
 				DATATYPE_BASE val = null;
 				EntityDef.datatypes.TryGetValue(name, out val);
 				EntityDef.datatypes[typeName] = val;
+				EntityDef.id2datatypes[utype] = EntityDef.datatypes[typeName];
+				EntityDef.datatype2id[typeName] = utype;
+			}
+
+			{
+				UInt16 utype = 22;
+				string typeName = "CHESS_INFO";
+				DATATYPE_CHESS_INFO datatype = new DATATYPE_CHESS_INFO();
+				EntityDef.datatypes[typeName] = datatype;
+				EntityDef.id2datatypes[utype] = EntityDef.datatypes[typeName];
+				EntityDef.datatype2id[typeName] = utype;
+			}
+
+			{
+				UInt16 utype = 23;
+				string typeName = "CHESS_INFO_LIST";
+				DATATYPE_CHESS_INFO_LIST datatype = new DATATYPE_CHESS_INFO_LIST();
+				EntityDef.datatypes[typeName] = datatype;
 				EntityDef.id2datatypes[utype] = EntityDef.datatypes[typeName];
 				EntityDef.datatype2id[typeName] = utype;
 			}

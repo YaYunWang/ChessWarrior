@@ -708,5 +708,19 @@ namespace KBEngine
 		}
 	}
 
+	public class CHESS_INFO
+	{
+		public UInt64 id = 0;
+		public string name = "";
+		public UInt64 level = 0;
+
+	}
+
+	public class CHESS_INFO_LIST
+	{
+		public List<CHESS_INFO> values = new List<CHESS_INFO>();
+
+	}
+
 
 }

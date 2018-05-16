@@ -12,4 +12,72 @@ namespace KBEngine
 	using System.Collections.Generic;
 
 
+
+	public class DATATYPE_CHESS_INFO : DATATYPE_BASE
+	{
+		public CHESS_INFO createFromStreamEx(MemoryStream stream)
+		{
+			CHESS_INFO datas = new CHESS_INFO();
+			datas.id = stream.readUint64();
+			datas.name = stream.readUnicode();
+			datas.level = stream.readUint64();
+			return datas;
+		}
+
+		public void addToStreamEx(Bundle stream, CHESS_INFO v)
+		{
+			stream.writeUint64(v.id);
+			stream.writeUnicode(v.name);
+			stream.writeUint64(v.level);
+		}
+	}
+
+
+
+	public class DATATYPE_CHESS_INFO_LIST : DATATYPE_BASE
+	{
+		private DATATYPE__CHESS_INFO_LIST_values_ArrayType_ChildArray values_DataType = new DATATYPE__CHESS_INFO_LIST_values_ArrayType_ChildArray();
+
+		public class DATATYPE__CHESS_INFO_LIST_values_ArrayType_ChildArray : DATATYPE_BASE
+		{
+			private DATATYPE_CHESS_INFO itemType = new DATATYPE_CHESS_INFO();
+
+			public List<CHESS_INFO> createFromStreamEx(MemoryStream stream)
+			{
+				UInt32 size = stream.readUint32();
+				List<CHESS_INFO> datas = new List<CHESS_INFO>();
+
+				while(size > 0)
+				{
+					--size;
+					datas.Add(itemType.createFromStreamEx(stream));
+				};
+
+				return datas;
+			}
+
+			public void addToStreamEx(Bundle stream, List<CHESS_INFO> v)
+			{
+				stream.writeUint32((UInt32)v.Count);
+				for(int i=0; i<v.Count; ++i)
+				{
+					itemType.addToStreamEx(stream, v[i]);
+				};
+			}
+		}
+
+		public CHESS_INFO_LIST createFromStreamEx(MemoryStream stream)
+		{
+			CHESS_INFO_LIST datas = new CHESS_INFO_LIST();
+			datas.values = values_DataType.createFromStreamEx(stream);
+			return datas;
+		}
+
+		public void addToStreamEx(Bundle stream, CHESS_INFO_LIST v)
+		{
+			values_DataType.addToStreamEx(stream, v.values);
+		}
+	}
+
+
 }

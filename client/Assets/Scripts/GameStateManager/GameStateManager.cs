@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public enum StateEnum
 {
@@ -34,9 +35,20 @@ public class GameStateManager : ManagerTemplateBase<GameStateManager>
         m_stateDic.Add(StateEnum.LOADCONFIG, new LoadConfigState());
         m_stateDic.Add(StateEnum.LOGIN, new LoginState());
         m_stateDic.Add(StateEnum.WORLD, new WorldState());
+
+		KBEngine.Event.registerOut("onLoginFailed", this, "OnLoginFailed");
     }
 
-    void Update()
+	public void OnLoginFailed(UInt16 failedcode)
+	{
+		ServerErrorCodeCfg cfg = ConfigManager.Get<ServerErrorCodeLoader>().GetConfig((int)failedcode);
+		if (cfg == null)
+			return;
+
+		EmitNumberManager.Emit(EmitNumberType.EmitNumberTypeServerErrorCode, cfg.Error);
+	}
+
+	void Update()
     {
         if (m_activeState != null)
             m_activeState.Update();
