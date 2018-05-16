@@ -37,7 +37,18 @@ public class GameStateManager : ManagerTemplateBase<GameStateManager>
         m_stateDic.Add(StateEnum.WORLD, new WorldState());
 
 		KBEngine.Event.registerOut("onLoginFailed", this, "OnLoginFailed");
+
+		GameEventManager.RegisterEvent(GameEventTypes.ExitScene, OnExitScene);
+		GameEventManager.RegisterEvent(GameEventTypes.EnterScene, OnEntryScene);
     }
+
+	private void OnEntryScene(GameEventTypes eventType, object[] args)
+	{
+	}
+
+	private void OnExitScene(GameEventTypes eventType, object[] args)
+	{
+	}
 
 	public void OnLoginFailed(UInt16 failedcode)
 	{

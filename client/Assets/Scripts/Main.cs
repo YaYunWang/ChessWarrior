@@ -15,6 +15,7 @@ public class Main : MonoBehaviour
         TimerManager.CreateInstance();
 		GUIManager.CreateInstance();
         GameStateManager.CreateInstance();
+		EmitNumberManager.CreateInstance();
 	}
 
 	void Update()

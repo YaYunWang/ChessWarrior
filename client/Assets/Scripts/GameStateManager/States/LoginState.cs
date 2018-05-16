@@ -33,7 +33,8 @@ public class LoginState : IState
 
 		Account account = KBEngine.KBEngineApp.app.player() as Account;
 
-		GameStateManager.ChangeState(StateEnum.WORLD);// ��ʼ��Ϸ
+		//GameStateManager.ChangeState(StateEnum.WORLD);
+		EntryCity();
 	}
 
 	public void OnAccountCreate(Account account)
@@ -47,7 +48,13 @@ public class LoginState : IState
 		}
 		else
 		{
-			GameStateManager.ChangeState(StateEnum.WORLD);// ��ʼ��Ϸ
+			//GameStateManager.ChangeState(StateEnum.WORLD);
+			EntryCity();
 		}
+	}
+
+	private void EntryCity()
+	{
+		SceneManager.ChangeScene(1);
 	}
 }
