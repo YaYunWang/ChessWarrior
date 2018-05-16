@@ -1,22 +1,17 @@
 ﻿# -*- coding: utf-8 -*-
 import KBEngine
 from KBEDebug import *
+from CHESS_INFO import TChessInfo
+from CHESS_INFO_LIST import TChessInfoList
+import d_chess
 
 class Account(KBEngine.Proxy):
 	def __init__(self):
 		KBEngine.Proxy.__init__(self)
 
-		if len(self.Chess) == 0:
-			DEBUG_MSG("new account. create chess.")
+		#dataDict = {"id":1, "name":"test", "level":1}
+		#self.MineChess = TChessInfo().createFromDict(dataDict)
 
-			self.Chess.append({'Name':'chess 1'})
-			self.Chess.append({'Name':'chess 2'})
-			self.Chess.append({'Name':'chess 3'}) 
-
-		else:
-			for ch in self.Chess:
-				DEBUG_MSG("chess %s " % ch[0])
-		
 	def onTimer(self, id, userArg):
 		"""
 		KBEngine method.
@@ -53,7 +48,13 @@ class Account(KBEngine.Proxy):
 	def ReCreateAccountRequest(self, role_type, role_name):
 		self.RoleType = role_type
 		self.RoleName = role_name
+		
+		for data in d_chess.born_chess:
+			dataDict = {"id":data, "name":d_chess.data[data]["name"], "level":1}
+			chess = TChessInfo().createFromDict(dataDict)
 
+			self.MineChess[data] = chess
+			
 		self.client.ReNameResult(1)
 
 		DEBUG_MSG("re name %s %s" % (self.RoleName, role_name))

@@ -13,6 +13,13 @@
 			<DatabaseLength> 256 </DatabaseLength>
 			<Persistent>	true	</Persistent>
 		</RoleName>
+
+		<MineChess>
+			<Type> CHESS_INFO_LIST </Type>
+			<Default>	</Default>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Persistent>	true	</Persistent>
+		</MineChess>
 	</Properties>
 
 	<ClientMethods>

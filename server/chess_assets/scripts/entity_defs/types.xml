@@ -1,2 +1,25 @@
 <root>
+		<CHESS_INFO> FIXED_DICT
+			<implementedBy>CHESS_INFO.inst</implementedBy>
+			<Properties>
+					<id>
+						<Type> UINT64 </Type>
+					</id>
+					<name>
+						<Type> UNICODE </Type>
+					</name>
+					<level>
+						<Type> UINT64 </Type>
+					</level>
+			</Properties>
+		</CHESS_INFO>
+
+		<CHESS_INFO_LIST> FIXED_DICT
+			<implementedBy>CHESS_INFO_LIST.chess_list_inst</implementedBy>
+			<Properties>
+				<values>
+					<Type>	ARRAY <of> CHESS_INFO </of>	</Type>
+				</values>
+			</Properties>
+		</CHESS_INFO_LIST>
 </root>
