@@ -1,0 +1,34 @@
+<root>
+	<Properties>
+		<chess_id>
+			<Type>	UINT64	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</chess_id>
+
+		<chess_level>
+			<Type>	UINT64	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</chess_level>
+
+		<chess_name>
+			<Type>	UNICODE	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<DatabaseLength> 256 </DatabaseLength>
+			<Persistent>	true	</Persistent>
+		</chess_name>
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

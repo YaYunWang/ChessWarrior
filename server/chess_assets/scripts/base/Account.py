@@ -58,3 +58,23 @@ class Account(KBEngine.Proxy):
 		self.client.ReNameResult(1)
 
 		DEBUG_MSG("re name %s %s" % (self.RoleName, role_name))
+
+	"""
+	测试代码
+		总结：创建出来的Chess entity客户端是不会收到通知的。
+	"""
+	def TestChessEntity(self, chess_id):
+		if len(self.MineChess) == 0:
+			return
+
+		for key, info in self.MineChess.items():
+			if info[0] == chess_id:
+				chess = self.MineChess[chess_id]
+				params = {
+					"chess_id" : chess_id,
+					"chess_name" : info[1],
+					"chess_level" : info[2]
+				}
+
+				KBEngine.createEntityLocally("Chess", params)
+				break
