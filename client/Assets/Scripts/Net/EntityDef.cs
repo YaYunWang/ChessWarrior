@@ -169,7 +169,7 @@ namespace KBEngine
 
 			Method pAccount_ReNameResult = new Method();
 			pAccount_ReNameResult.name = "ReNameResult";
-			pAccount_ReNameResult.methodUtype = 2;
+			pAccount_ReNameResult.methodUtype = 3;
 			pAccount_ReNameResult.aliasID = 1;
 			pAccount_ReNameResult.args = pAccount_ReNameResult_args;
 
@@ -177,7 +177,7 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_ReNameResult.aliasID] = pAccount_ReNameResult;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 2).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 3).");
 
 			List<DATATYPE_BASE> pAccount_ReCreateAccountRequest_args = new List<DATATYPE_BASE>();
 			pAccount_ReCreateAccountRequest_args.Add(EntityDef.id2datatypes[7]);
@@ -195,6 +195,113 @@ namespace KBEngine
 			pAccountModule.idbase_methods[pAccount_ReCreateAccountRequest.methodUtype] = pAccount_ReCreateAccountRequest;
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReCreateAccountRequest / 1).");
+
+			List<DATATYPE_BASE> pAccount_TestChessEntity_args = new List<DATATYPE_BASE>();
+			pAccount_TestChessEntity_args.Add(EntityDef.id2datatypes[5]);
+
+			Method pAccount_TestChessEntity = new Method();
+			pAccount_TestChessEntity.name = "TestChessEntity";
+			pAccount_TestChessEntity.methodUtype = 2;
+			pAccount_TestChessEntity.aliasID = -1;
+			pAccount_TestChessEntity.args = pAccount_TestChessEntity_args;
+
+			pAccountModule.methods["TestChessEntity"] = pAccount_TestChessEntity; 
+			pAccountModule.base_methods["TestChessEntity"] = pAccount_TestChessEntity;
+
+			pAccountModule.idbase_methods[pAccount_TestChessEntity.methodUtype] = pAccount_TestChessEntity;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(TestChessEntity / 2).");
+
+			ScriptModule pChessModule = new ScriptModule("Chess");
+			EntityDef.moduledefs["Chess"] = pChessModule;
+			EntityDef.idmoduledefs[2] = pChessModule;
+
+			Property pChess_position = new Property();
+			pChess_position.name = "position";
+			pChess_position.properUtype = 40000;
+			pChess_position.properFlags = 4;
+			pChess_position.aliasID = 1;
+			Vector3 Chess_position_defval = new Vector3();
+			pChess_position.defaultVal = Chess_position_defval;
+			pChessModule.propertys["position"] = pChess_position; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_position.aliasID] = pChess_position;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(position / 40000).");
+
+			Property pChess_direction = new Property();
+			pChess_direction.name = "direction";
+			pChess_direction.properUtype = 40001;
+			pChess_direction.properFlags = 4;
+			pChess_direction.aliasID = 2;
+			Vector3 Chess_direction_defval = new Vector3();
+			pChess_direction.defaultVal = Chess_direction_defval;
+			pChessModule.propertys["direction"] = pChess_direction; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_direction.aliasID] = pChess_direction;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(direction / 40001).");
+
+			Property pChess_spaceID = new Property();
+			pChess_spaceID.name = "spaceID";
+			pChess_spaceID.properUtype = 40002;
+			pChess_spaceID.properFlags = 16;
+			pChess_spaceID.aliasID = 3;
+			UInt32 Chess_spaceID_defval;
+			UInt32.TryParse("", out Chess_spaceID_defval);
+			pChess_spaceID.defaultVal = Chess_spaceID_defval;
+			pChessModule.propertys["spaceID"] = pChess_spaceID; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_spaceID.aliasID] = pChess_spaceID;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(spaceID / 40002).");
+
+			Property pChess_chess_id = new Property();
+			pChess_chess_id.name = "chess_id";
+			pChess_chess_id.properUtype = 4;
+			pChess_chess_id.properFlags = 32;
+			pChess_chess_id.aliasID = 4;
+			UInt64 Chess_chess_id_defval;
+			UInt64.TryParse("0", out Chess_chess_id_defval);
+			pChess_chess_id.defaultVal = Chess_chess_id_defval;
+			pChessModule.propertys["chess_id"] = pChess_chess_id; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_chess_id.aliasID] = pChess_chess_id;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_id / 4).");
+
+			Property pChess_chess_level = new Property();
+			pChess_chess_level.name = "chess_level";
+			pChess_chess_level.properUtype = 5;
+			pChess_chess_level.properFlags = 32;
+			pChess_chess_level.aliasID = 5;
+			UInt64 Chess_chess_level_defval;
+			UInt64.TryParse("0", out Chess_chess_level_defval);
+			pChess_chess_level.defaultVal = Chess_chess_level_defval;
+			pChessModule.propertys["chess_level"] = pChess_chess_level; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_chess_level.aliasID] = pChess_chess_level;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_level / 5).");
+
+			Property pChess_chess_name = new Property();
+			pChess_chess_name.name = "chess_name";
+			pChess_chess_name.properUtype = 6;
+			pChess_chess_name.properFlags = 32;
+			pChess_chess_name.aliasID = 6;
+			string Chess_chess_name_defval = "";
+			pChess_chess_name.defaultVal = Chess_chess_name_defval;
+			pChessModule.propertys["chess_name"] = pChess_chess_name; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_chess_name.aliasID] = pChess_chess_name;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_name / 6).");
 
 		}
 

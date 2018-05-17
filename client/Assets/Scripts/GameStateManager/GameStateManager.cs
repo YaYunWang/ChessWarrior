@@ -37,6 +37,7 @@ public class GameStateManager : ManagerTemplateBase<GameStateManager>
         m_stateDic.Add(StateEnum.WORLD, new WorldState());
 
 		KBEngine.Event.registerOut("onLoginFailed", this, "OnLoginFailed");
+		KBEngine.Event.registerOut("onDisconnected", this, "OnDisconnected");
 
 		GameEventManager.RegisterEvent(GameEventTypes.ExitScene, OnExitScene);
 		GameEventManager.RegisterEvent(GameEventTypes.EnterScene, OnEntryScene);
@@ -48,6 +49,11 @@ public class GameStateManager : ManagerTemplateBase<GameStateManager>
 
 	private void OnExitScene(GameEventTypes eventType, object[] args)
 	{
+	}
+
+	public void OnDisconnected()
+	{
+		GameStateManager.ChangeState(StateEnum.LOGIN);
 	}
 
 	public void OnLoginFailed(UInt16 failedcode)

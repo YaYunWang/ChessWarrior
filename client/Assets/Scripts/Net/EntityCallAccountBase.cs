@@ -32,6 +32,16 @@ namespace KBEngine
 			sendCall(null);
 		}
 
+		public void TestChessEntity(UInt64 arg1)
+		{
+			Bundle pBundle = newCall("TestChessEntity", 0);
+			if(pBundle == null)
+				return;
+
+			bundle.writeUint64(arg1);
+			sendCall(null);
+		}
+
 	}
 
 	public class EntityCellEntityCall_AccountBase : EntityCall

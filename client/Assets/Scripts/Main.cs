@@ -16,6 +16,8 @@ public class Main : MonoBehaviour
 		GUIManager.CreateInstance();
         GameStateManager.CreateInstance();
 		EmitNumberManager.CreateInstance();
+
+		InputManager.CreateInstance();
 	}
 
 	void Update()
