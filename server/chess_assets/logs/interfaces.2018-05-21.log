@@ -1,0 +1,509 @@
+  INFO root [2018-05-21 08:49:19,166] - 
+  INFO root [2018-05-21 08:49:19,167] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 08:49:19,167] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 08:49:19,168] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 08:49:19,168] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 08:49:19,170] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 08:49:19,170] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 08:49:19,189] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 17358. PID: 9032 ----
+  INFO root [2018-05-21 08:49:19,189] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 08:49:19,190] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 08:49:19,190] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 08:49:19,478] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 08:49:19,478] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 08:49:19,479] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 08:49:19,482] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 08:49:19,482] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 08:49:19,482] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 08:49:19,483] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 08:49:19,536] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 08:49:19,578] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 08:49:19,579] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 08:49:19,616] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 08:49:19,633] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 08:49:20,014] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 08:49:20,015] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 08:49:27,323] - Components::process(): Found all the components!
+  WARN root [2018-05-21 08:50:59,115] - TCPPacketReceiver::processPendingEvents(127.0.0.1:52799): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 08:51:02,848] - 
+  INFO root [2018-05-21 08:51:02,848] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 08:51:02,863] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 08:51:02,864] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 08:51:02,864] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 08:51:02,866] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 08:51:02,866] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 08:51:02,871] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 17756. PID: 15920 ----
+  INFO root [2018-05-21 08:51:02,871] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 08:51:02,872] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 08:51:02,872] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 08:51:03,017] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 08:51:03,018] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 08:51:03,018] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 08:51:03,021] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 08:51:03,021] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 08:51:03,021] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 08:51:03,022] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 08:51:03,062] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 08:51:03,101] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 08:51:03,101] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 08:51:03,115] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 08:51:03,122] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 08:51:03,502] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 08:51:03,503] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 08:51:10,715] - Components::process(): Found all the components!
+  WARN root [2018-05-21 08:51:56,831] - TCPPacketReceiver::processPendingEvents(127.0.0.1:52961): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 08:52:00,072] - 
+  INFO root [2018-05-21 08:52:00,072] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 08:52:00,073] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 08:52:00,073] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 08:52:00,073] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 08:52:00,075] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 08:52:00,076] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 08:52:00,080] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 17942. PID: 796 ----
+  INFO root [2018-05-21 08:52:00,081] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 08:52:00,081] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 08:52:00,081] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 08:52:00,248] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 08:52:00,248] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 08:52:00,249] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 08:52:00,252] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 08:52:00,252] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 08:52:00,252] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 08:52:00,253] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 08:52:00,299] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 08:52:00,348] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 08:52:00,348] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 08:52:00,360] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 08:52:00,367] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 08:52:00,741] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 08:52:00,742] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 08:52:07,874] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 08:52:27,090] - onRequestAccountLogin: registerName=test2
+S_INFO root [2018-05-21 08:53:28,060] - onRequestAccountLogin: registerName=test2
+S_INFO root [2018-05-21 09:00:24,359] - onRequestAccountLogin: registerName=test2
+S_INFO root [2018-05-21 09:01:23,558] - onRequestAccountLogin: registerName=test2
+S_INFO root [2018-05-21 09:02:20,258] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 09:03:18,042] - TCPPacketReceiver::processPendingEvents(127.0.0.1:53079): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 09:03:27,463] - 
+  INFO root [2018-05-21 09:03:27,463] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 09:03:27,465] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 09:03:27,465] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 09:03:27,465] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 09:03:27,468] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 09:03:27,468] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 09:03:27,473] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 20189. PID: 8804 ----
+  INFO root [2018-05-21 09:03:27,473] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 09:03:27,473] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 09:03:27,473] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 09:03:27,605] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 09:03:27,606] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 09:03:27,606] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 09:03:27,609] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 09:03:27,610] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 09:03:27,610] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 09:03:27,610] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 09:03:27,655] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 09:03:27,699] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 09:03:27,700] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 09:03:27,712] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 09:03:27,722] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 09:03:28,200] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 09:03:28,202] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 09:03:35,513] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 09:03:57,012] - onRequestAccountLogin: registerName=test2
+S_INFO root [2018-05-21 09:04:31,612] - onRequestAccountLogin: registerName=test2
+S_INFO root [2018-05-21 09:05:40,912] - onRequestAccountLogin: registerName=test2
+S_INFO root [2018-05-21 09:06:51,412] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 09:07:47,629] - TCPPacketReceiver::processPendingEvents(127.0.0.1:54039): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:14:29,319] - 
+  INFO root [2018-05-21 15:14:29,357] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:14:29,358] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:14:29,358] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:14:29,358] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:14:29,360] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:14:29,361] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:14:29,365] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 27286. PID: 12296 ----
+  INFO root [2018-05-21 15:14:29,365] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:14:29,365] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:14:29,366] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:14:29,500] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:14:29,500] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:14:29,501] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:14:29,504] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:14:29,504] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:14:29,504] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:14:29,505] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:14:29,549] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:14:29,596] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:14:29,596] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:14:29,633] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:14:29,648] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:14:30,027] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:14:30,028] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:14:37,265] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:16:14,655] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:17:36,207] - TCPPacketReceiver::processPendingEvents(127.0.0.1:52439): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:21:32,192] - 
+  INFO root [2018-05-21 15:21:32,192] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:21:32,194] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:21:32,194] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:21:32,194] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:21:32,197] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:21:32,197] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:21:32,202] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 28729. PID: 5572 ----
+  INFO root [2018-05-21 15:21:32,202] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:21:32,202] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:21:32,203] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:21:32,339] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:21:32,340] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:21:32,340] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:21:32,344] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:21:32,345] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:21:32,345] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:21:32,346] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:21:32,383] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:21:32,422] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:21:32,422] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:21:32,436] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:21:32,443] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:21:32,817] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:21:32,817] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:21:40,036] - Components::process(): Found all the components!
+  WARN root [2018-05-21 15:21:46,639] - TCPPacketReceiver::processPendingEvents(127.0.0.1:53105): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:23:44,748] - 
+  INFO root [2018-05-21 15:23:44,749] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:23:44,749] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:23:44,750] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:23:44,750] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:23:44,752] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:23:44,752] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:23:44,757] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 29163. PID: 2816 ----
+  INFO root [2018-05-21 15:23:44,758] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:23:44,758] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:23:44,759] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:23:44,896] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:23:44,896] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:23:44,897] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:23:44,900] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:23:44,901] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:23:44,901] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:23:44,901] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:23:44,943] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:23:44,986] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:23:44,986] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:23:44,999] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:23:45,007] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:23:45,384] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:23:45,384] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:23:52,599] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:24:13,699] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:24:48,478] - TCPPacketReceiver::processPendingEvents(127.0.0.1:53540): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:25:35,234] - 
+  INFO root [2018-05-21 15:25:35,235] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:25:35,236] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:25:35,236] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:25:35,236] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:25:35,238] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:25:35,239] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:25:35,243] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 29523. PID: 5916 ----
+  INFO root [2018-05-21 15:25:35,243] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:25:35,244] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:25:35,244] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:25:35,382] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:25:35,382] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:25:35,383] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:25:35,385] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:25:35,386] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:25:35,386] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:25:35,386] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:25:35,436] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:25:35,491] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:25:35,492] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:25:35,504] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:25:35,512] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:25:35,937] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:25:35,937] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:25:43,137] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:26:00,405] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:26:40,501] - TCPPacketReceiver::processPendingEvents(127.0.0.1:53749): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:28:02,978] - 
+  INFO root [2018-05-21 15:28:03,002] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:28:03,003] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:28:03,003] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:28:03,003] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:28:03,018] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:28:03,018] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:28:03,023] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 30006. PID: 8948 ----
+  INFO root [2018-05-21 15:28:03,026] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:28:03,028] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:28:03,028] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:28:03,187] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:28:03,187] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:28:03,188] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:28:03,191] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:28:03,191] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:28:03,192] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:28:03,192] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:28:03,236] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:28:03,276] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:28:03,276] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:28:03,294] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:28:03,302] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:28:03,749] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:28:03,750] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:28:10,994] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:28:28,494] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:28:54,281] - TCPPacketReceiver::processPendingEvents(127.0.0.1:54037): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:47:32,541] - 
+  INFO root [2018-05-21 15:47:32,541] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:47:32,542] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:47:32,542] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:47:32,542] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:47:32,544] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:47:32,544] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:47:32,548] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 1055. PID: 5656 ----
+  INFO root [2018-05-21 15:47:32,548] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:47:32,549] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:47:32,549] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:47:32,682] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:47:32,682] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:47:32,682] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:47:32,685] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:47:32,685] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:47:32,686] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:47:32,686] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:47:32,731] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:47:32,785] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:47:32,786] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:47:32,800] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:47:32,809] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:47:33,260] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:47:33,261] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:48:00,762] - 
+  INFO root [2018-05-21 15:48:00,764] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:48:00,765] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:48:00,765] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:48:00,765] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:48:00,770] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:48:00,771] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:48:00,778] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 1150. PID: 17816 ----
+  INFO root [2018-05-21 15:48:00,778] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:48:00,778] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:48:00,778] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:48:00,922] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:48:00,923] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:48:00,923] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:48:00,926] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:48:00,926] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:48:00,927] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:48:00,927] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:48:00,971] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:48:01,011] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:48:01,011] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:48:01,023] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:48:01,030] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:48:01,463] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:48:01,463] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:48:08,723] - Components::process(): Found all the components!
+  WARN root [2018-05-21 15:48:15,640] - TCPPacketReceiver::processPendingEvents(127.0.0.1:56124): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:49:08,310] - 
+  INFO root [2018-05-21 15:49:08,315] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:49:08,316] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:49:08,316] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:49:08,316] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:49:08,331] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:49:08,331] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:49:08,339] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 1369. PID: 18736 ----
+  INFO root [2018-05-21 15:49:08,344] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:49:08,345] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:49:08,345] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:49:08,487] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:49:08,487] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:49:08,487] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:49:08,490] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:49:08,490] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:49:08,491] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:49:08,491] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:49:08,530] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:49:08,570] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:49:08,570] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:49:08,581] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:49:08,591] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:49:08,993] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:49:08,993] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:49:16,230] - Components::process(): Found all the components!
+  WARN root [2018-05-21 15:49:18,562] - TCPPacketReceiver::processPendingEvents(127.0.0.1:56240): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:50:21,912] - 
+  INFO root [2018-05-21 15:50:21,913] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:50:21,914] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:50:21,915] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:50:21,915] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:50:21,920] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:50:21,920] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:50:21,925] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 1611. PID: 16884 ----
+  INFO root [2018-05-21 15:50:21,926] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:50:21,926] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:50:21,926] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:50:22,061] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:50:22,061] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:50:22,062] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:50:22,064] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:50:22,065] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:50:22,065] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:50:22,065] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:50:22,107] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:50:22,154] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:50:22,154] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:50:22,164] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:50:22,173] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:50:22,625] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:50:22,625] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:50:29,864] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:50:49,165] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:51:26,371] - TCPPacketReceiver::processPendingEvents(127.0.0.1:56368): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:51:30,492] - 
+  INFO root [2018-05-21 15:51:30,492] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:51:30,493] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:51:30,493] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:51:30,493] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:51:30,496] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:51:30,497] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:51:30,501] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 1833. PID: 13116 ----
+  INFO root [2018-05-21 15:51:30,502] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:51:30,502] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:51:30,502] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:51:30,636] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:51:30,636] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:51:30,636] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:51:30,639] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:51:30,640] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:51:30,640] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:51:30,640] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:51:30,684] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:51:30,727] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:51:30,727] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:51:30,739] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:51:30,749] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:51:31,182] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:51:31,183] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:51:38,394] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:51:54,839] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:52:12,020] - TCPPacketReceiver::processPendingEvents(127.0.0.1:56526): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:52:15,689] - 
+  INFO root [2018-05-21 15:52:15,700] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:52:15,700] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:52:15,701] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:52:15,701] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:52:15,767] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:52:15,767] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:52:15,772] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 1980. PID: 17732 ----
+  INFO root [2018-05-21 15:52:15,775] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:52:15,775] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:52:15,776] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:52:15,908] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:52:15,909] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:52:15,909] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:52:15,912] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:52:15,913] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:52:15,913] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:52:15,914] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:52:15,959] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:52:16,003] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:52:16,004] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:52:16,015] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:52:16,021] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:52:16,431] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:52:16,432] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:52:23,615] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:52:42,115] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:53:04,907] - TCPPacketReceiver::processPendingEvents(127.0.0.1:56646): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:54:35,519] - 
+  INFO root [2018-05-21 15:54:35,522] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:54:35,522] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:54:35,523] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:54:35,523] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:54:35,528] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:54:35,528] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:54:35,533] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 2437. PID: 19388 ----
+  INFO root [2018-05-21 15:54:35,535] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:54:35,535] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:54:35,536] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:54:35,672] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:54:35,673] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:54:35,673] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:54:35,677] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:54:35,677] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:54:35,677] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:54:35,678] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:54:35,719] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:54:35,760] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:54:35,760] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:54:35,774] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:54:35,782] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:54:36,266] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:54:36,266] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:54:43,526] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:54:55,674] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:55:35,640] - TCPPacketReceiver::processPendingEvents(127.0.0.1:56901): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET
+  INFO root [2018-05-21 15:57:36,724] - 
+  INFO root [2018-05-21 15:57:36,731] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:57:36,732] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:57:36,732] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:57:36,732] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:57:36,736] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:30099 )
+  INFO root [2018-05-21 15:57:36,736] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:30099, SOMAXCONN=5.
+  INFO root [2018-05-21 15:57:36,741] - ---- interfaces Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: A3D4913C83C4082A29723B2DA267A5B0. Config: Debug X86. Built: 15:49:42 May 15 2018. AppID: 3000. UID: 3028. PID: 2496 ----
+  INFO root [2018-05-21 15:57:36,750] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:57:36,754] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:57:36,755] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:57:36,889] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:57:36,889] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:57:36,890] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:57:36,893] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:57:36,893] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:57:36,893] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:57:36,894] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:57:36,945] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:57:36,984] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:49:39) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:57:36,984] - Script::install(): KBExtra is successfully!
+S_INFO root [2018-05-21 15:57:36,996] - onInterfaceAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+  INFO root [2018-05-21 15:57:37,003] - TelnetServer server is running on port 33000
+  INFO root [2018-05-21 15:57:37,440] - ---- interfaces is running ----
+ DEBUG root [2018-05-21 15:57:37,440] - Components::process(): Request for the process of identity...
+  INFO root [2018-05-21 15:57:44,697] - Components::process(): Found all the components!
+S_INFO root [2018-05-21 15:57:58,797] - onRequestAccountLogin: registerName=test2
+  WARN root [2018-05-21 15:59:18,601] - TCPPacketReceiver::processPendingEvents(127.0.0.1:57232): Throwing REASON_GENERAL_NETWORK - WSAECONNRESET

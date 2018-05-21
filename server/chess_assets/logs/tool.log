@@ -1,0 +1,256 @@
+  INFO root [2018-05-21 08:48:52,736] - 
+  INFO root [2018-05-21 08:48:52,737] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 08:48:52,738] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 08:48:52,739] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 08:48:52,739] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 08:48:52,743] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:52747 )
+  INFO root [2018-05-21 08:48:52,745] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:52747, SOMAXCONN=5.
+  INFO root [2018-05-21 08:48:52,765] - ---- tool Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: F217117F928F68467C45B47BA31B1B8B. Config: Debug X86. Built: 15:51:05 May 15 2018. AppID: 0. UID: 17325. PID: 1900 ----
+  INFO root [2018-05-21 08:48:52,766] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 08:48:52,766] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 08:48:52,766] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 08:48:52,940] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 08:48:52,940] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 08:48:52,940] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 08:48:52,943] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 08:48:52,943] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 08:48:52,943] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 08:48:52,944] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 08:48:53,048] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 08:48:53,144] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:51:04) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 08:48:53,144] - Script::install(): KBExtra is successfully!
+ DEBUG root [2018-05-21 08:48:53,794] - ClientSDK::writeServerErrorDescrsModule(): ..\..\client\Assets\Scripts\Net//ServerErrorDescrs.cs
+ DEBUG root [2018-05-21 08:48:53,794] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/ServerErrorDescrs.cs
+ DEBUG root [2018-05-21 08:48:53,802] - ClientSDK::writeEngineMessagesModule(): ..\..\client\Assets\Scripts\Net//Messages.cs
+ DEBUG root [2018-05-21 08:48:53,805] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/Messages.cs
+ DEBUG root [2018-05-21 08:48:53,813] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/KBETypes.cs
+ DEBUG root [2018-05-21 08:48:53,817] - ClientSDK::writeEntityDefsModule(): ..\..\client\Assets\Scripts\Net//EntityDef.cs
+ DEBUG root [2018-05-21 08:48:53,819] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityDef.cs
+ DEBUG root [2018-05-21 08:48:53,829] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/CustomDataTypes.cs
+ DEBUG root [2018-05-21 08:48:53,835] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//Account
+ DEBUG root [2018-05-21 08:48:53,836] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/AccountBase.cs
+ DEBUG root [2018-05-21 08:48:53,846] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallAccountBase.cs
+ DEBUG root [2018-05-21 08:48:53,851] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//Chess
+ DEBUG root [2018-05-21 08:48:53,853] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/ChessBase.cs
+ DEBUG root [2018-05-21 08:48:53,860] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallChessBase.cs
+ DEBUG root [2018-05-21 08:48:53,865] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//NormalFB
+ DEBUG root [2018-05-21 08:48:53,865] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/NormalFBBase.cs
+ DEBUG root [2018-05-21 08:48:53,872] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallNormalFBBase.cs
+ DEBUG root [2018-05-21 08:48:53,877] - Script::uninstall_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 08:48:53,877] - Script::uninstall_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 08:48:53,877] - Script::uninstall_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 08:48:53,877] - Script::uninstall_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 08:48:53,877] - Script::uninstall_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 08:48:53,878] - Script::uninstall_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 08:48:53,878] - Script::uninstall_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 08:48:53,878] - Script::uninstall_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 08:48:53,887] - Script::uninstall(): is successfully!
+ DEBUG root [2018-05-21 08:48:53,887] - ThreadPool::destroy(): starting size 2.
+  WARN root [2018-05-21 08:48:54,188] - ThreadPool::destroy(): waiting for thread(2)[0x3df10f8,0x3df1160,], try=1
+ DEBUG root [2018-05-21 08:48:54,590] - TPThread::~TPThread(): 0x3df10f8
+ DEBUG root [2018-05-21 08:48:54,590] - TPThread::~TPThread(): 0x3df1160
+ DEBUG root [2018-05-21 08:48:54,590] - ThreadPool::destroy(): successfully!
+ DEBUG root [2018-05-21 08:48:54,601] - Bundle::destroyObjPool(): size 13.
+ DEBUG root [2018-05-21 08:48:54,601] - Channel::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 08:48:54,601] - TCPPacket::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 08:48:54,602] - UDPPacket::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 08:48:54,602] - EndPoint::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 08:48:54,603] - Address::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 08:48:54,603] - TCPPacketReceiver::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 08:48:54,603] - UDPPacketReceiver::destroyObjPool(): size 0.
+  INFO root [2018-05-21 08:48:54,603] - tool(0) has shut down. ClientSDK=1
+  INFO root [2018-05-21 08:48:55,606] - EventDispatcher()::~EventDispatcher: Num timers = 2
+  INFO root [2018-05-21 15:30:43,539] - 
+  INFO root [2018-05-21 15:30:43,539] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:30:43,539] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:30:43,540] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:30:43,540] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:30:43,543] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:54325 )
+  INFO root [2018-05-21 15:30:43,543] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:54325, SOMAXCONN=5.
+  INFO root [2018-05-21 15:30:43,549] - ---- tool Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: F217117F928F68467C45B47BA31B1B8B. Config: Debug X86. Built: 15:51:05 May 15 2018. AppID: 0. UID: 30525. PID: 13544 ----
+  INFO root [2018-05-21 15:30:43,549] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:30:43,550] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:30:43,550] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:30:43,681] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:30:43,683] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:30:43,683] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:30:43,687] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:30:43,688] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:30:43,688] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:30:43,689] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:30:43,723] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:30:43,764] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:51:04) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:30:43,764] - Script::install(): KBExtra is successfully!
+ DEBUG root [2018-05-21 15:30:44,379] - ClientSDK::writeServerErrorDescrsModule(): ..\..\client\Assets\Scripts\Net//ServerErrorDescrs.cs
+ DEBUG root [2018-05-21 15:30:44,380] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/ServerErrorDescrs.cs
+ DEBUG root [2018-05-21 15:30:44,390] - ClientSDK::writeEngineMessagesModule(): ..\..\client\Assets\Scripts\Net//Messages.cs
+ DEBUG root [2018-05-21 15:30:44,394] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/Messages.cs
+ DEBUG root [2018-05-21 15:30:44,401] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/KBETypes.cs
+ DEBUG root [2018-05-21 15:30:44,405] - ClientSDK::writeEntityDefsModule(): ..\..\client\Assets\Scripts\Net//EntityDef.cs
+ DEBUG root [2018-05-21 15:30:44,408] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityDef.cs
+ DEBUG root [2018-05-21 15:30:44,418] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/CustomDataTypes.cs
+ DEBUG root [2018-05-21 15:30:44,419] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//Account
+ DEBUG root [2018-05-21 15:30:44,420] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/AccountBase.cs
+ DEBUG root [2018-05-21 15:30:44,426] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallAccountBase.cs
+ DEBUG root [2018-05-21 15:30:44,431] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//Chess
+ DEBUG root [2018-05-21 15:30:44,433] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/ChessBase.cs
+ DEBUG root [2018-05-21 15:30:44,439] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallChessBase.cs
+ DEBUG root [2018-05-21 15:30:44,443] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//NormalFB
+ DEBUG root [2018-05-21 15:30:44,443] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/NormalFBBase.cs
+ DEBUG root [2018-05-21 15:30:44,451] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallNormalFBBase.cs
+ DEBUG root [2018-05-21 15:30:44,455] - Script::uninstall_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:30:44,455] - Script::uninstall_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:30:44,456] - Script::uninstall_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:30:44,456] - Script::uninstall_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:30:44,456] - Script::uninstall_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:30:44,456] - Script::uninstall_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:30:44,456] - Script::uninstall_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:30:44,456] - Script::uninstall_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:30:44,466] - Script::uninstall(): is successfully!
+ DEBUG root [2018-05-21 15:30:44,466] - ThreadPool::destroy(): starting size 2.
+  WARN root [2018-05-21 15:30:44,767] - ThreadPool::destroy(): waiting for thread(2)[0x3ac4ce8,0x3ac55d8,], try=1
+ DEBUG root [2018-05-21 15:30:45,168] - TPThread::~TPThread(): 0x3ac4ce8
+ DEBUG root [2018-05-21 15:30:45,168] - TPThread::~TPThread(): 0x3ac55d8
+ DEBUG root [2018-05-21 15:30:45,169] - ThreadPool::destroy(): successfully!
+ DEBUG root [2018-05-21 15:30:45,179] - Bundle::destroyObjPool(): size 13.
+ DEBUG root [2018-05-21 15:30:45,179] - Channel::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:30:45,180] - TCPPacket::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:30:45,180] - UDPPacket::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:30:45,180] - EndPoint::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:30:45,181] - Address::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:30:45,181] - TCPPacketReceiver::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:30:45,181] - UDPPacketReceiver::destroyObjPool(): size 0.
+  INFO root [2018-05-21 15:30:45,181] - tool(0) has shut down. ClientSDK=1
+  INFO root [2018-05-21 15:30:46,182] - EventDispatcher()::~EventDispatcher: Num timers = 2
+  INFO root [2018-05-21 15:47:16,514] - 
+  INFO root [2018-05-21 15:47:16,515] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:47:16,515] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:47:16,515] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:47:16,515] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:47:16,517] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:56020 )
+  INFO root [2018-05-21 15:47:16,517] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:56020, SOMAXCONN=5.
+  INFO root [2018-05-21 15:47:16,522] - ---- tool Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: F217117F928F68467C45B47BA31B1B8B. Config: Debug X86. Built: 15:51:05 May 15 2018. AppID: 0. UID: 1006. PID: 8480 ----
+  INFO root [2018-05-21 15:47:16,522] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:47:16,522] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:47:16,522] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:47:16,663] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:47:16,664] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:47:16,665] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:47:16,668] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:47:16,669] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:47:16,669] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:47:16,670] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:47:16,717] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:47:16,754] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:51:04) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:47:16,754] - Script::install(): KBExtra is successfully!
+ DEBUG root [2018-05-21 15:47:17,319] - ClientSDK::writeServerErrorDescrsModule(): ..\..\client\Assets\Scripts\Net//ServerErrorDescrs.cs
+ DEBUG root [2018-05-21 15:47:17,320] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/ServerErrorDescrs.cs
+ DEBUG root [2018-05-21 15:47:17,331] - ClientSDK::writeEngineMessagesModule(): ..\..\client\Assets\Scripts\Net//Messages.cs
+ DEBUG root [2018-05-21 15:47:17,335] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/Messages.cs
+ DEBUG root [2018-05-21 15:47:17,353] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/KBETypes.cs
+ DEBUG root [2018-05-21 15:47:17,364] - ClientSDK::writeEntityDefsModule(): ..\..\client\Assets\Scripts\Net//EntityDef.cs
+ DEBUG root [2018-05-21 15:47:17,366] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityDef.cs
+ DEBUG root [2018-05-21 15:47:17,382] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/CustomDataTypes.cs
+ DEBUG root [2018-05-21 15:47:17,397] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//Account
+ DEBUG root [2018-05-21 15:47:17,399] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/AccountBase.cs
+ DEBUG root [2018-05-21 15:47:17,408] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallAccountBase.cs
+ DEBUG root [2018-05-21 15:47:17,413] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//Chess
+ DEBUG root [2018-05-21 15:47:17,414] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/ChessBase.cs
+ DEBUG root [2018-05-21 15:47:17,423] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallChessBase.cs
+ DEBUG root [2018-05-21 15:47:17,424] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//NormalFB
+ DEBUG root [2018-05-21 15:47:17,425] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/NormalFBBase.cs
+ DEBUG root [2018-05-21 15:47:17,436] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallNormalFBBase.cs
+ DEBUG root [2018-05-21 15:47:17,452] - Script::uninstall_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:47:17,452] - Script::uninstall_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:47:17,452] - Script::uninstall_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:47:17,452] - Script::uninstall_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:47:17,452] - Script::uninstall_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:47:17,452] - Script::uninstall_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:47:17,452] - Script::uninstall_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:47:17,452] - Script::uninstall_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:47:17,465] - Script::uninstall(): is successfully!
+ DEBUG root [2018-05-21 15:47:17,465] - ThreadPool::destroy(): starting size 2.
+  WARN root [2018-05-21 15:47:17,766] - ThreadPool::destroy(): waiting for thread(2)[0x3a45418,0x3a45a98,], try=1
+ DEBUG root [2018-05-21 15:47:18,167] - TPThread::~TPThread(): 0x3a45418
+ DEBUG root [2018-05-21 15:47:18,168] - TPThread::~TPThread(): 0x3a45a98
+ DEBUG root [2018-05-21 15:47:18,168] - ThreadPool::destroy(): successfully!
+ DEBUG root [2018-05-21 15:47:18,180] - Bundle::destroyObjPool(): size 13.
+ DEBUG root [2018-05-21 15:47:18,180] - Channel::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:47:18,180] - TCPPacket::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:47:18,181] - UDPPacket::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:47:18,181] - EndPoint::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:47:18,181] - Address::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:47:18,181] - TCPPacketReceiver::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:47:18,181] - UDPPacketReceiver::destroyObjPool(): size 0.
+  INFO root [2018-05-21 15:47:18,181] - tool(0) has shut down. ClientSDK=1
+  INFO root [2018-05-21 15:47:19,185] - EventDispatcher()::~EventDispatcher: Num timers = 2
+  INFO root [2018-05-21 15:50:38,955] - 
+  INFO root [2018-05-21 15:50:38,955] - -----------------------------------------------------------------------------------------
+
+
+  INFO root [2018-05-21 15:50:38,956] - Resmgr::initialize: KBE_ROOT=D:/noah/ChessWarrior/server/
+  INFO root [2018-05-21 15:50:38,956] - Resmgr::initialize: KBE_RES_PATH=D:/noah/ChessWarrior/server/kbe/res/;D:/noah/ChessWarrior/server/chess_assets/;D:/noah/ChessWarrior/server/chess_assets/scripts/;D:/noah/ChessWarrior/server/chess_assets/res/
+  INFO root [2018-05-21 15:50:38,956] - Resmgr::initialize: KBE_BIN_PATH=D:/noah/ChessWarrior/server/kbe/bin/server/
+  INFO root [2018-05-21 15:50:38,958] - NetworkInterface::initialize(INTERNAL): bound to all interfaces with default route interface on 192.168.0.111 ( 192.168.0.111:56414 )
+  INFO root [2018-05-21 15:50:38,958] - NetworkInterface::initialize(INTERNAL): address 192.168.0.111:56414, SOMAXCONN=5.
+  INFO root [2018-05-21 15:50:38,964] - ---- tool Version: 2.0.0. ScriptVersion: 0.1.0. Protocol: F217117F928F68467C45B47BA31B1B8B. Config: Debug X86. Built: 15:51:05 May 15 2018. AppID: 0. UID: 1669. PID: 8520 ----
+  INFO root [2018-05-21 15:50:38,965] - Server : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz with 2097151kB RAM
+  INFO root [2018-05-21 15:50:38,965] - ThreadPool::createThreadPool: creating  threadpool...
+  INFO root [2018-05-21 15:50:38,965] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+ DEBUG root [2018-05-21 15:50:39,097] - Script::install_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:50:39,098] - Script::install_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:50:39,098] - Script::install_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:50:39,101] - Script::install_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:50:39,101] - Script::install_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:50:39,101] - Script::install_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:50:39,102] - Script::install_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:50:39,139] - Script::install_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:50:39,173] - Script::install(): is successfully, Python=(3.4.2 (default, May 15 2018, 15:51:04) [MSC v.1900 32 bit (Intel)])!
+  INFO root [2018-05-21 15:50:39,174] - Script::install(): KBExtra is successfully!
+ DEBUG root [2018-05-21 15:50:39,771] - ClientSDK::writeServerErrorDescrsModule(): ..\..\client\Assets\Scripts\Net//ServerErrorDescrs.cs
+ DEBUG root [2018-05-21 15:50:39,771] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/ServerErrorDescrs.cs
+ DEBUG root [2018-05-21 15:50:39,779] - ClientSDK::writeEngineMessagesModule(): ..\..\client\Assets\Scripts\Net//Messages.cs
+ DEBUG root [2018-05-21 15:50:39,783] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/Messages.cs
+ DEBUG root [2018-05-21 15:50:39,790] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/KBETypes.cs
+ DEBUG root [2018-05-21 15:50:39,796] - ClientSDK::writeEntityDefsModule(): ..\..\client\Assets\Scripts\Net//EntityDef.cs
+ DEBUG root [2018-05-21 15:50:39,799] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityDef.cs
+ DEBUG root [2018-05-21 15:50:39,809] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/CustomDataTypes.cs
+ DEBUG root [2018-05-21 15:50:39,811] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//Account
+ DEBUG root [2018-05-21 15:50:39,812] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/AccountBase.cs
+ DEBUG root [2018-05-21 15:50:39,815] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallAccountBase.cs
+ DEBUG root [2018-05-21 15:50:39,818] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//Chess
+ DEBUG root [2018-05-21 15:50:39,819] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/ChessBase.cs
+ DEBUG root [2018-05-21 15:50:39,821] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallChessBase.cs
+ DEBUG root [2018-05-21 15:50:39,822] - ClientSDK::writeEntityModule(): ..\..\client\Assets\Scripts\Net//NormalFB
+ DEBUG root [2018-05-21 15:50:39,823] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/NormalFBBase.cs
+ DEBUG root [2018-05-21 15:50:39,825] - ClientSDK::saveFile(): ..\..\client\Assets\Scripts\Net/EntityCallNormalFBBase.cs
+ DEBUG root [2018-05-21 15:50:39,826] - Script::uninstall_py_dlls(): PyInit_pyexpat
+ DEBUG root [2018-05-21 15:50:39,826] - Script::uninstall_py_dlls(): PyInit__socket
+ DEBUG root [2018-05-21 15:50:39,826] - Script::uninstall_py_dlls(): PyInit__ssl
+ DEBUG root [2018-05-21 15:50:39,827] - Script::uninstall_py_dlls(): PyInit__hashlib
+ DEBUG root [2018-05-21 15:50:39,827] - Script::uninstall_py_dlls(): PyInit_select
+ DEBUG root [2018-05-21 15:50:39,827] - Script::uninstall_py_dlls(): PyInit__ctypes
+ DEBUG root [2018-05-21 15:50:39,827] - Script::uninstall_py_dlls(): PyInit__elementtree
+ DEBUG root [2018-05-21 15:50:39,827] - Script::uninstall_py_dlls(): PyInit_unicodedata
+  INFO root [2018-05-21 15:50:39,837] - Script::uninstall(): is successfully!
+ DEBUG root [2018-05-21 15:50:39,837] - ThreadPool::destroy(): starting size 2.
+  WARN root [2018-05-21 15:50:40,139] - ThreadPool::destroy(): waiting for thread(2)[0x3835838,0x3835288,], try=1
+ DEBUG root [2018-05-21 15:50:40,539] - TPThread::~TPThread(): 0x3835838
+ DEBUG root [2018-05-21 15:50:40,539] - TPThread::~TPThread(): 0x3835288
+ DEBUG root [2018-05-21 15:50:40,539] - ThreadPool::destroy(): successfully!
+ DEBUG root [2018-05-21 15:50:40,551] - Bundle::destroyObjPool(): size 13.
+ DEBUG root [2018-05-21 15:50:40,551] - Channel::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:50:40,552] - TCPPacket::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:50:40,552] - UDPPacket::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:50:40,552] - EndPoint::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:50:40,552] - Address::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:50:40,552] - TCPPacketReceiver::destroyObjPool(): size 0.
+ DEBUG root [2018-05-21 15:50:40,552] - UDPPacketReceiver::destroyObjPool(): size 0.
+  INFO root [2018-05-21 15:50:40,552] - tool(0) has shut down. ClientSDK=1
+  INFO root [2018-05-21 15:50:41,554] - EventDispatcher()::~EventDispatcher: Num timers = 2
