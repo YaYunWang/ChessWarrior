@@ -13,6 +13,7 @@ public class WorldState : IState
 
     public void Exit()
 	{
+		GUIManager.CloseAll();
 	}
 
     public void Update()

@@ -164,20 +164,64 @@ namespace KBEngine
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), property(RoleType / 1).");
 
+			List<DATATYPE_BASE> pAccount_EntryFB_args = new List<DATATYPE_BASE>();
+
+			Method pAccount_EntryFB = new Method();
+			pAccount_EntryFB.name = "EntryFB";
+			pAccount_EntryFB.methodUtype = 7;
+			pAccount_EntryFB.aliasID = 1;
+			pAccount_EntryFB.args = pAccount_EntryFB_args;
+
+			pAccountModule.methods["EntryFB"] = pAccount_EntryFB; 
+			pAccountModule.useMethodDescrAlias = true;
+			pAccountModule.idmethods[(UInt16)pAccount_EntryFB.aliasID] = pAccount_EntryFB;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFB / 7).");
+
 			List<DATATYPE_BASE> pAccount_ReNameResult_args = new List<DATATYPE_BASE>();
 			pAccount_ReNameResult_args.Add(EntityDef.id2datatypes[7]);
 
 			Method pAccount_ReNameResult = new Method();
 			pAccount_ReNameResult.name = "ReNameResult";
-			pAccount_ReNameResult.methodUtype = 3;
-			pAccount_ReNameResult.aliasID = 1;
+			pAccount_ReNameResult.methodUtype = 6;
+			pAccount_ReNameResult.aliasID = 2;
 			pAccount_ReNameResult.args = pAccount_ReNameResult_args;
 
 			pAccountModule.methods["ReNameResult"] = pAccount_ReNameResult; 
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_ReNameResult.aliasID] = pAccount_ReNameResult;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 3).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 6).");
+
+			List<DATATYPE_BASE> pAccount_ClientReady_args = new List<DATATYPE_BASE>();
+
+			Method pAccount_ClientReady = new Method();
+			pAccount_ClientReady.name = "ClientReady";
+			pAccount_ClientReady.methodUtype = 4;
+			pAccount_ClientReady.aliasID = -1;
+			pAccount_ClientReady.args = pAccount_ClientReady_args;
+
+			pAccountModule.methods["ClientReady"] = pAccount_ClientReady; 
+			pAccountModule.base_methods["ClientReady"] = pAccount_ClientReady;
+
+			pAccountModule.idbase_methods[pAccount_ClientReady.methodUtype] = pAccount_ClientReady;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ClientReady / 4).");
+
+			List<DATATYPE_BASE> pAccount_EntryFBScene_args = new List<DATATYPE_BASE>();
+
+			Method pAccount_EntryFBScene = new Method();
+			pAccount_EntryFBScene.name = "EntryFBScene";
+			pAccount_EntryFBScene.methodUtype = 3;
+			pAccount_EntryFBScene.aliasID = -1;
+			pAccount_EntryFBScene.args = pAccount_EntryFBScene_args;
+
+			pAccountModule.methods["EntryFBScene"] = pAccount_EntryFBScene; 
+			pAccountModule.base_methods["EntryFBScene"] = pAccount_EntryFBScene;
+
+			pAccountModule.idbase_methods[pAccount_EntryFBScene.methodUtype] = pAccount_EntryFBScene;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFBScene / 3).");
 
 			List<DATATYPE_BASE> pAccount_ReCreateAccountRequest_args = new List<DATATYPE_BASE>();
 			pAccount_ReCreateAccountRequest_args.Add(EntityDef.id2datatypes[7]);
@@ -261,7 +305,7 @@ namespace KBEngine
 
 			Property pChess_chess_id = new Property();
 			pChess_chess_id.name = "chess_id";
-			pChess_chess_id.properUtype = 4;
+			pChess_chess_id.properUtype = 5;
 			pChess_chess_id.properFlags = 32;
 			pChess_chess_id.aliasID = 4;
 			UInt64 Chess_chess_id_defval;
@@ -272,11 +316,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_id.aliasID] = pChess_chess_id;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_id / 4).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_id / 5).");
 
 			Property pChess_chess_level = new Property();
 			pChess_chess_level.name = "chess_level";
-			pChess_chess_level.properUtype = 5;
+			pChess_chess_level.properUtype = 6;
 			pChess_chess_level.properFlags = 32;
 			pChess_chess_level.aliasID = 5;
 			UInt64 Chess_chess_level_defval;
@@ -287,11 +331,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_level.aliasID] = pChess_chess_level;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_level / 5).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_level / 6).");
 
 			Property pChess_chess_name = new Property();
 			pChess_chess_name.name = "chess_name";
-			pChess_chess_name.properUtype = 6;
+			pChess_chess_name.properUtype = 7;
 			pChess_chess_name.properFlags = 32;
 			pChess_chess_name.aliasID = 6;
 			string Chess_chess_name_defval = "";
@@ -301,7 +345,7 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_name.aliasID] = pChess_chess_name;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_name / 6).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_name / 7).");
 
 		}
 

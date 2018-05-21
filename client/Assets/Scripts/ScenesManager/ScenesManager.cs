@@ -81,7 +81,10 @@ public class SceneManager : ManagerTemplateBase<SceneManager>
         if (config.BGM > 0)
             PlayBGM(config.BGM);
 
-        GameStateManager.ChangeState(StateEnum.WORLD);
+		if (config.SceneType == 1)
+			GameStateManager.ChangeState(StateEnum.WORLD);
+		else
+			GameStateManager.ChangeState(StateEnum.WORLDFight);
     }
     
     private static void PlayBGM(int audioID)

@@ -21,6 +21,24 @@ namespace KBEngine
 			type = ENTITYCALL_TYPE.ENTITYCALL_TYPE_BASE;
 		}
 
+		public void ClientReady()
+		{
+			Bundle pBundle = newCall("ClientReady", 0);
+			if(pBundle == null)
+				return;
+
+			sendCall(null);
+		}
+
+		public void EntryFBScene()
+		{
+			Bundle pBundle = newCall("EntryFBScene", 0);
+			if(pBundle == null)
+				return;
+
+			sendCall(null);
+		}
+
 		public void ReCreateAccountRequest(Int16 arg1, string arg2)
 		{
 			Bundle pBundle = newCall("ReCreateAccountRequest", 0);

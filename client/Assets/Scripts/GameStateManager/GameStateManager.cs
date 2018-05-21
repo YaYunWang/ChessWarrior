@@ -9,6 +9,7 @@ public enum StateEnum
 	LOADCONFIG,
     LOGIN,
     WORLD,
+    WORLDFight,
 }
 
 public class GameStateManager : ManagerTemplateBase<GameStateManager>
@@ -35,13 +36,20 @@ public class GameStateManager : ManagerTemplateBase<GameStateManager>
         m_stateDic.Add(StateEnum.LOADCONFIG, new LoadConfigState());
         m_stateDic.Add(StateEnum.LOGIN, new LoginState());
         m_stateDic.Add(StateEnum.WORLD, new WorldState());
+        m_stateDic.Add(StateEnum.WORLDFight, new WorldFightState());
 
 		KBEngine.Event.registerOut("onLoginFailed", this, "OnLoginFailed");
 		KBEngine.Event.registerOut("onDisconnected", this, "OnDisconnected");
+		KBEngine.Event.registerOut("EntryFb", this, "EntryFb");
 
 		GameEventManager.RegisterEvent(GameEventTypes.ExitScene, OnExitScene);
 		GameEventManager.RegisterEvent(GameEventTypes.EnterScene, OnEntryScene);
     }
+
+	public void EntryFb()
+	{
+		SceneManager.ChangeScene(2);
+	}
 
 	private void OnEntryScene(GameEventTypes eventType, object[] args)
 	{

@@ -21,5 +21,10 @@ namespace KBEngine
 		{
 			KBEngine.Event.fireOut("AccountReName", (int)arg1);
 		}
+
+		public override void EntryFB()
+		{
+			KBEngine.Event.fireOut("EntryFb");
+		}
 	}
 }
