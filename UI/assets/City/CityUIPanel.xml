@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,768">
+  <displayList>
+    <text id="n0_uwm1" name="role_name" xy="44,49" size="250,54" fontSize="53" color="#ff0000" autoSize="none" text="名字名字"/>
+    <component id="n2_uwm1" name="entry_game" src="uwm12" xy="359,284"/>
+  </displayList>
+</component>
