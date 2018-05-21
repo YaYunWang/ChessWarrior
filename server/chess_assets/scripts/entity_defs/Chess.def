@@ -26,6 +26,10 @@
 	</ClientMethods>
 
 	<BaseMethods>
+		<CreateCell>
+			<Arg> ENTITYCALL </Arg>
+			<Arg> ENTITYCALL </Arg>
+		</CreateCell>
 	</BaseMethods>
 
 	<CellMethods>

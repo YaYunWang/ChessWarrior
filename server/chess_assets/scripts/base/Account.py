@@ -78,3 +78,31 @@ class Account(KBEngine.Proxy):
 
 				KBEngine.createEntityLocally("Chess", params)
 				break
+
+	"""
+	进入副本，先写个临时的，副本里面的内容都是写死的。
+	1、 创建fb entity
+	2、 创建avatar entity
+	"""
+	def EntryFBScene(self):
+		INFO_MSG("client entry fb.")
+		params = {
+			"player" : self
+		}
+		fb = KBEngine.createEntityLocally("NormalFB", params)
+
+	def CreateCell(self, fbBaseEntity, fbEntityCall):
+		if self.cell is not None:
+			return
+		self.CurrentFB = fbBaseEntity
+		self.createCellEntity(fbEntityCall)
+
+	def onGetCell(self):
+		if self.cell is None:
+			return
+		INFO_MSG("account create cell.")
+		# 可以进入游戏了
+		self.client.EntryFB()
+
+	def ClientReady(self):
+		self.CurrentFB.ClientReady()

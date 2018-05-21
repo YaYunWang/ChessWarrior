@@ -20,12 +20,22 @@
 			<Flags> BASE_AND_CLIENT </Flags>
 			<Persistent>	true	</Persistent>
 		</MineChess>
+
+		<CurrentFB>
+			<Type> ENTITYCALL </Type>
+			<Default>	</Default>
+			<Flags> BASE </Flags>
+			<Persistent>	false	</Persistent>
+		</CurrentFB>
 	</Properties>
 
 	<ClientMethods>
 		<ReNameResult>
 			<Arg> INT16 </Arg>
 		</ReNameResult>
+
+		<EntryFB>
+		</EntryFB>
 	</ClientMethods>
 
 	<BaseMethods>
@@ -39,6 +49,19 @@
 			<Arg> UINT64 </Arg>
 			<Exposed/>
 		</TestChessEntity>
+
+		<EntryFBScene>
+			<Exposed/>
+		</EntryFBScene>
+
+		<ClientReady>
+			<Exposed/>
+		</ClientReady>
+
+		<CreateCell>
+			<Arg> ENTITYCALL </Arg>
+			<Arg> ENTITYCALL </Arg>
+		</CreateCell>
 	</BaseMethods>
 
 	<CellMethods>

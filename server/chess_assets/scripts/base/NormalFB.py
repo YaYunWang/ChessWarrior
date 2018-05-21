@@ -2,11 +2,14 @@
 import KBEngine
 from KBEDebug import *
 
-class Chess(KBEngine.Proxy):
+class NormalFB(KBEngine.Entity):
 	def __init__(self):
-		KBEngine.Proxy.__init__(self)
+		KBEngine.Entity.__init__(self)
 
-		INFO_MSG('chess is create.')
+		# 创建cell
+		self.createCellEntityInNewSpace(None)
+
+		INFO_MSG("NormalFB is create.")
 
 	def onTimer(self, id, userArg):
 		"""
@@ -23,7 +26,7 @@ class Chess(KBEngine.Proxy):
 		该entity被正式激活为可使用， 此时entity已经建立了client对应实体， 可以在此创建它的
 		cell部分。
 		"""
-		INFO_MSG("account[%i] entities enable. entityCall:%s" % (self.id, self.client))
+		INFO_MSG("NormalFB[%i] entities enable. entityCall:%s" % (self.id, self.client))
 			
 	def onLogOnAttempt(self, ip, port, password):
 		"""
@@ -38,8 +41,22 @@ class Chess(KBEngine.Proxy):
 		KBEngine method.
 		客户端对应实体已经销毁
 		"""
-		DEBUG_MSG("Account[%i].onClientDeath:" % self.id)
+		DEBUG_MSG("NormalFB[%i].onClientDeath:" % self.id)
 		self.destroy()
 
-	def CreateCell(self, fbBaseEntity, fbEntityCall):
-		self.createCellEntity(fbEntityCall)
+	def onGetCell(self):
+		if self.player is not None:
+			INFO_MSG("normal fb cell create. player is not none.")
+		else:
+			INFO_MSG("normal fb cell create. player is none.")
+
+		# account 创建cell
+
+		self.player.CreateCell(self, self.cell)
+
+	def ClientReady(self):
+		INFO_MSG("client ready.")
+
+		param = {}
+		temp = KBEngine.createEntityLocally("Chess", param)
+		temp.CreateCell(self, self.cell)

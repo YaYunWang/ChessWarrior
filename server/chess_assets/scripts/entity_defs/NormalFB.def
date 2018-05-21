@@ -1,0 +1,30 @@
+<root>
+	
+	<Volatile>
+	    <position/>           <!-- 总是同步 -->
+	    <yaw/>                <!-- 总是同步 -->
+	    <pitch>999999</pitch>     <!-- 相距20米或以内同步     -->
+	    <optimized> true </optimized>   
+	</Volatile>               <!-- roll未指明则总是同步  -->
+
+	<Properties>
+		<player>
+			<Type>	ENTITYCALL	</Type>
+			<Flags>	BASE	</Flags>
+			<Default>		</Default>
+			<Persistent>	false	</Persistent>
+		</player>
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+		<ClientReady>
+		</ClientReady>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>
