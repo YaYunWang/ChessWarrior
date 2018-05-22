@@ -2,49 +2,49 @@
 	<Properties>
 		<chess_id>
 			<Type>	UINT64	</Type>
-			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Flags>	ALL_CLIENTS	</Flags>
 			<Default>	0	</Default>
 			<Persistent>	true	</Persistent>
 		</chess_id>
 
 		<chess_level>
 			<Type>	UINT64	</Type>
-			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Flags>	ALL_CLIENTS	</Flags>
 			<Default>	0	</Default>
 			<Persistent>	true	</Persistent>
 		</chess_level>
 
 		<chess_name>
 			<Type>	UNICODE	</Type>
-			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Flags>	ALL_CLIENTS	</Flags>
 			<DatabaseLength> 256 </DatabaseLength>
 			<Persistent>	true	</Persistent>
 		</chess_name>
 
 		<chess_index_x>
 			<Type>	UINT64	</Type>
-			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Flags>	ALL_CLIENTS	</Flags>
 			<Default>	0	</Default>
 			<Persistent>	true	</Persistent>
 		</chess_index_x>
 
-		<chess_index_y>
+		<chess_index_z>
 			<Type>	UINT64	</Type>
-			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Flags>	ALL_CLIENTS	</Flags>
 			<Default>	0	</Default>
 			<Persistent>	true	</Persistent>
-		</chess_index_y>
+		</chess_index_z>
 
 		<chess_attack>
 			<Type>	UINT64	</Type>
-			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Flags>	ALL_CLIENTS	</Flags>
 			<Default>	0	</Default>
 			<Persistent>	true	</Persistent>
 		</chess_attack>
 
 		<chess_defense>
 			<Type>	UINT64	</Type>
-			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Flags>	ALL_CLIENTS	</Flags>
 			<Default>	0	</Default>
 			<Persistent>	true	</Persistent>
 		</chess_defense>

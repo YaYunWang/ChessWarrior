@@ -6,7 +6,7 @@ class Chess(KBEngine.Proxy):
 	def __init__(self):
 		KBEngine.Proxy.__init__(self)
 
-		INFO_MSG('chess is create.')
+		INFO_MSG('chess is create, config id [%d]' % (self.chess_id))
 
 	def onTimer(self, id, userArg):
 		"""

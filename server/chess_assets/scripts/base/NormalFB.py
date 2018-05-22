@@ -57,6 +57,15 @@ class NormalFB(KBEngine.Entity):
 	def ClientReady(self):
 		INFO_MSG("client ready.")
 
-		param = {}
+		param = {
+			"chess_id":1,
+			"chess_level":1,
+			"chess_name":"测试棋子",
+			"chess_index_x":0,
+			"chess_index_z":0,
+			"chess_attack":100,
+			"chess_defense":50,
+		}
+
 		temp = KBEngine.createEntityLocally("Chess", param)
 		temp.CreateCell(self, self.cell)
