@@ -19,8 +19,16 @@ namespace KBEngine
 		public EntityBaseEntityCall_ChessBase baseEntityCall = null;
 		public EntityCellEntityCall_ChessBase cellEntityCall = null;
 
+		public UInt64 chess_attack = 0;
+		public virtual void onChess_attackChanged(UInt64 oldValue) {}
+		public UInt64 chess_defense = 0;
+		public virtual void onChess_defenseChanged(UInt64 oldValue) {}
 		public UInt64 chess_id = 0;
 		public virtual void onChess_idChanged(UInt64 oldValue) {}
+		public UInt64 chess_index_x = 0;
+		public virtual void onChess_index_xChanged(UInt64 oldValue) {}
+		public UInt64 chess_index_z = 0;
+		public virtual void onChess_index_zChanged(UInt64 oldValue) {}
 		public UInt64 chess_level = 0;
 		public virtual void onChess_levelChanged(UInt64 oldValue) {}
 		public string chess_name = "";
@@ -142,6 +150,38 @@ namespace KBEngine
 
 				switch(prop.properUtype)
 				{
+					case 10:
+						UInt64 oldval_chess_attack = chess_attack;
+						chess_attack = stream.readUint64();
+
+						if(prop.isBase())
+						{
+							if(inited)
+								onChess_attackChanged(oldval_chess_attack);
+						}
+						else
+						{
+							if(inWorld)
+								onChess_attackChanged(oldval_chess_attack);
+						}
+
+						break;
+					case 11:
+						UInt64 oldval_chess_defense = chess_defense;
+						chess_defense = stream.readUint64();
+
+						if(prop.isBase())
+						{
+							if(inited)
+								onChess_defenseChanged(oldval_chess_defense);
+						}
+						else
+						{
+							if(inWorld)
+								onChess_defenseChanged(oldval_chess_defense);
+						}
+
+						break;
 					case 5:
 						UInt64 oldval_chess_id = chess_id;
 						chess_id = stream.readUint64();
@@ -155,6 +195,38 @@ namespace KBEngine
 						{
 							if(inWorld)
 								onChess_idChanged(oldval_chess_id);
+						}
+
+						break;
+					case 8:
+						UInt64 oldval_chess_index_x = chess_index_x;
+						chess_index_x = stream.readUint64();
+
+						if(prop.isBase())
+						{
+							if(inited)
+								onChess_index_xChanged(oldval_chess_index_x);
+						}
+						else
+						{
+							if(inWorld)
+								onChess_index_xChanged(oldval_chess_index_x);
+						}
+
+						break;
+					case 9:
+						UInt64 oldval_chess_index_z = chess_index_z;
+						chess_index_z = stream.readUint64();
+
+						if(prop.isBase())
+						{
+							if(inited)
+								onChess_index_zChanged(oldval_chess_index_z);
+						}
+						else
+						{
+							if(inWorld)
+								onChess_index_zChanged(oldval_chess_index_z);
 						}
 
 						break;
@@ -236,8 +308,50 @@ namespace KBEngine
 			ScriptModule sm = EntityDef.moduledefs["Chess"];
 			Dictionary<UInt16, Property> pdatas = sm.idpropertys;
 
+			UInt64 oldval_chess_attack = chess_attack;
+			Property prop_chess_attack = pdatas[4];
+			if(prop_chess_attack.isBase())
+			{
+				if(inited && !inWorld)
+					onChess_attackChanged(oldval_chess_attack);
+			}
+			else
+			{
+				if(inWorld)
+				{
+					if(prop_chess_attack.isOwnerOnly() && !isPlayer())
+					{
+					}
+					else
+					{
+						onChess_attackChanged(oldval_chess_attack);
+					}
+				}
+			}
+
+			UInt64 oldval_chess_defense = chess_defense;
+			Property prop_chess_defense = pdatas[5];
+			if(prop_chess_defense.isBase())
+			{
+				if(inited && !inWorld)
+					onChess_defenseChanged(oldval_chess_defense);
+			}
+			else
+			{
+				if(inWorld)
+				{
+					if(prop_chess_defense.isOwnerOnly() && !isPlayer())
+					{
+					}
+					else
+					{
+						onChess_defenseChanged(oldval_chess_defense);
+					}
+				}
+			}
+
 			UInt64 oldval_chess_id = chess_id;
-			Property prop_chess_id = pdatas[4];
+			Property prop_chess_id = pdatas[6];
 			if(prop_chess_id.isBase())
 			{
 				if(inited && !inWorld)
@@ -257,8 +371,50 @@ namespace KBEngine
 				}
 			}
 
+			UInt64 oldval_chess_index_x = chess_index_x;
+			Property prop_chess_index_x = pdatas[7];
+			if(prop_chess_index_x.isBase())
+			{
+				if(inited && !inWorld)
+					onChess_index_xChanged(oldval_chess_index_x);
+			}
+			else
+			{
+				if(inWorld)
+				{
+					if(prop_chess_index_x.isOwnerOnly() && !isPlayer())
+					{
+					}
+					else
+					{
+						onChess_index_xChanged(oldval_chess_index_x);
+					}
+				}
+			}
+
+			UInt64 oldval_chess_index_z = chess_index_z;
+			Property prop_chess_index_z = pdatas[8];
+			if(prop_chess_index_z.isBase())
+			{
+				if(inited && !inWorld)
+					onChess_index_zChanged(oldval_chess_index_z);
+			}
+			else
+			{
+				if(inWorld)
+				{
+					if(prop_chess_index_z.isOwnerOnly() && !isPlayer())
+					{
+					}
+					else
+					{
+						onChess_index_zChanged(oldval_chess_index_z);
+					}
+				}
+			}
+
 			UInt64 oldval_chess_level = chess_level;
-			Property prop_chess_level = pdatas[5];
+			Property prop_chess_level = pdatas[9];
 			if(prop_chess_level.isBase())
 			{
 				if(inited && !inWorld)
@@ -279,7 +435,7 @@ namespace KBEngine
 			}
 
 			string oldval_chess_name = chess_name;
-			Property prop_chess_name = pdatas[6];
+			Property prop_chess_name = pdatas[10];
 			if(prop_chess_name.isBase())
 			{
 				if(inited && !inWorld)

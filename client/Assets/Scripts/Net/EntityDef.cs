@@ -303,11 +303,41 @@ namespace KBEngine
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(spaceID / 40002).");
 
+			Property pChess_chess_attack = new Property();
+			pChess_chess_attack.name = "chess_attack";
+			pChess_chess_attack.properUtype = 10;
+			pChess_chess_attack.properFlags = 4;
+			pChess_chess_attack.aliasID = 4;
+			UInt64 Chess_chess_attack_defval;
+			UInt64.TryParse("0", out Chess_chess_attack_defval);
+			pChess_chess_attack.defaultVal = Chess_chess_attack_defval;
+			pChessModule.propertys["chess_attack"] = pChess_chess_attack; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_chess_attack.aliasID] = pChess_chess_attack;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_attack / 10).");
+
+			Property pChess_chess_defense = new Property();
+			pChess_chess_defense.name = "chess_defense";
+			pChess_chess_defense.properUtype = 11;
+			pChess_chess_defense.properFlags = 4;
+			pChess_chess_defense.aliasID = 5;
+			UInt64 Chess_chess_defense_defval;
+			UInt64.TryParse("0", out Chess_chess_defense_defval);
+			pChess_chess_defense.defaultVal = Chess_chess_defense_defval;
+			pChessModule.propertys["chess_defense"] = pChess_chess_defense; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_chess_defense.aliasID] = pChess_chess_defense;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_defense / 11).");
+
 			Property pChess_chess_id = new Property();
 			pChess_chess_id.name = "chess_id";
 			pChess_chess_id.properUtype = 5;
-			pChess_chess_id.properFlags = 32;
-			pChess_chess_id.aliasID = 4;
+			pChess_chess_id.properFlags = 4;
+			pChess_chess_id.aliasID = 6;
 			UInt64 Chess_chess_id_defval;
 			UInt64.TryParse("0", out Chess_chess_id_defval);
 			pChess_chess_id.defaultVal = Chess_chess_id_defval;
@@ -318,11 +348,41 @@ namespace KBEngine
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_id / 5).");
 
+			Property pChess_chess_index_x = new Property();
+			pChess_chess_index_x.name = "chess_index_x";
+			pChess_chess_index_x.properUtype = 8;
+			pChess_chess_index_x.properFlags = 4;
+			pChess_chess_index_x.aliasID = 7;
+			UInt64 Chess_chess_index_x_defval;
+			UInt64.TryParse("0", out Chess_chess_index_x_defval);
+			pChess_chess_index_x.defaultVal = Chess_chess_index_x_defval;
+			pChessModule.propertys["chess_index_x"] = pChess_chess_index_x; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_chess_index_x.aliasID] = pChess_chess_index_x;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_index_x / 8).");
+
+			Property pChess_chess_index_z = new Property();
+			pChess_chess_index_z.name = "chess_index_z";
+			pChess_chess_index_z.properUtype = 9;
+			pChess_chess_index_z.properFlags = 4;
+			pChess_chess_index_z.aliasID = 8;
+			UInt64 Chess_chess_index_z_defval;
+			UInt64.TryParse("0", out Chess_chess_index_z_defval);
+			pChess_chess_index_z.defaultVal = Chess_chess_index_z_defval;
+			pChessModule.propertys["chess_index_z"] = pChess_chess_index_z; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_chess_index_z.aliasID] = pChess_chess_index_z;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_index_z / 9).");
+
 			Property pChess_chess_level = new Property();
 			pChess_chess_level.name = "chess_level";
 			pChess_chess_level.properUtype = 6;
-			pChess_chess_level.properFlags = 32;
-			pChess_chess_level.aliasID = 5;
+			pChess_chess_level.properFlags = 4;
+			pChess_chess_level.aliasID = 9;
 			UInt64 Chess_chess_level_defval;
 			UInt64.TryParse("0", out Chess_chess_level_defval);
 			pChess_chess_level.defaultVal = Chess_chess_level_defval;
@@ -336,8 +396,8 @@ namespace KBEngine
 			Property pChess_chess_name = new Property();
 			pChess_chess_name.name = "chess_name";
 			pChess_chess_name.properUtype = 7;
-			pChess_chess_name.properFlags = 32;
-			pChess_chess_name.aliasID = 6;
+			pChess_chess_name.properFlags = 4;
+			pChess_chess_name.aliasID = 10;
 			string Chess_chess_name_defval = "";
 			pChess_chess_name.defaultVal = Chess_chess_name_defval;
 			pChessModule.propertys["chess_name"] = pChess_chess_name; 

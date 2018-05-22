@@ -10,8 +10,6 @@ namespace KBEngine
 		{
 			base.__init__();
 
-			Debug.Log("============= chess init.");
-
 			KBEngine.Event.fireOut("ChessCreate", this);
 		}
 	}

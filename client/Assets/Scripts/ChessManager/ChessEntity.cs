@@ -28,8 +28,10 @@ public partial class ChessEntity : MonoBehaviour
 	public void InitChess(Chess chess)
 	{
 		chessObj = chess;
-
 		chessCfg = ConfigManager.Get<ChessCfgLoader>().GetConfig((int)chessObj.chess_id);
+
+		if (chessCfg == null)
+			return;
 
 		this.gameObject.name = string.Format("{0} -- {1}", chess.chess_id, chess.id);
 
