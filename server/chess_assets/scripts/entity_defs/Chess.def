@@ -20,6 +20,34 @@
 			<DatabaseLength> 256 </DatabaseLength>
 			<Persistent>	true	</Persistent>
 		</chess_name>
+
+		<chess_index_x>
+			<Type>	UINT64	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</chess_index_x>
+
+		<chess_index_y>
+			<Type>	UINT64	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</chess_index_y>
+
+		<chess_attack>
+			<Type>	UINT64	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</chess_attack>
+
+		<chess_defense>
+			<Type>	UINT64	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</chess_defense>
 	</Properties>
 
 	<ClientMethods>
