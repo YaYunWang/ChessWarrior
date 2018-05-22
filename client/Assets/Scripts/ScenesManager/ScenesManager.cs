@@ -36,6 +36,8 @@ public class SceneManager : ManagerTemplateBase<SceneManager>
     {
         AssetLoadManager.OnDispose();
 
+        GameEventManager.RaiseEvent(GameEventTypes.ExitScene);
+
         UnityEngine.SceneManagement.SceneManager.LoadScene("empty");
 
         UnLoadLastSceneAsset();
@@ -85,9 +87,11 @@ public class SceneManager : ManagerTemplateBase<SceneManager>
 			GameStateManager.ChangeState(StateEnum.WORLD);
 		else
 			GameStateManager.ChangeState(StateEnum.WORLDFight);
-    }
-    
-    private static void PlayBGM(int audioID)
+
+		GameEventManager.RaiseEvent(GameEventTypes.EnterScene, sceneId);
+	}
+
+	private static void PlayBGM(int audioID)
     {
         if (SceneCamera == null)
             return;

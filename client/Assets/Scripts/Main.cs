@@ -18,6 +18,7 @@ public class Main : MonoBehaviour
 		EmitNumberManager.CreateInstance();
 
 		InputManager.CreateInstance();
+		ChessManager.CreateInstance();
 	}
 
 	void Update()

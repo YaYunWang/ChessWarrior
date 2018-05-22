@@ -16,6 +16,13 @@ public class LoginState : IState
 
 		KBEngine.Event.registerOut("Account", this, "OnAccountCreate");
 		KBEngine.Event.registerOut("AccountReName", this, "AccountReName");
+
+		//// 测试，客户端测试显示棋子
+		//Chess chess = new Chess();
+		//chess.id = 1;
+		//chess.chess_id = 1;
+
+		//chess.__init__();
 	}
 
 	public void Exit()

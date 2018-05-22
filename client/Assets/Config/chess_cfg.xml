@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Table>
+	<Row ID="1" Name="车-哪吒" Model="nezha_01" Controller="nezha"/>
+	<Row ID="2" Name="兵-蛤蟆" Model="hamajing_02" Controller="hamaguai"/>
+</Table>
