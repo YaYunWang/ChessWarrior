@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import KBEngine
 from KBEDebug import *
+import d_chess
 
 class NormalFB(KBEngine.Entity):
 	def __init__(self):
@@ -11,6 +12,8 @@ class NormalFB(KBEngine.Entity):
 
 		INFO_MSG("NormalFB is create.")
 
+		self.create_chess_index = 0
+
 	def onTimer(self, id, userArg):
 		"""
 		KBEngine method.
@@ -19,7 +22,31 @@ class NormalFB(KBEngine.Entity):
 		@param userArg	: addTimer 最后一个参数所给入的数据
 		"""
 		DEBUG_MSG(id, userArg)
-		
+		# 开始创建棋子
+		if userArg == 1:
+			temp_chess_len = len(d_chess.test_chess)
+			if self.create_chess_index >= temp_chess_len:
+				self.delTimer(id)
+				self.startRound(1)
+			else:
+				param = d_chess.test_chess[self.create_chess_index]
+
+				temp = KBEngine.createEntityLocally("Chess", param)
+				temp.CreateCell(self, self.cell)
+
+				self.create_chess_index = self.create_chess_index + 1
+	
+	"""
+		开启回合
+		1 自己回合
+		0 电脑回合
+	"""
+	def startRound(self, type):
+		if self.player is None:
+			return
+
+		self.player.StartRound(type)
+
 	def onClientEnabled(self):
 		"""
 		KBEngine method.
@@ -54,18 +81,13 @@ class NormalFB(KBEngine.Entity):
 
 		self.player.CreateCell(self, self.cell)
 
+	def onLoseCell(self):
+		self.destroy()
+
+	def ClientDeath(self):
+		self.destroyCellEntity()
+
 	def ClientReady(self):
 		INFO_MSG("client ready.")
-
-		param = {
-			"chess_id":1,
-			"chess_level":1,
-			"chess_name":"测试棋子",
-			"chess_index_x":0,
-			"chess_index_z":0,
-			"chess_attack":100,
-			"chess_defense":50,
-		}
-
-		temp = KBEngine.createEntityLocally("Chess", param)
-		temp.CreateCell(self, self.cell)
+		self.create_chess_index = 0
+		self.addTimer(0, 1, 1)

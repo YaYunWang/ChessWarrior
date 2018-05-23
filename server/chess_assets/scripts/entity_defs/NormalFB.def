@@ -22,6 +22,9 @@
 	<BaseMethods>
 		<ClientReady>
 		</ClientReady>
+
+		<ClientDeath>
+		</ClientDeath>
 	</BaseMethods>
 
 	<CellMethods>

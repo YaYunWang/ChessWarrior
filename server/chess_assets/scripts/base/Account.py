@@ -42,10 +42,16 @@ class Account(KBEngine.Proxy):
 		KBEngine method.
 		客户端对应实体已经销毁
 		"""
+		INFO_MSG("client death.")
+		if self.CurrentFB is not None:
+			self.CurrentFB.ClientDeath()
+
 		if self.cell is not None:
-			return
+			self.destroyCellEntity()
 
 		DEBUG_MSG("Account[%i].onClientDeath:" % self.id)
+
+	def onLoseCell(self):
 		self.destroy()
 
 	def ReCreateAccountRequest(self, role_type, role_name):
