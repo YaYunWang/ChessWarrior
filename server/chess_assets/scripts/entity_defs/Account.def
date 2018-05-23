@@ -37,9 +37,10 @@
 		<EntryFB>
 		</EntryFB>
 
-		<StartRound>
+		<OnStartRound>
 			<Arg> INT16 </Arg>
-		</StartRound>
+			<Arg> INT32 </Arg>
+		</OnStartRound>
 	</ClientMethods>
 
 	<BaseMethods>
@@ -66,6 +67,10 @@
 			<Arg> ENTITYCALL </Arg>
 			<Arg> ENTITYCALL </Arg>
 		</CreateCell>
+
+		<StartRound>
+			<Arg> INT16 </Arg>
+		</StartRound>
 	</BaseMethods>
 
 	<CellMethods>

@@ -21,21 +21,33 @@ class NormalFB(KBEngine.Entity):
 		@param id		: addTimer 的返回值ID
 		@param userArg	: addTimer 最后一个参数所给入的数据
 		"""
-		DEBUG_MSG(id, userArg)
+		INFO_MSG("time %d " % (userArg))
 		# 开始创建棋子
 		if userArg == 1:
 			temp_chess_len = len(d_chess.test_chess)
+			INFO_MSG("========= %d   %d" % (self.create_chess_index, temp_chess_len))
 			if self.create_chess_index >= temp_chess_len:
-				self.delTimer(id)
+				INFO_MSG("creat chess finish...")
 				self.startRound(1)
+				self.delTimer(1)
 			else:
+				INFO_MSG("creat chess ")
 				param = d_chess.test_chess[self.create_chess_index]
 
 				temp = KBEngine.createEntityLocally("Chess", param)
 				temp.CreateCell(self, self.cell)
 
 				self.create_chess_index = self.create_chess_index + 1
-	
+		elif userArg == 2:
+			# 强制走一步，这里暂时不做处理
+			self.nextRound()
+
+	def nextRound(self):
+		self.delTimer(2)
+		if self.current_round_type == 1:
+			self.startRound(0)
+		else:
+			self.startRound(1)
 	"""
 		开启回合
 		1 自己回合
@@ -43,9 +55,14 @@ class NormalFB(KBEngine.Entity):
 	"""
 	def startRound(self, type):
 		if self.player is None:
+			INFO_MSG("start round , but player is none.")
 			return
 
+		INFO_MSG("round begin ....")
+		self.current_round_type = type
 		self.player.StartRound(type)
+
+		self.addTimer(30, 30, 2)
 
 	def onClientEnabled(self):
 		"""
@@ -90,4 +107,4 @@ class NormalFB(KBEngine.Entity):
 	def ClientReady(self):
 		INFO_MSG("client ready.")
 		self.create_chess_index = 0
-		self.addTimer(0, 1, 1)
+		self.addTimer(0, 0.5, 1)

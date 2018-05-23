@@ -115,3 +115,6 @@ class Account(KBEngine.Proxy):
 
 	def ClientReady(self):
 		self.CurrentFB.ClientReady()
+
+	def StartRound(self, type):
+		self.client.OnStartRound(type, 30)
