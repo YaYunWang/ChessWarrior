@@ -5,6 +5,7 @@ using KBEngine;
 
 public partial class ChessEntity : MonoBehaviour
 {
+	private static float ChessInterval = 5;
 	public bool Ready = false;
 
 	private Chess chessObj = null;
@@ -36,6 +37,8 @@ public partial class ChessEntity : MonoBehaviour
 		this.gameObject.name = string.Format("{0} -- {1}", chess.chess_id, chess.id);
 
 		Ready = false;
+
+		this.transform.localPosition = new Vector3(ChessInterval * chess.chess_index_x, 0, ChessInterval * chess.chess_index_z);
 
 		StartCoroutine(InitChessInternale());
 	}

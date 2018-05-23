@@ -33,6 +33,8 @@ namespace KBEngine
 		public virtual void onChess_levelChanged(UInt64 oldValue) {}
 		public string chess_name = "";
 		public virtual void onChess_nameChanged(string oldValue) {}
+		public UInt64 chess_owner_player = 0;
+		public virtual void onChess_owner_playerChanged(UInt64 oldValue) {}
 
 
 		public ChessBase()
@@ -262,6 +264,22 @@ namespace KBEngine
 						}
 
 						break;
+					case 12:
+						UInt64 oldval_chess_owner_player = chess_owner_player;
+						chess_owner_player = stream.readUint64();
+
+						if(prop.isBase())
+						{
+							if(inited)
+								onChess_owner_playerChanged(oldval_chess_owner_player);
+						}
+						else
+						{
+							if(inWorld)
+								onChess_owner_playerChanged(oldval_chess_owner_player);
+						}
+
+						break;
 					case 40001:
 						Vector3 oldval_direction = direction;
 						direction = stream.readVector3();
@@ -451,6 +469,27 @@ namespace KBEngine
 					else
 					{
 						onChess_nameChanged(oldval_chess_name);
+					}
+				}
+			}
+
+			UInt64 oldval_chess_owner_player = chess_owner_player;
+			Property prop_chess_owner_player = pdatas[11];
+			if(prop_chess_owner_player.isBase())
+			{
+				if(inited && !inWorld)
+					onChess_owner_playerChanged(oldval_chess_owner_player);
+			}
+			else
+			{
+				if(inWorld)
+				{
+					if(prop_chess_owner_player.isOwnerOnly() && !isPlayer())
+					{
+					}
+					else
+					{
+						onChess_owner_playerChanged(oldval_chess_owner_player);
 					}
 				}
 			}

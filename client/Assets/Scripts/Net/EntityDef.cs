@@ -407,6 +407,21 @@ namespace KBEngine
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_name / 7).");
 
+			Property pChess_chess_owner_player = new Property();
+			pChess_chess_owner_player.name = "chess_owner_player";
+			pChess_chess_owner_player.properUtype = 12;
+			pChess_chess_owner_player.properFlags = 4;
+			pChess_chess_owner_player.aliasID = 11;
+			UInt64 Chess_chess_owner_player_defval;
+			UInt64.TryParse("0", out Chess_chess_owner_player_defval);
+			pChess_chess_owner_player.defaultVal = Chess_chess_owner_player_defval;
+			pChessModule.propertys["chess_owner_player"] = pChess_chess_owner_player; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_chess_owner_player.aliasID] = pChess_chess_owner_player;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_owner_player / 12).");
+
 		}
 
 		public static void initDefTypes()
