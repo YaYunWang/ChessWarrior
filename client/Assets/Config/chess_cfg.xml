@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Table>
-	<Row ID="1" Name="车-哪吒" Model="nezha_01" Controller="nezha"/>
+	<Row ID="1" Name="车-哪吒" Model="nezha_01" Controller="nezha" Script="ChessJu"/>
 	<Row ID="2" Name="马-牛头妖" Model="niutouyao_01" Controller="niutouyao"/>
 	<Row ID="3" Name="象-雷公" Model="leigong_01" Controller="leigong"/>
 	<Row ID="4" Name="士-人参娃" Model="renshenwa_01" Controller="renshenwa"/>

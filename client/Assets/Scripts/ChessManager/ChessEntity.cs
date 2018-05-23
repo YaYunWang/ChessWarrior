@@ -5,15 +5,16 @@ using KBEngine;
 
 public partial class ChessEntity : MonoBehaviour
 {
-	private static float ChessInterval = 5;
+	public static float ChessInterval = 5;
+
 	public bool Ready = false;
 
-	private Chess chessObj = null;
+	public Chess chessObj = null;
 	private ChessCfg chessCfg = null;
 
 	private List<AssetBundleLoadAssetOperation> loadOps = new List<AssetBundleLoadAssetOperation>();
     private Dictionary<string, Transform> bpoints = new Dictionary<string, Transform>();
-	protected Transform avatarModel;
+	public Transform avatarModel;
 	private Renderer[] Renderers;
 
 	protected Animator animator;
@@ -46,6 +47,8 @@ public partial class ChessEntity : MonoBehaviour
 	private void OnReady()
 	{
 		Ready = true;
+
+		ChessManager.AddEntity(this);
 	}
 
 	private void Update()

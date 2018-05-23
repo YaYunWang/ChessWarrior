@@ -13,10 +13,6 @@ namespace KBEngine
 			KBEngine.Event.fireOut("Account", this);
 		}
 
-		//public override void ReNameResult(KBEngine.INT16 arg1)
-		//{
-		//	KBEngine.Event.fireOut("AccountReName", arg1);
-		//}
 		public override void ReNameResult(short arg1)
 		{
 			KBEngine.Event.fireOut("AccountReName", (int)arg1);
@@ -25,6 +21,11 @@ namespace KBEngine
 		public override void EntryFB()
 		{
 			KBEngine.Event.fireOut("EntryFb");
+		}
+
+		public override void OnStartRound(short arg1, int arg2)
+		{
+			KBEngine.Event.fireOut("OnStartRound", (int)arg1, (int)arg2);
 		}
 	}
 }

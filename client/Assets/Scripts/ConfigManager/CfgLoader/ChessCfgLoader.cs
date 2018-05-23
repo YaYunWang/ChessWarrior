@@ -10,6 +10,7 @@ public class ChessCfg
 	public int ID;
 	public string Model;
 	public string Controller;
+	public string Script;
 }
 
 public class ChessCfgLoader : CfgLoaderBase

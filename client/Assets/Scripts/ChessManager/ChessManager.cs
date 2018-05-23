@@ -5,9 +5,13 @@ using KBEngine;
 
 public class ChessManager : ManagerTemplateBase<ChessManager>
 {
+	private static Dictionary<string, System.Type> entityTypeMap = new Dictionary<string, System.Type>();
+
 	private static Dictionary<int, ChessEntity> chessMap = new Dictionary<int, ChessEntity>();
 	protected override void InitManager()
 	{
+		InitTypes();
+
 		KBEngine.Event.registerOut("ChessCreate", this, "ChessCreate");
 
 		GameEventManager.RegisterEvent(GameEventTypes.ExitScene, Clear);
@@ -21,8 +25,34 @@ public class ChessManager : ManagerTemplateBase<ChessManager>
 	public void ChessCreate(Chess chess)
 	{
 		GameObject entityGameObject = new GameObject();
-		ChessEntity chessEntity = entityGameObject.AddComponent<ChessEntity>();
+		System.Type chessType = GetEntityTypeByConfigID((int)chess.chess_id);
+		if (chessType == null)
+			return;
+
+		ChessEntity chessEntity = entityGameObject.AddComponent(chessType) as ChessEntity;
 		chessEntity.InitChess(chess);
+	}
+
+	public ChessEntity FindChessByIndex(int index_x, int index_z)
+	{
+		foreach (ChessEntity entity in chessMap.Values)
+		{
+			if ((int)entity.chessObj.chess_index_x == index_x && (int)entity.chessObj.chess_index_z == index_z)
+				return entity;
+		}
+
+		return null;
+	}
+
+	public ChessEntity FindChessByAvatarModel(GameObject avatar)
+	{
+		foreach (ChessEntity entity in chessMap.Values)
+		{
+			if (entity.avatarModel.gameObject == avatar)
+				return entity;
+		}
+
+		return null;
 	}
 
 	public static void AddEntity(ChessEntity entity)
@@ -63,5 +93,35 @@ public class ChessManager : ManagerTemplateBase<ChessManager>
 			entity.OnRemove();
 			chessMap.Remove(entity.ID);
 		}
+	}
+
+	private static void InitTypes()
+	{
+		var types = typeof(ChessEntity).Assembly.GetTypes();
+
+		for (int i = 0; i < types.Length; i++)
+		{
+			var type = types[i];
+			if (type.IsSubclassOf(typeof(ChessEntity)))
+			{
+				entityTypeMap.Add(type.ToString(), type);
+			}
+		}
+	}
+
+	public static System.Type GetEntityTypeByConfigID(int configID)
+	{
+		ChessCfg cfg = ConfigManager.Get<ChessCfgLoader>().GetConfig(configID);
+		if (cfg == null)
+			return typeof(ChessEntity);
+
+		string script = cfg.Script;
+		if (string.IsNullOrEmpty(script))
+			return typeof(ChessEntity);
+
+		if (!entityTypeMap.ContainsKey(script))
+			return typeof(ChessEntity);
+
+		return entityTypeMap[script];
 	}
 }

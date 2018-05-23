@@ -19,6 +19,7 @@ public class Main : MonoBehaviour
 
 		InputManager.CreateInstance();
 		ChessManager.CreateInstance();
+		ChessPathManager.CreateInstance();
 	}
 
 	void Update()

@@ -27,6 +27,7 @@ namespace KBEngine
 		public virtual void onRoleTypeChanged(Int16 oldValue) {}
 
 		public abstract void EntryFB(); 
+		public abstract void OnStartRound(Int16 arg1, Int32 arg2); 
 		public abstract void ReNameResult(Int16 arg1); 
 
 		public AccountBase()
@@ -96,10 +97,15 @@ namespace KBEngine
 
 			switch(method.methodUtype)
 			{
-				case 7:
+				case 8:
 					EntryFB();
 					break;
-				case 6:
+				case 9:
+					Int16 OnStartRound_arg1 = stream.readInt16();
+					Int32 OnStartRound_arg2 = stream.readInt32();
+					OnStartRound(OnStartRound_arg1, OnStartRound_arg2);
+					break;
+				case 7:
 					Int16 ReNameResult_arg1 = stream.readInt16();
 					ReNameResult(ReNameResult_arg1);
 					break;

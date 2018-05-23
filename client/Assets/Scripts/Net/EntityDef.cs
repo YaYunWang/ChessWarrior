@@ -168,7 +168,7 @@ namespace KBEngine
 
 			Method pAccount_EntryFB = new Method();
 			pAccount_EntryFB.name = "EntryFB";
-			pAccount_EntryFB.methodUtype = 7;
+			pAccount_EntryFB.methodUtype = 8;
 			pAccount_EntryFB.aliasID = 1;
 			pAccount_EntryFB.args = pAccount_EntryFB_args;
 
@@ -176,22 +176,38 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_EntryFB.aliasID] = pAccount_EntryFB;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFB / 7).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFB / 8).");
+
+			List<DATATYPE_BASE> pAccount_OnStartRound_args = new List<DATATYPE_BASE>();
+			pAccount_OnStartRound_args.Add(EntityDef.id2datatypes[7]);
+			pAccount_OnStartRound_args.Add(EntityDef.id2datatypes[8]);
+
+			Method pAccount_OnStartRound = new Method();
+			pAccount_OnStartRound.name = "OnStartRound";
+			pAccount_OnStartRound.methodUtype = 9;
+			pAccount_OnStartRound.aliasID = 2;
+			pAccount_OnStartRound.args = pAccount_OnStartRound_args;
+
+			pAccountModule.methods["OnStartRound"] = pAccount_OnStartRound; 
+			pAccountModule.useMethodDescrAlias = true;
+			pAccountModule.idmethods[(UInt16)pAccount_OnStartRound.aliasID] = pAccount_OnStartRound;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnStartRound / 9).");
 
 			List<DATATYPE_BASE> pAccount_ReNameResult_args = new List<DATATYPE_BASE>();
 			pAccount_ReNameResult_args.Add(EntityDef.id2datatypes[7]);
 
 			Method pAccount_ReNameResult = new Method();
 			pAccount_ReNameResult.name = "ReNameResult";
-			pAccount_ReNameResult.methodUtype = 6;
-			pAccount_ReNameResult.aliasID = 2;
+			pAccount_ReNameResult.methodUtype = 7;
+			pAccount_ReNameResult.aliasID = 3;
 			pAccount_ReNameResult.args = pAccount_ReNameResult_args;
 
 			pAccountModule.methods["ReNameResult"] = pAccount_ReNameResult; 
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_ReNameResult.aliasID] = pAccount_ReNameResult;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 6).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 7).");
 
 			List<DATATYPE_BASE> pAccount_ClientReady_args = new List<DATATYPE_BASE>();
 
