@@ -13,6 +13,7 @@ public class ChessManager : ManagerTemplateBase<ChessManager>
 		InitTypes();
 
 		KBEngine.Event.registerOut("ChessCreate", this, "ChessCreate");
+		KBEngine.Event.registerOut("OnChessMove", this, "OnChessMove");
 
 		GameEventManager.RegisterEvent(GameEventTypes.ExitScene, Clear);
 	}
@@ -20,6 +21,15 @@ public class ChessManager : ManagerTemplateBase<ChessManager>
 	private void Clear(GameEventTypes eventType, object[] args)
 	{
 		ClearEntity();
+	}
+
+	public void OnChessMove(int chess_id, int index_x, int index_z)
+	{
+		ChessEntity chess = chessMap.ContainsKey(chess_id) ? chessMap[chess_id] : null;
+		if (chess == null || !chess.Ready)
+			return;
+
+		chess.MoveTo(index_x, index_z);
 	}
 
 	public void ChessCreate(Chess chess)

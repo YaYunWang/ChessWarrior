@@ -67,7 +67,13 @@ public class InputManager : ManagerTemplateBase<InputManager>
 						if(ChessPathManager.GetChessPathIndex(hitGameObject, out index_x, out index_z))
 						{
 							// 走到这个格子去
+							Account account = KBEngine.KBEngineApp.app.player() as Account;
+							account.baseCall("ChessMove", SelectChess.chessObj.id, index_x, index_z);
 						}
+					}
+					else
+					{
+						ClearSelectChess();
 					}
 				}
 				else

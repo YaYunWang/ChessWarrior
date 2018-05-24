@@ -27,5 +27,10 @@ namespace KBEngine
 		{
 			KBEngine.Event.fireOut("OnStartRound", (int)arg1, (int)arg2);
 		}
+
+		public override void OnMove(int arg1, int arg2, int arg3)
+		{
+			KBEngine.Event.fireOut("OnChessMove", (int)arg1, (int)arg2, (int)arg3);
+		}
 	}
 }

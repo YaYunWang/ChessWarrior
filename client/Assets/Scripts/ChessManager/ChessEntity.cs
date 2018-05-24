@@ -43,7 +43,7 @@ public partial class ChessEntity : MonoBehaviour
 
 		StartCoroutine(InitChessInternale());
 	}
-
+	
 	private void OnReady()
 	{
 		Ready = true;

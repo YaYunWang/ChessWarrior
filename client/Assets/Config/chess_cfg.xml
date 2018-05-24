@@ -5,8 +5,8 @@
 	<Row ID="3" Name="象-雷公" Model="leigong_01" Controller="leigong"/>
 	<Row ID="4" Name="士-人参娃" Model="renshenwa_01" Controller="renshenwa"/>
 	<Row ID="5" Name="将-杨戬" Model="yangjian_03" Controller="yangjian"/>
-	<Row ID="6" Name="炮-猪八戒" Model="huozhu_04" Controller="zhubajie"/>
-	<Row ID="7" Name="兵-蛤蟆" Model="hamajing_02" Controller="hamaguai"/>
+	<Row ID="6" Name="炮-猪八戒" Model="huozhu_04" Controller="zhubajie" Script="ChessPao"/>
+	<Row ID="7" Name="兵-蛤蟆" Model="hamajing_02" Controller="hamaguai" Script="ChessZu"/>
 	
 	<Row ID="8" Name="敌人 将-巨石怪" Model="jushiguai_04" Controller="jushiguai"/>
 </Table>

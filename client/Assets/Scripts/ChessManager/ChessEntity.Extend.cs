@@ -21,4 +21,9 @@ public partial class ChessEntity
 	public virtual void ShowChessPath()
 	{
 	}
+
+	public virtual void MoveTo(int index_x, int index_z)
+	{
+		this.transform.localPosition = new Vector3(ChessInterval * index_x, 0, ChessInterval * index_z);
+	}
 }
