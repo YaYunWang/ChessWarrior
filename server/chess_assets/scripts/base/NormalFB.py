@@ -108,3 +108,17 @@ class NormalFB(KBEngine.Entity):
 		INFO_MSG("client ready.")
 		self.create_chess_index = 0
 		self.addTimer(0, 0.5, 1)
+
+	def ChessMove(self, chess_id, index_x, index_z):
+		INFO_MSG("=== chess move index 2")
+
+		chess = KBEngine.entities[chess_id]
+		if chess is None:
+			INFO_MSG("not find this chess %d" % (chess_id))
+			return
+
+		chess.Move(index_x, index_z)
+
+		self.player.Move(chess_id, index_x, index_z)
+
+		self.nextRound()

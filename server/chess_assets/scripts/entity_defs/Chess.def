@@ -58,6 +58,7 @@
 	</Properties>
 
 	<ClientMethods>
+		
 	</ClientMethods>
 
 	<BaseMethods>
@@ -65,6 +66,11 @@
 			<Arg> ENTITYCALL </Arg>
 			<Arg> ENTITYCALL </Arg>
 		</CreateCell>
+
+		<Move>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</Move>
 	</BaseMethods>
 
 	<CellMethods>

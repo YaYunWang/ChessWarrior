@@ -25,6 +25,12 @@
 
 		<ClientDeath>
 		</ClientDeath>
+
+		<ChessMove>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</ChessMove>
 	</BaseMethods>
 
 	<CellMethods>

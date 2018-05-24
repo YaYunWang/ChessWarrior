@@ -41,3 +41,9 @@ class Chess(KBEngine.Proxy):
 
 	def CreateCell(self, fbBaseEntity, fbEntityCall):
 		self.createCellEntity(fbEntityCall)
+
+	def Move(self, index_x, index_z):
+		INFO_MSG("=== chess move index 3")
+
+		self.chess_index_x = index_x
+		self.chess_index_z = index_z

@@ -118,3 +118,15 @@ class Account(KBEngine.Proxy):
 
 	def StartRound(self, type):
 		self.client.OnStartRound(type, 30)
+
+	def ChessMove(self, chess_id, index_x, index_z):
+		INFO_MSG("=== chess move index 1")
+		if self.cell is None:
+			return
+		if self.CurrentFB is None:
+			return
+
+		self.CurrentFB.ChessMove(chess_id, index_x, index_z)
+
+	def Move(self, chess_id, index_x, index_z):
+		self.client.OnMove(chess_id, index_x, index_z)

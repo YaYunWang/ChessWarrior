@@ -41,6 +41,12 @@
 			<Arg> INT16 </Arg>
 			<Arg> INT32 </Arg>
 		</OnStartRound>
+
+		<OnMove>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</OnMove>
 	</ClientMethods>
 
 	<BaseMethods>
@@ -62,6 +68,19 @@
 		<ClientReady>
 			<Exposed/>
 		</ClientReady>
+
+		<ChessMove>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Exposed/>
+		</ChessMove>
+
+		<Move>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</Move>
 
 		<CreateCell>
 			<Arg> ENTITYCALL </Arg>
