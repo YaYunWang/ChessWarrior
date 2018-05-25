@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,768">
+  <displayList>
+    <text id="n0_kn4p" name="state_info" xy="0,0" size="1024,44" fontSize="30" color="#ff0000" align="center" leading="6" autoSize="none" text="你的回合"/>
+  </displayList>
+</component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="bslgpm22" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="kn4p0" name="FightMainUIPanel.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="Fight"/>
+</packageDescription>
