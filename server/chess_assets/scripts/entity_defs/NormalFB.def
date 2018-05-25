@@ -31,6 +31,13 @@
 			<Arg> INT32 </Arg>
 			<Arg> INT32 </Arg>
 		</ChessMove>
+
+		<AttackChess>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</AttackChess>
 	</BaseMethods>
 
 	<CellMethods>

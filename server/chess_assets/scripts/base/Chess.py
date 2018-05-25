@@ -45,5 +45,4 @@ class Chess(KBEngine.Proxy):
 	def Move(self, index_x, index_z):
 		INFO_MSG("=== chess move index 3")
 
-		self.chess_index_x = index_x
-		self.chess_index_z = index_z
+		self.cell.CellMove(index_x, index_z)

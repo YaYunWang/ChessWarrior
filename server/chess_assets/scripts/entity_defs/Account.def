@@ -47,6 +47,11 @@
 			<Arg> INT32 </Arg>
 			<Arg> INT32 </Arg>
 		</OnMove>
+
+		<OnAttack>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</OnAttack>
 	</ClientMethods>
 
 	<BaseMethods>
@@ -81,6 +86,19 @@
 			<Arg> INT32 </Arg>
 			<Arg> INT32 </Arg>
 		</Move>
+
+		<AttackChess>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Exposed/>
+		</AttackChess>
+
+		<Attack>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</Attack>
 
 		<CreateCell>
 			<Arg> ENTITYCALL </Arg>

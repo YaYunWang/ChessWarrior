@@ -43,7 +43,7 @@ class NormalFB(KBEngine.Entity):
 			self.nextRound()
 
 	def nextRound(self):
-		self.delTimer(2)
+		self.delTimer(self.state_id)
 		if self.current_round_type == 1:
 			self.startRound(0)
 		else:
@@ -62,7 +62,10 @@ class NormalFB(KBEngine.Entity):
 		self.current_round_type = type
 		self.player.StartRound(type)
 
-		self.addTimer(30, 30, 2)
+		if self.current_round_type:
+			self.state_id = self.addTimer(30, 30, 2)
+		else:
+			self.state_id = self.addTimer(5, 5, 2)
 
 	def onClientEnabled(self):
 		"""
@@ -110,8 +113,6 @@ class NormalFB(KBEngine.Entity):
 		self.addTimer(0, 0.5, 1)
 
 	def ChessMove(self, chess_id, index_x, index_z):
-		INFO_MSG("=== chess move index 2")
-
 		chess = KBEngine.entities[chess_id]
 		if chess is None:
 			INFO_MSG("not find this chess %d" % (chess_id))
@@ -122,3 +123,17 @@ class NormalFB(KBEngine.Entity):
 		self.player.Move(chess_id, index_x, index_z)
 
 		self.nextRound()
+
+	def AttackChess(self, chess_id, be_chess_id, index_x, index_z):
+		chess = KBEngine.entities[chess_id]
+		if chess is None:
+			INFO_MSG("not find this chess %d" % (chess_id))
+			return
+
+		be_chess = KBEngine.entities[be_chess_id]
+		if chess is None:
+			INFO_MSG("not find this be attack chess %d" % (be_chess_id))
+			return
+
+		chess.Move(index_x, index_z)
+		self.player.Attack(chess_id, be_chess_id)
