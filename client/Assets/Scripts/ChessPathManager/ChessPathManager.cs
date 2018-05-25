@@ -32,6 +32,11 @@ public class ChessPathManager : ManagerTemplateBase<ChessPathManager>
 		}
 	}
 
+	public static void SetPathIndex(int index_x, int index_z)
+	{
+		points[index_x][index_z].SetActive(true);
+	}
+
 	public static void HideAllPath()
 	{
 		for (int idx = 0; idx <= 8; idx++)

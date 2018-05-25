@@ -1,0 +1,8 @@
+﻿<Object>
+	<SkillFlow ID="1001" Name="" Des="">
+		<FlowAction Action="Attack1" Time="3000">
+			<OutPut>
+			</OutPut>
+		</FlowAction>
+	</SkillFlow>
+</Object>

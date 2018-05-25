@@ -12,6 +12,16 @@ namespace KBEngine
 
 			KBEngine.Event.fireOut("ChessCreate", this);
 		}
+
+		public override void onChess_index_xChanged(ulong oldValue)
+		{
+			base.onChess_index_xChanged(oldValue);
+		}
+
+		public override void onChess_index_zChanged(ulong oldValue)
+		{
+			base.onChess_index_zChanged(oldValue);
+		}
 	}
 }
 

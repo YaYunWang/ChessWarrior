@@ -49,6 +49,9 @@ public class InputManager : ManagerTemplateBase<InputManager>
 					if(SelectChess != null && entity.chessObj.chess_owner_player == 0)
 					{
 						// 攻击当前选中的棋子
+						Debug.Log("发送攻击棋子...");
+						Account account = KBEngine.KBEngineApp.app.player() as Account;
+						account.baseCall("AttackChess", SelectChess.chessObj.id, entity.chessObj.id, entity.chessObj.chess_index_x, entity.chessObj.chess_index_z);
 					}
 					else
 					{

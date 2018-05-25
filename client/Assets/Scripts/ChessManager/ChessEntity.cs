@@ -19,12 +19,19 @@ public partial class ChessEntity : MonoBehaviour
 
 	protected Animator animator;
 
+	public ChessEntity Target;
+
 	public int ID
 	{
 		get
 		{
 			return chessObj.id;
 		}
+	}
+
+	public bool IsDead
+	{
+		get; private set;
 	}
 
 	public void InitChess(Chess chess)
@@ -200,5 +207,19 @@ public partial class ChessEntity : MonoBehaviour
 		}
 
 		return bpTrans;
+	}
+
+	protected void SetIndexPath(int index_x, int index_z)
+	{
+		if (index_x < 0 || index_x > 8 || index_z < 0 || index_z > 9)
+			return;
+
+		ChessEntity entity = ChessManager.Instance.FindChessByIndex(index_x, index_z);
+		if (entity == this)
+			return;
+		if (entity != null)
+			return;
+
+		ChessPathManager.SetPathIndex(index_x, index_z);
 	}
 }

@@ -21,6 +21,19 @@ namespace KBEngine
 			type = ENTITYCALL_TYPE.ENTITYCALL_TYPE_BASE;
 		}
 
+		public void AttackChess(Int32 arg1, Int32 arg2, Int32 arg3, Int32 arg4)
+		{
+			Bundle pBundle = newCall("AttackChess", 0);
+			if(pBundle == null)
+				return;
+
+			bundle.writeInt32(arg1);
+			bundle.writeInt32(arg2);
+			bundle.writeInt32(arg3);
+			bundle.writeInt32(arg4);
+			sendCall(null);
+		}
+
 		public void ChessMove(Int32 arg1, Int32 arg2, Int32 arg3)
 		{
 			Bundle pBundle = newCall("ChessMove", 0);

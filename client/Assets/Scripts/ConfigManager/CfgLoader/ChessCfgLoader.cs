@@ -11,6 +11,8 @@ public class ChessCfg
 	public string Model;
 	public string Controller;
 	public string Script;
+
+	public int Skill;
 }
 
 public class ChessCfgLoader : CfgLoaderBase

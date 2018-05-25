@@ -25,11 +25,18 @@ public class ChessManager : ManagerTemplateBase<ChessManager>
 
 	public void OnChessMove(int chess_id, int index_x, int index_z)
 	{
+		InputManager.ClearSelectChess();
+
 		ChessEntity chess = chessMap.ContainsKey(chess_id) ? chessMap[chess_id] : null;
 		if (chess == null || !chess.Ready)
 			return;
 
 		chess.MoveTo(index_x, index_z);
+	}
+
+	public static ChessEntity FindEntityByID(int id)
+	{
+		return chessMap.ContainsKey(id) ? chessMap[id] : null;
 	}
 
 	public void ChessCreate(Chess chess)
