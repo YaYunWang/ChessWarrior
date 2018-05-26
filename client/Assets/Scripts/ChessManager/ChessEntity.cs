@@ -34,6 +34,12 @@ public partial class ChessEntity : MonoBehaviour
 		get; private set;
 	}
 
+	public int HP
+	{
+		get;
+		set;
+	}
+
 	public void InitChess(Chess chess)
 	{
 		chessObj = chess;
@@ -47,6 +53,9 @@ public partial class ChessEntity : MonoBehaviour
 		Ready = false;
 
 		this.transform.localPosition = new Vector3(ChessInterval * chess.chess_index_x, 0, ChessInterval * chess.chess_index_z);
+		this.transform.localScale = Vector3.one * 2;
+
+		HP = (int)chessObj.max_hp;
 
 		StartCoroutine(InitChessInternale());
 	}
@@ -221,5 +230,30 @@ public partial class ChessEntity : MonoBehaviour
 			return;
 
 		ChessPathManager.SetPathIndex(index_x, index_z);
+	}
+
+	public void BeAttack(int damage)
+	{
+		if (IsDead)
+			return;
+
+		PlayAction("Wound");
+
+		HP -= damage;
+		if(HP <= 0)
+		{
+			HP = 0;
+			IsDead = true;
+
+			StartCoroutine(OnDeath());
+		}
+	}
+
+	private IEnumerator OnDeath()
+	{
+		PlayAction("Death");
+		yield return new WaitForSeconds(5);
+
+		ChessManager.RemoveEntity(chessObj.id);
 	}
 }

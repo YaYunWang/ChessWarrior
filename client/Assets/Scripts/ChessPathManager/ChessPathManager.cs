@@ -8,6 +8,12 @@ public class ChessPathManager : ManagerTemplateBase<ChessPathManager>
 
 	protected override void InitManager()
 	{
+		GameEventManager.RegisterEvent(GameEventTypes.ExitScene, Clear);
+	}
+
+	private void Clear(GameEventTypes eventType, object[] args)
+	{
+		points.Clear();
 	}
 
 	public static void CreatePathPoint()
@@ -23,6 +29,7 @@ public class ChessPathManager : ManagerTemplateBase<ChessPathManager>
 				go.SetActive(false);
 
 				go.transform.position = new Vector3(idx * ChessEntity.ChessInterval, 0, idz * ChessEntity.ChessInterval);
+				go.transform.localScale = Vector3.one * 2;
 				go.name = "ChessPath";
 
 				list.Add(go);

@@ -43,4 +43,9 @@ public class ChessShi : ChessEntity
 			}
 		}
 	}
+
+	public override ChessType GetChessType()
+	{
+		return ChessType.ChessTypeShi;
+	}
 }

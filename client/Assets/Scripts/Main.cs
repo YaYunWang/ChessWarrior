@@ -11,6 +11,7 @@ public class Main : MonoBehaviour
 
 	void Start()
 	{
+		GameEventManager.CreateInstance();
 		LayerManager.CreateInstance();
         TimerManager.CreateInstance();
 		GUIManager.CreateInstance();

@@ -39,4 +39,9 @@ public class ChessZu : ChessEntity
 			}
 		}
 	}
+
+	public override ChessType GetChessType()
+	{
+		return ChessType.ChessTypeZu;
+	}
 }

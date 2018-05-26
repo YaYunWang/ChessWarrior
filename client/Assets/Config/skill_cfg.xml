@@ -1,6 +1,9 @@
 ﻿<Object>
 	<SkillFlow ID="1001" Name="" Des="">
-		<FlowAction Action="Attack1" Time="3000">
+		<FlowAction Action="Attack1" Time="1000,1000">
+			<OutPut>
+				<DamageNormal DamageTarget="owner" BeDamageTarget="target"/>
+			</OutPut>
 			<OutPut>
 			</OutPut>
 		</FlowAction>

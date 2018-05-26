@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using KBEngine;
 
 public partial class ChessEntity
 {
@@ -45,6 +46,7 @@ public partial class ChessEntity
 				if(Target.IsDead)
 				{
 					// 发送，杀死对方，继续下一回合
+					GameEventManager.RaiseEvent(GameEventTypes.KillChess, this, Target);
 				}
 				else
 				{

@@ -35,6 +35,8 @@ namespace KBEngine
 		public virtual void onChess_nameChanged(string oldValue) {}
 		public UInt64 chess_owner_player = 0;
 		public virtual void onChess_owner_playerChanged(UInt64 oldValue) {}
+		public UInt64 max_hp = 0;
+		public virtual void onMax_hpChanged(UInt64 oldValue) {}
 
 
 		public ChessBase()
@@ -296,6 +298,22 @@ namespace KBEngine
 						}
 
 						break;
+					case 13:
+						UInt64 oldval_max_hp = max_hp;
+						max_hp = stream.readUint64();
+
+						if(prop.isBase())
+						{
+							if(inited)
+								onMax_hpChanged(oldval_max_hp);
+						}
+						else
+						{
+							if(inWorld)
+								onMax_hpChanged(oldval_max_hp);
+						}
+
+						break;
 					case 40000:
 						Vector3 oldval_position = position;
 						position = stream.readVector3();
@@ -511,6 +529,27 @@ namespace KBEngine
 					else
 					{
 						onDirectionChanged(oldval_direction);
+					}
+				}
+			}
+
+			UInt64 oldval_max_hp = max_hp;
+			Property prop_max_hp = pdatas[12];
+			if(prop_max_hp.isBase())
+			{
+				if(inited && !inWorld)
+					onMax_hpChanged(oldval_max_hp);
+			}
+			else
+			{
+				if(inWorld)
+				{
+					if(prop_max_hp.isOwnerOnly() && !isPlayer())
+					{
+					}
+					else
+					{
+						onMax_hpChanged(oldval_max_hp);
 					}
 				}
 			}

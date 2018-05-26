@@ -37,5 +37,10 @@ namespace KBEngine
 		{
 			KBEngine.Event.fireOut("AttackChess", arg1, arg2);
 		}
+
+		public override void OnExitFb()
+		{
+			KBEngine.Event.fireOut("OnExitFb");
+		}
 	}
 }

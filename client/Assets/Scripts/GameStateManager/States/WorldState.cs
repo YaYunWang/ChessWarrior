@@ -6,8 +6,6 @@ public class WorldState : IState
 {
     public void Enter()
 	{
-		DebugLogger.Log("========================entry world state.");
-
 		GUIManager.Open<CityUIPanel>("City", "CityUIPanel");
 	}
 

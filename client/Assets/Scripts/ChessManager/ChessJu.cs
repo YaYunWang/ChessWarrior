@@ -31,4 +31,9 @@ public class ChessJu : ChessEntity
 			SetIndexPath(index_x, idx);
 		}
 	}
+
+	public override ChessType GetChessType()
+	{
+		return ChessType.ChessTypeJu;
+	}
 }

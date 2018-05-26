@@ -28,6 +28,9 @@ public class LoginState : IState
 	public void Exit()
 	{
 		GUIManager.DestroyAll();
+
+		KBEngine.Event.deregisterOut("Account", this, "OnAccountCreate");
+		KBEngine.Event.deregisterOut("AccountReName", this, "AccountReName");
 	}
 
 	public void Update()

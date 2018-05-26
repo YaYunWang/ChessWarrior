@@ -24,4 +24,9 @@ public class ChessMa : ChessEntity
 		SetIndexPath(index_x - 1, index_z + 2);
 		SetIndexPath(index_x - 1, index_z - 2);
 	}
+
+	public override ChessType GetChessType()
+	{
+		return ChessType.ChessTypeMa;
+	}
 }

@@ -64,6 +64,26 @@ namespace KBEngine
 			sendCall(null);
 		}
 
+		public void ExitFBScene(Int32 arg1)
+		{
+			Bundle pBundle = newCall("ExitFBScene", 0);
+			if(pBundle == null)
+				return;
+
+			bundle.writeInt32(arg1);
+			sendCall(null);
+		}
+
+		public void KillChess(Int32 arg1)
+		{
+			Bundle pBundle = newCall("KillChess", 0);
+			if(pBundle == null)
+				return;
+
+			bundle.writeInt32(arg1);
+			sendCall(null);
+		}
+
 		public void ReCreateAccountRequest(Int16 arg1, string arg2)
 		{
 			Bundle pBundle = newCall("ReCreateAccountRequest", 0);

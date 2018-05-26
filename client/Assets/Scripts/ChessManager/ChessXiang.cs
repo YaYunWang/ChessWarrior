@@ -35,4 +35,9 @@ public class ChessXiang : ChessEntity
 			}
 		}
 	}
+
+	public override ChessType GetChessType()
+	{
+		return ChessType.ChessTypeXiang;
+	}
 }

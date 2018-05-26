@@ -6,7 +6,7 @@ public partial class ChessEntity
 {
 	public virtual void BeSelect()
 	{
-		transform.localScale = Vector3.one * 2;
+		transform.localScale = Vector3.one * 4;
 
 		ChessPathManager.HideAllPath();
 		ShowChessPath();
@@ -14,7 +14,7 @@ public partial class ChessEntity
 
 	public virtual void UnSelect()
 	{
-		transform.localScale = Vector3.one;
+		transform.localScale = Vector3.one * 2;
 		ChessPathManager.HideAllPath();
 	}
 
@@ -26,4 +26,26 @@ public partial class ChessEntity
 	{
 		this.transform.localPosition = new Vector3(ChessInterval * index_x, 0, ChessInterval * index_z);
 	}
+
+	public virtual void MoveTo(Vector3 pos)
+	{
+		this.transform.localPosition = pos;
+	}
+
+	public virtual ChessType GetChessType()
+	{
+		return ChessType.ChessTypeNone;
+	}
+}
+
+public enum ChessType
+{
+	ChessTypeNone,
+	ChessTypeJu,
+	ChessTypeMa,
+	ChessTypeXiang,
+	ChessTypeShi,
+	ChessTypeJiang,
+	ChessTypePao,
+	ChessTypeZu
 }

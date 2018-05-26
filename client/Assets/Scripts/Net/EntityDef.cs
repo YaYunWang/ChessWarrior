@@ -168,7 +168,7 @@ namespace KBEngine
 
 			Method pAccount_EntryFB = new Method();
 			pAccount_EntryFB.name = "EntryFB";
-			pAccount_EntryFB.methodUtype = 12;
+			pAccount_EntryFB.methodUtype = 14;
 			pAccount_EntryFB.aliasID = 1;
 			pAccount_EntryFB.args = pAccount_EntryFB_args;
 
@@ -176,7 +176,7 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_EntryFB.aliasID] = pAccount_EntryFB;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFB / 12).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFB / 14).");
 
 			List<DATATYPE_BASE> pAccount_OnAttack_args = new List<DATATYPE_BASE>();
 			pAccount_OnAttack_args.Add(EntityDef.id2datatypes[8]);
@@ -184,7 +184,7 @@ namespace KBEngine
 
 			Method pAccount_OnAttack = new Method();
 			pAccount_OnAttack.name = "OnAttack";
-			pAccount_OnAttack.methodUtype = 15;
+			pAccount_OnAttack.methodUtype = 17;
 			pAccount_OnAttack.aliasID = 2;
 			pAccount_OnAttack.args = pAccount_OnAttack_args;
 
@@ -192,7 +192,21 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_OnAttack.aliasID] = pAccount_OnAttack;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnAttack / 15).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnAttack / 17).");
+
+			List<DATATYPE_BASE> pAccount_OnExitFb_args = new List<DATATYPE_BASE>();
+
+			Method pAccount_OnExitFb = new Method();
+			pAccount_OnExitFb.name = "OnExitFb";
+			pAccount_OnExitFb.methodUtype = 18;
+			pAccount_OnExitFb.aliasID = 3;
+			pAccount_OnExitFb.args = pAccount_OnExitFb_args;
+
+			pAccountModule.methods["OnExitFb"] = pAccount_OnExitFb; 
+			pAccountModule.useMethodDescrAlias = true;
+			pAccountModule.idmethods[(UInt16)pAccount_OnExitFb.aliasID] = pAccount_OnExitFb;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnExitFb / 18).");
 
 			List<DATATYPE_BASE> pAccount_OnMove_args = new List<DATATYPE_BASE>();
 			pAccount_OnMove_args.Add(EntityDef.id2datatypes[8]);
@@ -201,15 +215,15 @@ namespace KBEngine
 
 			Method pAccount_OnMove = new Method();
 			pAccount_OnMove.name = "OnMove";
-			pAccount_OnMove.methodUtype = 14;
-			pAccount_OnMove.aliasID = 3;
+			pAccount_OnMove.methodUtype = 16;
+			pAccount_OnMove.aliasID = 4;
 			pAccount_OnMove.args = pAccount_OnMove_args;
 
 			pAccountModule.methods["OnMove"] = pAccount_OnMove; 
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_OnMove.aliasID] = pAccount_OnMove;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnMove / 14).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnMove / 16).");
 
 			List<DATATYPE_BASE> pAccount_OnStartRound_args = new List<DATATYPE_BASE>();
 			pAccount_OnStartRound_args.Add(EntityDef.id2datatypes[7]);
@@ -217,30 +231,30 @@ namespace KBEngine
 
 			Method pAccount_OnStartRound = new Method();
 			pAccount_OnStartRound.name = "OnStartRound";
-			pAccount_OnStartRound.methodUtype = 13;
-			pAccount_OnStartRound.aliasID = 4;
+			pAccount_OnStartRound.methodUtype = 15;
+			pAccount_OnStartRound.aliasID = 5;
 			pAccount_OnStartRound.args = pAccount_OnStartRound_args;
 
 			pAccountModule.methods["OnStartRound"] = pAccount_OnStartRound; 
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_OnStartRound.aliasID] = pAccount_OnStartRound;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnStartRound / 13).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnStartRound / 15).");
 
 			List<DATATYPE_BASE> pAccount_ReNameResult_args = new List<DATATYPE_BASE>();
 			pAccount_ReNameResult_args.Add(EntityDef.id2datatypes[7]);
 
 			Method pAccount_ReNameResult = new Method();
 			pAccount_ReNameResult.name = "ReNameResult";
-			pAccount_ReNameResult.methodUtype = 11;
-			pAccount_ReNameResult.aliasID = 5;
+			pAccount_ReNameResult.methodUtype = 13;
+			pAccount_ReNameResult.aliasID = 6;
 			pAccount_ReNameResult.args = pAccount_ReNameResult_args;
 
 			pAccountModule.methods["ReNameResult"] = pAccount_ReNameResult; 
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_ReNameResult.aliasID] = pAccount_ReNameResult;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 11).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 13).");
 
 			List<DATATYPE_BASE> pAccount_AttackChess_args = new List<DATATYPE_BASE>();
 			pAccount_AttackChess_args.Add(EntityDef.id2datatypes[8]);
@@ -308,6 +322,38 @@ namespace KBEngine
 			pAccountModule.idbase_methods[pAccount_EntryFBScene.methodUtype] = pAccount_EntryFBScene;
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFBScene / 3).");
+
+			List<DATATYPE_BASE> pAccount_ExitFBScene_args = new List<DATATYPE_BASE>();
+			pAccount_ExitFBScene_args.Add(EntityDef.id2datatypes[8]);
+
+			Method pAccount_ExitFBScene = new Method();
+			pAccount_ExitFBScene.name = "ExitFBScene";
+			pAccount_ExitFBScene.methodUtype = 12;
+			pAccount_ExitFBScene.aliasID = -1;
+			pAccount_ExitFBScene.args = pAccount_ExitFBScene_args;
+
+			pAccountModule.methods["ExitFBScene"] = pAccount_ExitFBScene; 
+			pAccountModule.base_methods["ExitFBScene"] = pAccount_ExitFBScene;
+
+			pAccountModule.idbase_methods[pAccount_ExitFBScene.methodUtype] = pAccount_ExitFBScene;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ExitFBScene / 12).");
+
+			List<DATATYPE_BASE> pAccount_KillChess_args = new List<DATATYPE_BASE>();
+			pAccount_KillChess_args.Add(EntityDef.id2datatypes[8]);
+
+			Method pAccount_KillChess = new Method();
+			pAccount_KillChess.name = "KillChess";
+			pAccount_KillChess.methodUtype = 11;
+			pAccount_KillChess.aliasID = -1;
+			pAccount_KillChess.args = pAccount_KillChess_args;
+
+			pAccountModule.methods["KillChess"] = pAccount_KillChess; 
+			pAccountModule.base_methods["KillChess"] = pAccount_KillChess;
+
+			pAccountModule.idbase_methods[pAccount_KillChess.methodUtype] = pAccount_KillChess;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(KillChess / 11).");
 
 			List<DATATYPE_BASE> pAccount_ReCreateAccountRequest_args = new List<DATATYPE_BASE>();
 			pAccount_ReCreateAccountRequest_args.Add(EntityDef.id2datatypes[7]);
@@ -507,6 +553,21 @@ namespace KBEngine
 			pChessModule.idpropertys[(UInt16)pChess_chess_owner_player.aliasID] = pChess_chess_owner_player;
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_owner_player / 12).");
+
+			Property pChess_max_hp = new Property();
+			pChess_max_hp.name = "max_hp";
+			pChess_max_hp.properUtype = 13;
+			pChess_max_hp.properFlags = 4;
+			pChess_max_hp.aliasID = 12;
+			UInt64 Chess_max_hp_defval;
+			UInt64.TryParse("0", out Chess_max_hp_defval);
+			pChess_max_hp.defaultVal = Chess_max_hp_defval;
+			pChessModule.propertys["max_hp"] = pChess_max_hp; 
+
+			pChessModule.usePropertyDescrAlias = true;
+			pChessModule.idpropertys[(UInt16)pChess_max_hp.aliasID] = pChess_max_hp;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(max_hp / 13).");
 
 		}
 
