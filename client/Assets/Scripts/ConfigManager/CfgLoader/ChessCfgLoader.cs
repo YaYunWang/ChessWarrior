@@ -8,6 +8,7 @@ using System.IO;
 public class ChessCfg
 {
 	public int ID;
+	public string Name;
 	public string Model;
 	public string Controller;
 	public string Script;

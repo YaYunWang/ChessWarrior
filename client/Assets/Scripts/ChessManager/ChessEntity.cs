@@ -10,7 +10,7 @@ public partial class ChessEntity : MonoBehaviour
 	public bool Ready = false;
 
 	public Chess chessObj = null;
-	private ChessCfg chessCfg = null;
+	public ChessCfg chessCfg = null;
 
 	private List<AssetBundleLoadAssetOperation> loadOps = new List<AssetBundleLoadAssetOperation>();
     private Dictionary<string, Transform> bpoints = new Dictionary<string, Transform>();
@@ -40,6 +40,12 @@ public partial class ChessEntity : MonoBehaviour
 		set;
 	}
 
+	public bool CanAttackClick
+	{
+		get;
+		set;
+	}
+
 	public void InitChess(Chess chess)
 	{
 		chessObj = chess;
@@ -58,6 +64,8 @@ public partial class ChessEntity : MonoBehaviour
 		HP = (int)chessObj.max_hp;
 
 		StartCoroutine(InitChessInternale());
+
+		EmitNumberManager.Emit(EmitNumberType.EmitNumberTypeChessName, this);
 	}
 	
 	private void OnReady()
@@ -226,10 +234,28 @@ public partial class ChessEntity : MonoBehaviour
 		ChessEntity entity = ChessManager.Instance.FindChessByIndex(index_x, index_z);
 		if (entity == this)
 			return;
-		if (entity != null)
-			return;
 
-		ChessPathManager.SetPathIndex(index_x, index_z);
+		if (entity != null)
+		{
+			if(entity.chessObj.chess_owner_player != chessObj.chess_owner_player)
+				entity.SetCanAttackClick();
+		}
+		else
+		{
+			ChessPathManager.SetPathIndex(index_x, index_z);
+		}
+	}
+
+	public void SetCanAttackClick()
+	{
+		CanAttackClick = true;
+		MaterialsColor(Color.red);
+	}
+
+	public void SetUnCanAttackClick()
+	{
+		CanAttackClick = false;
+		RevertMaterialsColor();
 	}
 
 	public void BeAttack(int damage)
@@ -255,5 +281,12 @@ public partial class ChessEntity : MonoBehaviour
 		yield return new WaitForSeconds(5);
 
 		ChessManager.RemoveEntity(chessObj.id);
+	}
+
+	protected bool hasEntity(int index_x, int index_z)
+	{
+		ChessEntity entity = ChessManager.Instance.FindChessByIndex(index_x, index_z);
+
+		return entity != null;
 	}
 }

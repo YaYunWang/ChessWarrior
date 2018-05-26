@@ -253,6 +253,7 @@ MonoBehaviour:
   clientType: 7
   syncPlayer: 1
   threadUpdateHZ: 10
+  serverHeartbeatTick: 15
   SEND_BUFFER_MAX: 1460
   RECV_BUFFER_MAX: 1460
   useAliasEntityID: 1

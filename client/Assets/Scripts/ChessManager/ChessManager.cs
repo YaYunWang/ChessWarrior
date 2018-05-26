@@ -72,6 +72,14 @@ public class ChessManager : ManagerTemplateBase<ChessManager>
 		return null;
 	}
 
+	public static void SetUnCanAttackClick()
+	{
+		foreach (ChessEntity entity in chessMap.Values)
+		{
+			entity.SetUnCanAttackClick();
+		}
+	}
+
 	public static void AddEntity(ChessEntity entity)
 	{
 #if UNITY_EDITOR

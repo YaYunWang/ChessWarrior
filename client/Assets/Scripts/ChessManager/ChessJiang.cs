@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ChessJiang : ChessEntity
 {
+	/// <summary>
+	///  暂时不可以对将
+	/// </summary>
 	public override void ShowChessPath()
 	{
 		base.ShowChessPath();

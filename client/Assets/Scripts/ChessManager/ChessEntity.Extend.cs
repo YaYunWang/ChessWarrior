@@ -10,12 +10,16 @@ public partial class ChessEntity
 
 		ChessPathManager.HideAllPath();
 		ShowChessPath();
+
+		MaterialsColor(Color.green);
 	}
 
 	public virtual void UnSelect()
 	{
 		transform.localScale = Vector3.one * 2;
 		ChessPathManager.HideAllPath();
+
+		RevertMaterialsColor();
 	}
 
 	public virtual void ShowChessPath()

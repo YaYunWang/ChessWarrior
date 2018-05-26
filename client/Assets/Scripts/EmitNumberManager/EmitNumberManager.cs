@@ -6,6 +6,7 @@ using UnityEngine;
 public enum EmitNumberType
 {
 	EmitNumberTypeServerErrorCode,
+	EmitNumberTypeChessName,
 }
 
 public class EmitNumberManager : ManagerTemplateBase<EmitNumberManager>
@@ -34,6 +35,9 @@ public class EmitNumberManager : ManagerTemplateBase<EmitNumberManager>
 			{
 				case EmitNumberType.EmitNumberTypeServerErrorCode:
 					ec = new ServerErrorCodeEmitComponent();
+					break;
+				case EmitNumberType.EmitNumberTypeChessName:
+					ec = new EmitChessNameComponent();
 					break;
 			}
 		}

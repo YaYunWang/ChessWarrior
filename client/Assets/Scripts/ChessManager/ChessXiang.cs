@@ -14,24 +14,33 @@ public class ChessXiang : ChessEntity
 		// 自己的相
 		if (chessObj.chess_owner_player == 1)
 		{
-			SetIndexPath(index_x + 2, index_z - 2);
-			SetIndexPath(index_x - 2, index_z - 2);
+			if(!hasEntity(index_x + 1, index_x - 1))
+				SetIndexPath(index_x + 2, index_z - 2);
+
+			if(!hasEntity(index_x - 1, index_x - 1))
+				SetIndexPath(index_x - 2, index_z - 2);
 
 			if (index_z + 2 <= 4)
 			{
-				SetIndexPath(index_x + 2, index_z + 2);
-				SetIndexPath(index_x - 2, index_z + 2);
+				if(!hasEntity(index_x + 1, index_x + 1))
+					SetIndexPath(index_x + 2, index_z + 2);
+				if(!hasEntity(index_x - 1, index_x + 1))
+					SetIndexPath(index_x - 2, index_z + 2);
 			}
 		}
 		else
 		{
-			SetIndexPath(index_x + 2, index_z + 2);
-			SetIndexPath(index_x - 2, index_z + 2);
+			if(!hasEntity(index_x + 1, index_x + 1))
+				SetIndexPath(index_x + 2, index_z + 2);
+			if(!hasEntity(index_x - 1, index_x + 1))
+				SetIndexPath(index_x - 2, index_z + 2);
 
 			if(index_z - 2 <= 5)
 			{
-				SetIndexPath(index_x + 2, index_z - 2);
-				SetIndexPath(index_x - 2, index_z - 2);
+				if(!hasEntity(index_x + 1, index_x - 1))
+					SetIndexPath(index_x + 2, index_z - 2);
+				if(!hasEntity(index_x - 1, index_x - 1))
+					SetIndexPath(index_x - 2, index_z - 2);
 			}
 		}
 	}

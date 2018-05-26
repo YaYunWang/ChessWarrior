@@ -46,20 +46,24 @@ public class InputManager : ManagerTemplateBase<InputManager>
 				ChessEntity entity = ChessManager.Instance.FindChessByAvatarModel(hitGameObject);
 				if(entity != null)
 				{
-					if(SelectChess != null && entity.chessObj.chess_owner_player == 0)
+					if(SelectChess != null && entity.chessObj.chess_owner_player == 0 && entity.CanAttackClick)
 					{
 						// 攻击当前选中的棋子
 						Debug.Log("发送攻击棋子...");
 						Account account = KBEngine.KBEngineApp.app.player() as Account;
 						account.baseCall("AttackChess", SelectChess.chessObj.id, entity.chessObj.id, entity.chessObj.chess_index_x, entity.chessObj.chess_index_z);
 					}
-					else
+					else if(entity.chessObj.chess_owner_player == 1)
 					{
 						// 显示当前棋子可行走路线
 						ClearSelectChess();
 
 						SelectChess = entity;
 						SelectChess.BeSelect();
+					}
+					else
+					{
+						ClearSelectChess();
 					}
 				}
 				else if(SelectChess != null)

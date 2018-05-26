@@ -53,6 +53,8 @@ public class ChessPathManager : ManagerTemplateBase<ChessPathManager>
 				points[idx][idz].SetActive(false);
 			}
 		}
+
+		ChessManager.SetUnCanAttackClick();
 	}
 
 	public static bool GetChessPathIndex(GameObject go, out int index_x, out int index_z)
