@@ -43,6 +43,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":2,
@@ -53,6 +54,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":3,
@@ -63,6 +65,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":4,
@@ -73,6 +76,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":5,
@@ -83,6 +87,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":4,
@@ -93,6 +98,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":3,
@@ -103,6 +109,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":2,
@@ -113,6 +120,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":1,
@@ -123,6 +131,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":6,
@@ -133,6 +142,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":6,
@@ -143,6 +153,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":7,
@@ -153,6 +164,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":7,
@@ -163,6 +175,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":7,
@@ -173,6 +186,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":7,
@@ -183,6 +197,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":7,
@@ -193,6 +208,7 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":1,
+			"max_hp":100,
 		},
 		{
 			"chess_id":8,
@@ -203,5 +219,6 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":0,
+			"max_hp":1000,
 		},
 	]

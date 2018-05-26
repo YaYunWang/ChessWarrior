@@ -55,6 +55,13 @@
 			<Default>	0	</Default>
 			<Persistent>	false	</Persistent>
 		</chess_owner_player>
+
+		<max_hp>
+			<Type>	UINT64	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	false	</Persistent>
+		</max_hp>
 	</Properties>
 
 	<ClientMethods>

@@ -52,6 +52,9 @@
 			<Arg> INT32 </Arg>
 			<Arg> INT32 </Arg>
 		</OnAttack>
+
+		<OnExitFb>
+		</OnExitFb>
 	</ClientMethods>
 
 	<BaseMethods>
@@ -108,6 +111,16 @@
 		<StartRound>
 			<Arg> INT16 </Arg>
 		</StartRound>
+
+		<KillChess>
+			<Arg> INT32 </Arg>
+			<Exposed/>
+		</KillChess>
+
+		<ExitFBScene>
+			<Arg> INT32 </Arg>
+			<Exposed/>
+		</ExitFBScene>
 	</BaseMethods>
 
 	<CellMethods>

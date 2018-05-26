@@ -52,7 +52,8 @@ class Account(KBEngine.Proxy):
 		DEBUG_MSG("Account[%i].onClientDeath:" % self.id)
 
 	def onLoseCell(self):
-		self.destroy()
+		#self.destroy()
+		pass
 
 	def ReCreateAccountRequest(self, role_type, role_name):
 		self.RoleType = role_type
@@ -140,3 +141,15 @@ class Account(KBEngine.Proxy):
 
 	def Attack(self, chess_id, be_chess_id):
 		self.client.OnAttack(chess_id, be_chess_id)
+
+	def KillChess(self, chess_id):
+		self.CurrentFB.KillChess(chess_id)
+
+	def ExitFBScene(self, is_win):
+		if self.CurrentFB is not None:
+			self.CurrentFB.ClientDeath()
+
+		if self.cell is not None:
+			self.destroyCellEntity()
+
+		self.client.OnExitFb()

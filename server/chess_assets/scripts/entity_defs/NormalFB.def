@@ -38,6 +38,10 @@
 			<Arg> INT32 </Arg>
 			<Arg> INT32 </Arg>
 		</AttackChess>
+
+		<KillChess>
+			<Arg> INT32 </Arg>
+		</KillChess>
 	</BaseMethods>
 
 	<CellMethods>

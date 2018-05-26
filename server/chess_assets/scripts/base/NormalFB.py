@@ -105,7 +105,8 @@ class NormalFB(KBEngine.Entity):
 		self.destroy()
 
 	def ClientDeath(self):
-		self.destroyCellEntity()
+		if self.cell is not None:
+			self.destroyCellEntity()
 
 	def ClientReady(self):
 		INFO_MSG("client ready.")
@@ -137,3 +138,12 @@ class NormalFB(KBEngine.Entity):
 
 		chess.Move(index_x, index_z)
 		self.player.Attack(chess_id, be_chess_id)
+
+	def KillChess(self, chess_id):
+		# 干掉这个棋子
+		chess = KBEngine.entities[chess_id]
+		if chess is None:
+			INFO_MSG("not find this chess %d" % (chess_id))
+			return
+
+		self.nextRound()
