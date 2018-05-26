@@ -2,6 +2,9 @@
 <packageDescription id="bslgpm22" jpegQuality="80" compressPNG="true">
   <resources>
     <component id="kn4p0" name="FightMainUIPanel.xml" path="/" exported="true"/>
+    <component id="squ81" name="FightWinUIPanel.xml" path="/" exported="true"/>
+    <component id="squ82" name="Button1.xml" path="/"/>
+    <component id="squ83" name="FightLostUIPanel.xml" path="/" exported="true"/>
   </resources>
   <publish name="Fight"/>
 </packageDescription>

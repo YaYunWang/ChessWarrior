@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,768">
+  <displayList>
+    <text id="n0_squ8" name="n0" xy="0,0" size="1024,85" fontSize="30" color="#ff0000" align="center" vAlign="middle" autoSize="none" text="恭喜您，战斗胜利。"/>
+    <component id="n2_squ8" name="exit_btn" src="squ82" xy="404,363"/>
+  </displayList>
+</component>
