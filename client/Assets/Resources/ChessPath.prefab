@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 135422815028545312}
   - component: {fileID: 23275254358587574}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: ChessPath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

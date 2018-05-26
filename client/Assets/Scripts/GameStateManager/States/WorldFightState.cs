@@ -20,8 +20,9 @@ public class WorldFightState : IState
 		fightMainUIPanel.SetStateInfoString("正在摆盘，请稍候...");
 
 		ChessPathManager.CreatePathPoint();
+        ChessPathManager.ShowChessBoard();
 
-		Account account = KBEngine.KBEngineApp.app.player() as Account;
+        Account account = KBEngine.KBEngineApp.app.player() as Account;
 		account.baseCall("ClientReady");
 	}
 
