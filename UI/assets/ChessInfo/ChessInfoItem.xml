@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="177,39" pivot="0.5,0" anchor="true">
+  <displayList>
+    <text id="n0_f1lm" name="name" xy="0,0" size="177,39" fontSize="15" color="#ff0000" align="center" vAlign="middle" autoSize="none" text="111"/>
+    <text id="n1_e680" name="hp" xy="1,15" size="177,39" fontSize="15" color="#ff0000" align="center" vAlign="middle" autoSize="none" text="111"/>
+  </displayList>
+</component>
