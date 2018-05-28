@@ -37,14 +37,6 @@ public class ChessPathManager : ManagerTemplateBase<ChessPathManager>
 		VectorLine xiaokuangPathLine = new VectorLine("XiaoKuang", new List<Vector3>(), 3.0f);
 		xiaokuangPathLine.color = Color.black;
 		xiaokuangPathLine.textureScale = 1f;
-		//xiaokuangPathLine.points3.Add(new Vector3(0, 1f, 0));
-		//xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, 0));
-		//xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, 0));
-		//xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, ChessEntity.ChessInterval * 9));
-		//xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, ChessEntity.ChessInterval * 9));
-		//xiaokuangPathLine.points3.Add(new Vector3(0, 1f, ChessEntity.ChessInterval * 9));
-		//xiaokuangPathLine.points3.Add(new Vector3(0, 1f, ChessEntity.ChessInterval * 9));
-		//xiaokuangPathLine.points3.Add(new Vector3(0, 1f, 0));
 
 		// 竖
 		for(int idx = 0; idx <= 8; idx++)
