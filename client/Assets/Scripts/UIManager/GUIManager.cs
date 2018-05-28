@@ -29,9 +29,10 @@ public class GUIManager : ManagerTemplateBase<GUIManager>
         UIConfig.defaultFont = "SimHei";
         UIConfig.bringWindowToFrontOnClick = false;
 
-        PreLoadAssetBundle();
+		PreLoadAssetBundle(commandName, commandBundleName);
+		//PreLoadAssetBundle("ChessInfo", "ui/chessinfo.bundle");
 
-        GameEventManager.RegisterEvent(GameEventTypes.ExitScene, Clear);
+		GameEventManager.RegisterEvent(GameEventTypes.ExitScene, Clear);
     }
 
     private void Clear(GameEventTypes eventType, object[] args)
@@ -39,13 +40,12 @@ public class GUIManager : ManagerTemplateBase<GUIManager>
         DestroyAll();
     }
 
-    private void PreLoadAssetBundle()
-    {
-        UIPackage.AddPackage(commandName.ToLower(), (string name, string extension, System.Type type) =>{ return AssetLoadManager.LoadAsset(commandBundleName, name, type); });
+	public static void PreLoadAssetBundle(string path, string bundleName)
+	{
+        UIPackage.AddPackage(path.ToLower(), (string name, string extension, System.Type type) =>{ return AssetLoadManager.LoadAsset(bundleName, name, type); });
+	}
 
-    }
-    
-    private void Update()
+	private void Update()
 	{
         foreach (var item in uiViewDic)
         {

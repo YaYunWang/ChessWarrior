@@ -19,6 +19,8 @@ public class WorldFightState : IState
 		fightMainUIPanel = GUIManager.Open<FightMainUIPanel>("Fight", "FightMainUIPanel");
 		fightMainUIPanel.SetStateInfoString("正在摆盘，请稍候...");
 
+		GUIManager.Open<ChessInfoUIPanel>("ChessInfo", "ChessInfoUIPanel");
+
 		ChessPathManager.CreatePathPoint();
         ChessPathManager.ShowChessBoard();
 

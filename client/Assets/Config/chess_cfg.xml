@@ -8,5 +8,5 @@
 	<Row ID="6" Name="炮-猪八戒" Model="huozhu_04" Controller="zhubajie" Skill="1001" Script="ChessPao"/>
 	<Row ID="7" Name="兵-蛤蟆" Model="hamajing_02" Controller="hamaguai" Skill="1001" Script="ChessZu"/>
 	
-	<Row ID="8" Name="敌人 将-巨石怪" Model="jushiguai_04" Controller="jushiguai" Skill="1001"/>
+	<Row ID="8" Name="敌人 将-巨石怪" Model="jushiguai_04" Controller="jushiguai" Skill="1001" Script="ChessJiang"/>
 </Table>

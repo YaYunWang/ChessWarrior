@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using KBEngine;
+using FairyGUI;
 
 public partial class ChessEntity : MonoBehaviour
 {
@@ -65,7 +66,7 @@ public partial class ChessEntity : MonoBehaviour
 
 		StartCoroutine(InitChessInternale());
 
-		EmitNumberManager.Emit(EmitNumberType.EmitNumberTypeChessName, this);
+		GUIManager.GetView<ChessInfoUIPanel>("ChessInfoUIPanel").ShowChessInfo(this);
 	}
 	
 	private void OnReady()
@@ -199,6 +200,8 @@ public partial class ChessEntity : MonoBehaviour
 		{
 			yield return null;
 		}
+
+		GUIManager.GetView<ChessInfoUIPanel>("ChessInfoUIPanel").RemoveChessInfo(this);
 
 		UnloadAssets();
 

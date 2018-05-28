@@ -16,7 +16,6 @@ public class FightMainUIPanel : GUIBase
 	protected override void OnStart()
 	{
 		base.OnStart();
-
 		stateInfoText = GetChildren("state_info").asTextField;
 
 		stateInfoText.text = "";
