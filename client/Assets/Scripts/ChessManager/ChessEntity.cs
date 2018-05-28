@@ -201,7 +201,9 @@ public partial class ChessEntity : MonoBehaviour
 			yield return null;
 		}
 
-		GUIManager.GetView<ChessInfoUIPanel>("ChessInfoUIPanel").RemoveChessInfo(this);
+        ChessInfoUIPanel panel = GUIManager.GetView<ChessInfoUIPanel>("ChessInfoUIPanel");
+        if(panel != null)
+            panel.RemoveChessInfo(this);
 
 		UnloadAssets();
 
