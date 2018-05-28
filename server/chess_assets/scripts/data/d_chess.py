@@ -219,6 +219,6 @@ test_chess = [
 			"chess_attack":100,
 			"chess_defense":50,
 			"chess_owner_player":0,
-			"max_hp":1000,
+			"max_hp":300,
 		},
 	]
