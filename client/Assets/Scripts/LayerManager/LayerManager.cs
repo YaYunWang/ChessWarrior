@@ -18,6 +18,15 @@ public class LayerManager : ManagerTemplateBase<LayerManager>
         DefaultLayer = LayerMask.NameToLayer("Default");
     }
 
+	public static void SetLayer(GameObject go, int layer)
+	{
+		if (go == null)
+			return;
+
+		Renderer[] renderers = go.GetComponentsInChildren<Renderer>();
+		SetLayer(renderers, layer);
+	}
+
     public static void SetLayer(Renderer[] renderers, int layer)
     {
         if (renderers == null)

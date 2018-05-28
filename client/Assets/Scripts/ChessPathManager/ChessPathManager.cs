@@ -17,34 +17,125 @@ public class ChessPathManager : ManagerTemplateBase<ChessPathManager>
 		points.Clear();
 	}
 
-    private static VectorLine pathLine;
     public static void ShowChessBoard()
     {
-        //GameObject go = new GameObject("ChessBoard");
-        //var linePoints = new Vector3[2];
-        //linePoints[0] = new Vector3(0, 1, 0);
-        //linePoints[1] = new Vector3(10, 1, 0);
+		float dakuangTemp = 0.5f;
+		VectorLine dakuangPathLine = new VectorLine("DaKuang", new List<Vector3>(), 6.0f);
+        dakuangPathLine.color = Color.black;
+        dakuangPathLine.textureScale = 1f;
+        dakuangPathLine.points3.Add(new Vector3(0 - dakuangTemp, 1f, 0 - dakuangTemp));
+        dakuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8 + dakuangTemp, 1f, 0 - dakuangTemp));
+        dakuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8 + dakuangTemp, 1f, 0 - dakuangTemp));
+        dakuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8 + dakuangTemp, 1f, ChessEntity.ChessInterval * 9 + dakuangTemp));
+        dakuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8 + dakuangTemp, 1f, ChessEntity.ChessInterval * 9 + dakuangTemp));
+        dakuangPathLine.points3.Add(new Vector3(0 - dakuangTemp, 1f, ChessEntity.ChessInterval * 9 + dakuangTemp));
+        dakuangPathLine.points3.Add(new Vector3(0 - dakuangTemp, 1f, ChessEntity.ChessInterval * 9 + dakuangTemp));
+        dakuangPathLine.points3.Add(new Vector3(0 - dakuangTemp, 1f, 0 - dakuangTemp));
+        dakuangPathLine.Draw3DAuto();
+		LayerManager.SetLayer(dakuangPathLine.rectTransform.gameObject, LayerManager.DefaultLayer);
 
-        //var line = new VectorLine("Line", linePoints, null, 2.0f);
-        //line.drawTransform = go.transform;
+		VectorLine xiaokuangPathLine = new VectorLine("XiaoKuang", new List<Vector3>(), 3.0f);
+		xiaokuangPathLine.color = Color.black;
+		xiaokuangPathLine.textureScale = 1f;
+		//xiaokuangPathLine.points3.Add(new Vector3(0, 1f, 0));
+		//xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, 0));
+		//xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, 0));
+		//xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, ChessEntity.ChessInterval * 9));
+		//xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, ChessEntity.ChessInterval * 9));
+		//xiaokuangPathLine.points3.Add(new Vector3(0, 1f, ChessEntity.ChessInterval * 9));
+		//xiaokuangPathLine.points3.Add(new Vector3(0, 1f, ChessEntity.ChessInterval * 9));
+		//xiaokuangPathLine.points3.Add(new Vector3(0, 1f, 0));
 
-        //line.points3.Add(new Vector3(10, 1, 10));
+		// 竖
+		for(int idx = 0; idx <= 8; idx++)
+		{
+			if(idx == 0 || idx == 8)
+			{
+				xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * idx, 1f, 0));
+				xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * idx, 1f, ChessEntity.ChessInterval * 9));
+			}
+			else
+			{
+				xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * idx, 1f, 0));
+				xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * idx, 1f, ChessEntity.ChessInterval * 4));
+				xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * idx, 1f, ChessEntity.ChessInterval * 5));
+				xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * idx, 1f, ChessEntity.ChessInterval * 9));
+			}
+		}
+		// 横
+		for (int idx = 0; idx <= 9; idx++)
+		{
+			xiaokuangPathLine.points3.Add(new Vector3(0, 1f, ChessEntity.ChessInterval * idx));
+			xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 8, 1f, ChessEntity.ChessInterval * idx));
+		}
+		// 士
+		xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 3, 1f, ChessEntity.ChessInterval * 2));
+		xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 5, 1f, 0));
+		xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 3, 1f, 0));
+		xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 5, 1f, ChessEntity.ChessInterval * 2));
 
-        //line.Draw();
-        //line.Draw3D();
+		xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 3, 1f, ChessEntity.ChessInterval * 9));
+		xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 5, 1f, ChessEntity.ChessInterval * 7));
+		xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 3, 1f, ChessEntity.ChessInterval * 7));
+		xiaokuangPathLine.points3.Add(new Vector3(ChessEntity.ChessInterval * 5, 1f, ChessEntity.ChessInterval * 9));
 
-        pathLine = new VectorLine("Path", new List<Vector3>(), 12.0f);
-        pathLine.color = Color.green;
-        pathLine.textureScale = 1.0f;
+		// 
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 1, 1f, ChessEntity.ChessInterval * 2));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 7, 1f, ChessEntity.ChessInterval * 2));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 0, 1f, ChessEntity.ChessInterval * 3));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 2, 1f, ChessEntity.ChessInterval * 3));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 4, 1f, ChessEntity.ChessInterval * 3));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 6, 1f, ChessEntity.ChessInterval * 3));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 8, 1f, ChessEntity.ChessInterval * 3));
 
-        pathLine.points3.Add(new Vector3(10, 0, 0));
-        pathLine.points3.Add(new Vector3(10, 0, 10));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 1, 1f, ChessEntity.ChessInterval * 7));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 7, 1f, ChessEntity.ChessInterval * 7));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 0, 1f, ChessEntity.ChessInterval * 6));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 2, 1f, ChessEntity.ChessInterval * 6));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 4, 1f, ChessEntity.ChessInterval * 6));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 6, 1f, ChessEntity.ChessInterval * 6));
+		DrawXiHuaPoint(xiaokuangPathLine, new Vector3(ChessEntity.ChessInterval * 8, 1f, ChessEntity.ChessInterval * 6));
 
-        pathLine.Draw();
-    }
-        
-    public static void CreatePathPoint()
+		xiaokuangPathLine.Draw3DAuto();
+		LayerManager.SetLayer(xiaokuangPathLine.rectTransform.gameObject, LayerManager.DefaultLayer);
+	}
+
+	private static void DrawXiHuaPoint(VectorLine line, Vector3 v)
 	{
+		float temp = 1;
+		if(v.x > 0)
+		{
+			// 左上
+			line.points3.Add(new Vector3(v.x - temp / 2, 1f, v.z + temp));
+			line.points3.Add(new Vector3(v.x - temp / 2, 1f, v.z + temp / 2));
+			line.points3.Add(new Vector3(v.x - temp / 2, 1f, v.z + temp / 2));
+			line.points3.Add(new Vector3(v.x - temp, 1f, v.z + temp / 2));
+			// 左下
+			line.points3.Add(new Vector3(v.x - temp / 2, 1f, v.z - temp));
+			line.points3.Add(new Vector3(v.x - temp / 2, 1f, v.z - temp / 2));
+			line.points3.Add(new Vector3(v.x - temp / 2, 1f, v.z - temp / 2));
+			line.points3.Add(new Vector3(v.x - temp, 1f, v.z - temp / 2));
+		}
+
+		if(v.x < ChessEntity.ChessInterval * 8)
+		{
+			// 右上
+			line.points3.Add(new Vector3(v.x + temp / 2, 1f, v.z + temp));
+			line.points3.Add(new Vector3(v.x + temp / 2, 1f, v.z + temp / 2));
+			line.points3.Add(new Vector3(v.x + temp / 2, 1f, v.z + temp / 2));
+			line.points3.Add(new Vector3(v.x + temp, 1f, v.z + temp / 2));
+			// 右下
+			line.points3.Add(new Vector3(v.x + temp / 2, 1f, v.z - temp));
+			line.points3.Add(new Vector3(v.x + temp / 2, 1f, v.z - temp / 2));
+			line.points3.Add(new Vector3(v.x + temp / 2, 1f, v.z - temp / 2));
+			line.points3.Add(new Vector3(v.x + temp, 1f, v.z - temp / 2));
+		}
+	}
+
+	public static void CreatePathPoint()
+	{
+		GameObject parent = new GameObject("ChessPathParent");
+
 		GameObject chessPaht = Resources.Load<GameObject>("ChessPath");
 
 		for (int idx = 0; idx <= 8; idx++)
@@ -58,6 +149,7 @@ public class ChessPathManager : ManagerTemplateBase<ChessPathManager>
 				go.transform.position = new Vector3(idx * ChessEntity.ChessInterval, 0, idz * ChessEntity.ChessInterval);
 				go.transform.localScale = Vector3.one * 2;
 				go.name = "ChessPath";
+				go.transform.parent = parent.transform;
 
 				list.Add(go);
 			}
