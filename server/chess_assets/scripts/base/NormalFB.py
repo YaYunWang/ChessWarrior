@@ -111,6 +111,7 @@ class NormalFB(KBEngine.Entity):
 	def ClientReady(self, player):
 		INFO_MSG("client ready.")
 		self.create_chess_index = 0
+		self.player.CampTypeSet(1)
 		self.addTimer(0, 0.5, 1)
 
 	def ChessMove(self, chess_id, index_x, index_z):
