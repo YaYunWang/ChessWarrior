@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2638003527
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dffce1cc91632c74d59f1fbd780a8f31
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: da04d5352644e5aede0c7ec959090412
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/WeiYueYan/WeiYueYan@Idle.FBX
+Dependencies: []

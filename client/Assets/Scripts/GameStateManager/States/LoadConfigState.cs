@@ -20,6 +20,7 @@ public class LoadConfigState : IState
 		if (!ConfigManager.isDone)
 			return;
 
+		AssetLoadManager.CreateInstance();
 		GameStateManager.ChangeState(StateEnum.LOGIN);
 	}
 }

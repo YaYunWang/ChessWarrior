@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 2877212588
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 378b2e8eb7ff80bc5ca7cf12d12ab388
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 75bcef9584a6c307ccfefb63bca2cbd3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/NiuTouYao/NiuTouYao_01.prefab
+Dependencies:
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_run.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_idle.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_walk.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_attack2.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_attack1.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_wound.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_fight.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_death.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_niutouyao_attack3.bundle

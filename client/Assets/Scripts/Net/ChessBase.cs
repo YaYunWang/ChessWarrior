@@ -154,7 +154,7 @@ namespace KBEngine
 
 				switch(prop.properUtype)
 				{
-					case 10:
+					case 11:
 						UInt64 oldval_chess_attack = chess_attack;
 						chess_attack = stream.readUint64();
 
@@ -170,7 +170,7 @@ namespace KBEngine
 						}
 
 						break;
-					case 11:
+					case 12:
 						UInt64 oldval_chess_defense = chess_defense;
 						chess_defense = stream.readUint64();
 
@@ -186,7 +186,7 @@ namespace KBEngine
 						}
 
 						break;
-					case 5:
+					case 6:
 						UInt64 oldval_chess_id = chess_id;
 						chess_id = stream.readUint64();
 
@@ -202,7 +202,7 @@ namespace KBEngine
 						}
 
 						break;
-					case 8:
+					case 9:
 						UInt64 oldval_chess_index_x = chess_index_x;
 						chess_index_x = stream.readUint64();
 
@@ -218,7 +218,7 @@ namespace KBEngine
 						}
 
 						break;
-					case 9:
+					case 10:
 						UInt64 oldval_chess_index_z = chess_index_z;
 						chess_index_z = stream.readUint64();
 
@@ -234,7 +234,7 @@ namespace KBEngine
 						}
 
 						break;
-					case 6:
+					case 7:
 						UInt64 oldval_chess_level = chess_level;
 						chess_level = stream.readUint64();
 
@@ -250,7 +250,7 @@ namespace KBEngine
 						}
 
 						break;
-					case 7:
+					case 8:
 						string oldval_chess_name = chess_name;
 						chess_name = stream.readUnicode();
 
@@ -266,7 +266,7 @@ namespace KBEngine
 						}
 
 						break;
-					case 12:
+					case 13:
 						UInt64 oldval_chess_owner_player = chess_owner_player;
 						chess_owner_player = stream.readUint64();
 
@@ -298,7 +298,7 @@ namespace KBEngine
 						}
 
 						break;
-					case 13:
+					case 14:
 						UInt64 oldval_max_hp = max_hp;
 						max_hp = stream.readUint64();
 

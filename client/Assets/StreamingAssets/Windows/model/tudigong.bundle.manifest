@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1562987122
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3718a9345d19fb1b7597f1219165fe5a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4aaa02184588d4132b8c87f85c7ef659
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/TuDiGong/TuDiGong.prefab
+Dependencies: []

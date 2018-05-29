@@ -41,19 +41,22 @@ public class InputManager : ManagerTemplateBase<InputManager>
 			RaycastHit hit;
 			if(Physics.Raycast(ray, out hit))
 			{
+				Account account = KBEngine.KBEngineApp.app.player() as Account;
+				if (account == null)
+					return;
+
+				int campType = account.CampType;
 				GameObject hitGameObject = hit.collider.gameObject;
 
 				ChessEntity entity = ChessManager.Instance.FindChessByAvatarModel(hitGameObject);
 				if(entity != null)
 				{
-					if(SelectChess != null && entity.chessObj.chess_owner_player == 0 && entity.CanAttackClick)
+					if(SelectChess != null && (int)entity.chessObj.chess_owner_player != campType && entity.CanAttackClick)
 					{
 						// 攻击当前选中的棋子
-						Debug.Log("发送攻击棋子...");
-						Account account = KBEngine.KBEngineApp.app.player() as Account;
 						account.baseCall("AttackChess", SelectChess.chessObj.id, entity.chessObj.id, entity.chessObj.chess_index_x, entity.chessObj.chess_index_z);
 					}
-					else if(entity.chessObj.chess_owner_player == 1)
+					else if((int)entity.chessObj.chess_owner_player == campType)
 					{
 						// 显示当前棋子可行走路线
 						ClearSelectChess();
@@ -74,7 +77,6 @@ public class InputManager : ManagerTemplateBase<InputManager>
 						if(ChessPathManager.GetChessPathIndex(hitGameObject, out index_x, out index_z))
 						{
 							// 走到这个格子去
-							Account account = KBEngine.KBEngineApp.app.player() as Account;
 							account.baseCall("ChessMove", SelectChess.chessObj.id, index_x, index_z);
 						}
 					}

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3873491496
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ff2324bb9743f70cb83f754196307241
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: da04d5352644e5aede0c7ec959090412
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/ChangHuoZhangLao/ChangHuoZhangLao@Idle.FBX
+Dependencies: []

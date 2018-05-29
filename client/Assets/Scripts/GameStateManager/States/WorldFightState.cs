@@ -39,7 +39,8 @@ public class WorldFightState : IState
 		{
 			fightMainUIPanel.SetStateInfoString("");
 
-			if(beAttack.chessObj.chess_owner_player == 1)
+			Account account = KBEngine.KBEngineApp.app.player() as Account;
+			if((int)beAttack.chessObj.chess_owner_player == account.CampType)
 			{
 				GUIManager.Open<FightLostUIPanel>("Fight", "FightLostUIPanel");
 			}
@@ -115,7 +116,9 @@ public class WorldFightState : IState
 	public void OnStartRound(int type, int time)
 	{
 		InputManager.ClearSelectChess();
-		if(type == 1)
+		Account account = KBEngine.KBEngineApp.app.player() as Account;
+
+		if(type == (int)account.CampType)
 		{
 			InputManager.CanMove = true;
 			fightMainUIPanel.MyRound(time);

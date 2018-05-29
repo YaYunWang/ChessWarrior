@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3591735881
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 47b6d86fab5d54f4ad20c94a1504af90
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4381b8d24d7546af2f9b5d2b1de238
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Controller/jushiguai.controller
+Dependencies:
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_jushiguai_attack3.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_jushiguai_wound.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_jushiguai_attack1.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_jushiguai_attack2.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_jushiguai_death.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_jushiguai_idle.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_jushiguai_run.bundle

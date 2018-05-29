@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
+	public bool HasReporter = false;
+
 	private void Awake()
 	{
 		GameObject.DontDestroyOnLoad(gameObject);
@@ -21,6 +23,9 @@ public class Main : MonoBehaviour
 		InputManager.CreateInstance();
 		ChessManager.CreateInstance();
 		ChessPathManager.CreateInstance();
+
+		GameObject reporter = transform.Find("Reporter").gameObject;
+		reporter.SetActive(HasReporter);
 	}
 
 	void Update()

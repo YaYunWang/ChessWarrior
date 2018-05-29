@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2523998713
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 31c202ed03c8ba1e8f25821ec92870c0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: da04d5352644e5aede0c7ec959090412
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/ChangHuoZhangLao/ChangHuoZhangLao@Attack2.FBX
+Dependencies: []

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 2950805784
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 78812fa89b9ba0e2c4658995f4a47460
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4381b8d24d7546af2f9b5d2b1de238
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Controller/zhubajie.controller
+Dependencies:
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_huozhu_attack1.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_huozhu_attack2.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_huozhu_death.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_huozhu_run.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_huozhu_idle.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_huozhu_wound.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_huozhu_attack3.bundle

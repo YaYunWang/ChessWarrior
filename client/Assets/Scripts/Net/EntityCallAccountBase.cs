@@ -95,6 +95,15 @@ namespace KBEngine
 			sendCall(null);
 		}
 
+		public void StartMatch()
+		{
+			Bundle pBundle = newCall("StartMatch", 0);
+			if(pBundle == null)
+				return;
+
+			sendCall(null);
+		}
+
 		public void TestChessEntity(UInt64 arg1)
 		{
 			Bundle pBundle = newCall("TestChessEntity", 0);
@@ -102,6 +111,15 @@ namespace KBEngine
 				return;
 
 			bundle.writeUint64(arg1);
+			sendCall(null);
+		}
+
+		public void UnStartMatch()
+		{
+			Bundle pBundle = newCall("UnStartMatch", 0);
+			if(pBundle == null)
+				return;
+
 			sendCall(null);
 		}
 

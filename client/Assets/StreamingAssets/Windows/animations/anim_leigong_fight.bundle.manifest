@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 2176071939
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0dfe805069188cb08c61549d36e5297a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c95d5131e154e3742385018e9b460253
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/LeiGong/LeiGong@Fight.FBX
+Dependencies: []

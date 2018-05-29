@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 3491381183
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ab5011b01c66b29a825b0bd0b24eedb8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c95d5131e154e3742385018e9b460253
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/HaMaJing/HaMaJing@Attack2.FBX
+Dependencies: []

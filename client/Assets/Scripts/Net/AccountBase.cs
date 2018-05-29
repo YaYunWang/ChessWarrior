@@ -19,6 +19,8 @@ namespace KBEngine
 		public EntityBaseEntityCall_AccountBase baseEntityCall = null;
 		public EntityCellEntityCall_AccountBase cellEntityCall = null;
 
+		public Int16 CampType = 0;
+		public virtual void onCampTypeChanged(Int16 oldValue) {}
 		public CHESS_INFO_LIST MineChess = new CHESS_INFO_LIST();
 		public virtual void onMineChessChanged(CHESS_INFO_LIST oldValue) {}
 		public string RoleName = "";
@@ -100,29 +102,29 @@ namespace KBEngine
 
 			switch(method.methodUtype)
 			{
-				case 14:
+				case 17:
 					EntryFB();
 					break;
-				case 17:
+				case 20:
 					Int32 OnAttack_arg1 = stream.readInt32();
 					Int32 OnAttack_arg2 = stream.readInt32();
 					OnAttack(OnAttack_arg1, OnAttack_arg2);
 					break;
-				case 18:
+				case 21:
 					OnExitFb();
 					break;
-				case 16:
+				case 19:
 					Int32 OnMove_arg1 = stream.readInt32();
 					Int32 OnMove_arg2 = stream.readInt32();
 					Int32 OnMove_arg3 = stream.readInt32();
 					OnMove(OnMove_arg1, OnMove_arg2, OnMove_arg3);
 					break;
-				case 15:
+				case 18:
 					Int16 OnStartRound_arg1 = stream.readInt16();
 					Int32 OnStartRound_arg2 = stream.readInt32();
 					OnStartRound(OnStartRound_arg1, OnStartRound_arg2);
 					break;
-				case 13:
+				case 16:
 					Int16 ReNameResult_arg1 = stream.readInt16();
 					ReNameResult(ReNameResult_arg1);
 					break;
@@ -174,6 +176,22 @@ namespace KBEngine
 
 				switch(prop.properUtype)
 				{
+					case 5:
+						Int16 oldval_CampType = CampType;
+						CampType = stream.readInt16();
+
+						if(prop.isBase())
+						{
+							if(inited)
+								onCampTypeChanged(oldval_CampType);
+						}
+						else
+						{
+							if(inWorld)
+								onCampTypeChanged(oldval_CampType);
+						}
+
+						break;
 					case 3:
 						CHESS_INFO_LIST oldval_MineChess = MineChess;
 						MineChess = ((DATATYPE_CHESS_INFO_LIST)EntityDef.id2datatypes[23]).createFromStreamEx(stream);
@@ -268,8 +286,29 @@ namespace KBEngine
 			ScriptModule sm = EntityDef.moduledefs["Account"];
 			Dictionary<UInt16, Property> pdatas = sm.idpropertys;
 
+			Int16 oldval_CampType = CampType;
+			Property prop_CampType = pdatas[4];
+			if(prop_CampType.isBase())
+			{
+				if(inited && !inWorld)
+					onCampTypeChanged(oldval_CampType);
+			}
+			else
+			{
+				if(inWorld)
+				{
+					if(prop_CampType.isOwnerOnly() && !isPlayer())
+					{
+					}
+					else
+					{
+						onCampTypeChanged(oldval_CampType);
+					}
+				}
+			}
+
 			CHESS_INFO_LIST oldval_MineChess = MineChess;
-			Property prop_MineChess = pdatas[4];
+			Property prop_MineChess = pdatas[5];
 			if(prop_MineChess.isBase())
 			{
 				if(inited && !inWorld)
@@ -290,7 +329,7 @@ namespace KBEngine
 			}
 
 			string oldval_RoleName = RoleName;
-			Property prop_RoleName = pdatas[5];
+			Property prop_RoleName = pdatas[6];
 			if(prop_RoleName.isBase())
 			{
 				if(inited && !inWorld)
@@ -311,7 +350,7 @@ namespace KBEngine
 			}
 
 			Int16 oldval_RoleType = RoleType;
-			Property prop_RoleType = pdatas[6];
+			Property prop_RoleType = pdatas[7];
 			if(prop_RoleType.isBase())
 			{
 				if(inited && !inWorld)

@@ -1,0 +1,903 @@
+ManifestFileVersion: 0
+CRC: 2878007976
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scene/scene_fight.bundle
+      Dependencies: {}
+    Info_1:
+      Name: scene/scene_main.bundle
+      Dependencies: {}
+    Info_2:
+      Name: scene/scene_city.bundle
+      Dependencies: {}
+    Info_3:
+      Name: scene/scene_city2.bundle
+      Dependencies: {}
+    Info_4:
+      Name: config.bundle
+      Dependencies: {}
+    Info_5:
+      Name: scene/scene_empty.bundle
+      Dependencies: {}
+    Info_6:
+      Name: ui/command.bundle
+      Dependencies: {}
+    Info_7:
+      Name: ui/login.bundle
+      Dependencies: {}
+    Info_8:
+      Name: model/renshenwa_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_renshenwa_walk.bundle
+        Dependency_1: animations/anim_renshenwa_death.bundle
+        Dependency_2: animations/anim_renshenwa_run.bundle
+        Dependency_3: animations/anim_renshenwa_fight.bundle
+        Dependency_4: animations/anim_renshenwa_attack1.bundle
+        Dependency_5: animations/anim_renshenwa_attack3.bundle
+        Dependency_6: animations/anim_renshenwa_wound.bundle
+        Dependency_7: animations/anim_renshenwa_idle.bundle
+        Dependency_8: animations/anim_renshenwa_attack2.bundle
+    Info_9:
+      Name: model/hamajing_04.bundle
+      Dependencies:
+        Dependency_0: animations/anim_hamajing_run.bundle
+        Dependency_1: animations/anim_hamajing_idle.bundle
+        Dependency_2: animations/anim_hamajing_wound.bundle
+        Dependency_3: animations/anim_hamajing_attack1.bundle
+        Dependency_4: animations/anim_hamajing_attack2.bundle
+        Dependency_5: animations/anim_hamajing_attack3.bundle
+        Dependency_6: animations/anim_hamajing_fight.bundle
+        Dependency_7: animations/anim_hamajing_walk.bundle
+        Dependency_8: animations/anim_hamajing_death.bundle
+    Info_10:
+      Name: model/niutouyao_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_niutouyao_run.bundle
+        Dependency_1: animations/anim_niutouyao_idle.bundle
+        Dependency_2: animations/anim_niutouyao_walk.bundle
+        Dependency_3: animations/anim_niutouyao_attack2.bundle
+        Dependency_4: animations/anim_niutouyao_attack1.bundle
+        Dependency_5: animations/anim_niutouyao_wound.bundle
+        Dependency_6: animations/anim_niutouyao_fight.bundle
+        Dependency_7: animations/anim_niutouyao_death.bundle
+        Dependency_8: animations/anim_niutouyao_attack3.bundle
+    Info_11:
+      Name: model/changhuozhanglao_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_changhuozhanglao_idle.bundle
+        Dependency_1: animations/anim_changhuozhanglao_attack2.bundle
+        Dependency_2: animations/anim_changhuozhanglao_walk.bundle
+        Dependency_3: animations/anim_changhuozhanglao_attack1.bundle
+        Dependency_4: animations/anim_changhuozhanglao_run.bundle
+        Dependency_5: animations/anim_changhuozhanglao_wound.bundle
+        Dependency_6: animations/anim_changhuozhanglao_fight.bundle
+        Dependency_7: animations/anim_changhuozhanglao_attack3.bundle
+        Dependency_8: animations/anim_changhuozhanglao_death.bundle
+    Info_12:
+      Name: model/jushiguai_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_jushiguai_walk.bundle
+        Dependency_1: animations/anim_jushiguai_attack3.bundle
+        Dependency_2: animations/anim_jushiguai_wound.bundle
+        Dependency_3: animations/anim_jushiguai_attack1.bundle
+        Dependency_4: animations/anim_jushiguai_fight.bundle
+        Dependency_5: animations/anim_jushiguai_attack2.bundle
+        Dependency_6: animations/anim_jushiguai_death.bundle
+        Dependency_7: animations/anim_jushiguai_idle.bundle
+        Dependency_8: animations/anim_jushiguai_run.bundle
+    Info_13:
+      Name: model/niutouyao_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_niutouyao_run.bundle
+        Dependency_1: animations/anim_niutouyao_idle.bundle
+        Dependency_2: animations/anim_niutouyao_walk.bundle
+        Dependency_3: animations/anim_niutouyao_attack2.bundle
+        Dependency_4: animations/anim_niutouyao_attack1.bundle
+        Dependency_5: animations/anim_niutouyao_wound.bundle
+        Dependency_6: animations/anim_niutouyao_fight.bundle
+        Dependency_7: animations/anim_niutouyao_death.bundle
+        Dependency_8: animations/anim_niutouyao_attack3.bundle
+    Info_14:
+      Name: model/weiyueyan_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_weiyueyan_idle.bundle
+        Dependency_1: animations/anim_weiyueyan_run.bundle
+        Dependency_2: animations/anim_weiyueyan_attack1.bundle
+        Dependency_3: animations/anim_weiyueyan_attack3.bundle
+        Dependency_4: animations/anim_weiyueyan_death.bundle
+        Dependency_5: animations/anim_weiyueyan_fight.bundle
+        Dependency_6: animations/anim_weiyueyan_walk.bundle
+        Dependency_7: animations/anim_weiyueyan_wound.bundle
+        Dependency_8: animations/anim_weiyueyan_attack2.bundle
+    Info_15:
+      Name: model/huozhu.bundle
+      Dependencies:
+        Dependency_0: animations/anim_huozhu_attack1.bundle
+        Dependency_1: animations/anim_huozhu_attack2.bundle
+        Dependency_2: animations/anim_huozhu_death.bundle
+        Dependency_3: animations/anim_huozhu_run.bundle
+        Dependency_4: animations/anim_huozhu_fight.bundle
+        Dependency_5: animations/anim_huozhu_walk.bundle
+        Dependency_6: animations/anim_huozhu_idle.bundle
+        Dependency_7: animations/anim_huozhu_wound.bundle
+        Dependency_8: animations/anim_huozhu_attack3.bundle
+    Info_16:
+      Name: model/hamajing_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_hamajing_run.bundle
+        Dependency_1: animations/anim_hamajing_idle.bundle
+        Dependency_2: animations/anim_hamajing_wound.bundle
+        Dependency_3: animations/anim_hamajing_attack1.bundle
+        Dependency_4: animations/anim_hamajing_attack2.bundle
+        Dependency_5: animations/anim_hamajing_attack3.bundle
+        Dependency_6: animations/anim_hamajing_fight.bundle
+        Dependency_7: animations/anim_hamajing_walk.bundle
+        Dependency_8: animations/anim_hamajing_death.bundle
+    Info_17:
+      Name: model/yangjian.bundle
+      Dependencies:
+        Dependency_0: animations/anim_yangjian_death.bundle
+        Dependency_1: animations/anim_yangjian_attack2.bundle
+        Dependency_2: animations/anim_yangjian_idle.bundle
+        Dependency_3: animations/anim_yangjian_attack1.bundle
+        Dependency_4: animations/anim_yangjian_fight.bundle
+        Dependency_5: animations/anim_yangjian_attack3.bundle
+        Dependency_6: animations/anim_yangjian_walk.bundle
+        Dependency_7: animations/anim_yangjian_wound.bundle
+        Dependency_8: animations/anim_yangjian_run.bundle
+    Info_18:
+      Name: model/yangjian_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_yangjian_death.bundle
+        Dependency_1: animations/anim_yangjian_attack2.bundle
+        Dependency_2: animations/anim_yangjian_idle.bundle
+        Dependency_3: animations/anim_yangjian_attack1.bundle
+        Dependency_4: animations/anim_yangjian_fight.bundle
+        Dependency_5: animations/anim_yangjian_attack3.bundle
+        Dependency_6: animations/anim_yangjian_walk.bundle
+        Dependency_7: animations/anim_yangjian_wound.bundle
+        Dependency_8: animations/anim_yangjian_run.bundle
+    Info_19:
+      Name: model/jushiguai_04.bundle
+      Dependencies:
+        Dependency_0: animations/anim_jushiguai_walk.bundle
+        Dependency_1: animations/anim_jushiguai_attack3.bundle
+        Dependency_2: animations/anim_jushiguai_wound.bundle
+        Dependency_3: animations/anim_jushiguai_attack1.bundle
+        Dependency_4: animations/anim_jushiguai_fight.bundle
+        Dependency_5: animations/anim_jushiguai_attack2.bundle
+        Dependency_6: animations/anim_jushiguai_death.bundle
+        Dependency_7: animations/anim_jushiguai_idle.bundle
+        Dependency_8: animations/anim_jushiguai_run.bundle
+    Info_20:
+      Name: model/weiyueyan_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_weiyueyan_idle.bundle
+        Dependency_1: animations/anim_weiyueyan_run.bundle
+        Dependency_2: animations/anim_weiyueyan_attack1.bundle
+        Dependency_3: animations/anim_weiyueyan_attack3.bundle
+        Dependency_4: animations/anim_weiyueyan_death.bundle
+        Dependency_5: animations/anim_weiyueyan_fight.bundle
+        Dependency_6: animations/anim_weiyueyan_walk.bundle
+        Dependency_7: animations/anim_weiyueyan_wound.bundle
+        Dependency_8: animations/anim_weiyueyan_attack2.bundle
+    Info_21:
+      Name: model/huozhu_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_huozhu_attack1.bundle
+        Dependency_1: animations/anim_huozhu_attack2.bundle
+        Dependency_2: animations/anim_huozhu_death.bundle
+        Dependency_3: animations/anim_huozhu_run.bundle
+        Dependency_4: animations/anim_huozhu_fight.bundle
+        Dependency_5: animations/anim_huozhu_walk.bundle
+        Dependency_6: animations/anim_huozhu_idle.bundle
+        Dependency_7: animations/anim_huozhu_wound.bundle
+        Dependency_8: animations/anim_huozhu_attack3.bundle
+    Info_22:
+      Name: model/renshenwa.bundle
+      Dependencies:
+        Dependency_0: animations/anim_renshenwa_walk.bundle
+        Dependency_1: animations/anim_renshenwa_death.bundle
+        Dependency_2: animations/anim_renshenwa_run.bundle
+        Dependency_3: animations/anim_renshenwa_fight.bundle
+        Dependency_4: animations/anim_renshenwa_attack1.bundle
+        Dependency_5: animations/anim_renshenwa_attack3.bundle
+        Dependency_6: animations/anim_renshenwa_wound.bundle
+        Dependency_7: animations/anim_renshenwa_idle.bundle
+        Dependency_8: animations/anim_renshenwa_attack2.bundle
+    Info_23:
+      Name: model/leigong_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_leigong_walk.bundle
+        Dependency_1: animations/anim_leigong_attack2.bundle
+        Dependency_2: animations/anim_leigong_attack3.bundle
+        Dependency_3: animations/anim_leigong_attack1.bundle
+        Dependency_4: animations/anim_leigong_run.bundle
+        Dependency_5: animations/anim_leigong_wound.bundle
+        Dependency_6: animations/anim_leigong_idle.bundle
+        Dependency_7: animations/anim_leigong_death.bundle
+        Dependency_8: animations/anim_leigong_fight.bundle
+    Info_24:
+      Name: model/huozhu_04.bundle
+      Dependencies:
+        Dependency_0: animations/anim_huozhu_attack1.bundle
+        Dependency_1: animations/anim_huozhu_attack2.bundle
+        Dependency_2: animations/anim_huozhu_death.bundle
+        Dependency_3: animations/anim_huozhu_run.bundle
+        Dependency_4: animations/anim_huozhu_fight.bundle
+        Dependency_5: animations/anim_huozhu_walk.bundle
+        Dependency_6: animations/anim_huozhu_idle.bundle
+        Dependency_7: animations/anim_huozhu_wound.bundle
+        Dependency_8: animations/anim_huozhu_attack3.bundle
+    Info_25:
+      Name: model/jushiguai_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_jushiguai_walk.bundle
+        Dependency_1: animations/anim_jushiguai_attack3.bundle
+        Dependency_2: animations/anim_jushiguai_wound.bundle
+        Dependency_3: animations/anim_jushiguai_attack1.bundle
+        Dependency_4: animations/anim_jushiguai_fight.bundle
+        Dependency_5: animations/anim_jushiguai_attack2.bundle
+        Dependency_6: animations/anim_jushiguai_death.bundle
+        Dependency_7: animations/anim_jushiguai_idle.bundle
+        Dependency_8: animations/anim_jushiguai_run.bundle
+    Info_26:
+      Name: model/jushiguai_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_jushiguai_walk.bundle
+        Dependency_1: animations/anim_jushiguai_attack3.bundle
+        Dependency_2: animations/anim_jushiguai_wound.bundle
+        Dependency_3: animations/anim_jushiguai_attack1.bundle
+        Dependency_4: animations/anim_jushiguai_fight.bundle
+        Dependency_5: animations/anim_jushiguai_attack2.bundle
+        Dependency_6: animations/anim_jushiguai_death.bundle
+        Dependency_7: animations/anim_jushiguai_idle.bundle
+        Dependency_8: animations/anim_jushiguai_run.bundle
+    Info_27:
+      Name: model/renshenwa_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_renshenwa_walk.bundle
+        Dependency_1: animations/anim_renshenwa_death.bundle
+        Dependency_2: animations/anim_renshenwa_run.bundle
+        Dependency_3: animations/anim_renshenwa_fight.bundle
+        Dependency_4: animations/anim_renshenwa_attack1.bundle
+        Dependency_5: animations/anim_renshenwa_attack3.bundle
+        Dependency_6: animations/anim_renshenwa_wound.bundle
+        Dependency_7: animations/anim_renshenwa_idle.bundle
+        Dependency_8: animations/anim_renshenwa_attack2.bundle
+    Info_28:
+      Name: model/yangjian_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_yangjian_death.bundle
+        Dependency_1: animations/anim_yangjian_attack2.bundle
+        Dependency_2: animations/anim_yangjian_idle.bundle
+        Dependency_3: animations/anim_yangjian_attack1.bundle
+        Dependency_4: animations/anim_yangjian_fight.bundle
+        Dependency_5: animations/anim_yangjian_attack3.bundle
+        Dependency_6: animations/anim_yangjian_walk.bundle
+        Dependency_7: animations/anim_yangjian_wound.bundle
+        Dependency_8: animations/anim_yangjian_run.bundle
+    Info_29:
+      Name: model/leigong.bundle
+      Dependencies:
+        Dependency_0: animations/anim_leigong_walk.bundle
+        Dependency_1: animations/anim_leigong_attack2.bundle
+        Dependency_2: animations/anim_leigong_attack3.bundle
+        Dependency_3: animations/anim_leigong_attack1.bundle
+        Dependency_4: animations/anim_leigong_run.bundle
+        Dependency_5: animations/anim_leigong_wound.bundle
+        Dependency_6: animations/anim_leigong_idle.bundle
+        Dependency_7: animations/anim_leigong_death.bundle
+        Dependency_8: animations/anim_leigong_fight.bundle
+    Info_30:
+      Name: model/niutouyao_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_niutouyao_run.bundle
+        Dependency_1: animations/anim_niutouyao_idle.bundle
+        Dependency_2: animations/anim_niutouyao_walk.bundle
+        Dependency_3: animations/anim_niutouyao_attack2.bundle
+        Dependency_4: animations/anim_niutouyao_attack1.bundle
+        Dependency_5: animations/anim_niutouyao_wound.bundle
+        Dependency_6: animations/anim_niutouyao_fight.bundle
+        Dependency_7: animations/anim_niutouyao_death.bundle
+        Dependency_8: animations/anim_niutouyao_attack3.bundle
+    Info_31:
+      Name: model/weiyueyan.bundle
+      Dependencies:
+        Dependency_0: animations/anim_weiyueyan_idle.bundle
+        Dependency_1: animations/anim_weiyueyan_run.bundle
+        Dependency_2: animations/anim_weiyueyan_attack1.bundle
+        Dependency_3: animations/anim_weiyueyan_attack3.bundle
+        Dependency_4: animations/anim_weiyueyan_death.bundle
+        Dependency_5: animations/anim_weiyueyan_fight.bundle
+        Dependency_6: animations/anim_weiyueyan_walk.bundle
+        Dependency_7: animations/anim_weiyueyan_wound.bundle
+        Dependency_8: animations/anim_weiyueyan_attack2.bundle
+    Info_32:
+      Name: model/nezha.bundle
+      Dependencies:
+        Dependency_0: animations/anim_nezha_fight.bundle
+        Dependency_1: animations/anim_nezha_death.bundle
+        Dependency_2: animations/anim_nezha_run.bundle
+        Dependency_3: animations/anim_nezha_idle.bundle
+        Dependency_4: animations/anim_nezha_walk.bundle
+        Dependency_5: animations/anim_nezha_attack3.bundle
+        Dependency_6: animations/anim_nezha_wound.bundle
+        Dependency_7: animations/anim_nezha_attack1.bundle
+        Dependency_8: animations/anim_nezha_attack2.bundle
+    Info_33:
+      Name: model/yangjian_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_yangjian_death.bundle
+        Dependency_1: animations/anim_yangjian_attack2.bundle
+        Dependency_2: animations/anim_yangjian_idle.bundle
+        Dependency_3: animations/anim_yangjian_attack1.bundle
+        Dependency_4: animations/anim_yangjian_fight.bundle
+        Dependency_5: animations/anim_yangjian_attack3.bundle
+        Dependency_6: animations/anim_yangjian_walk.bundle
+        Dependency_7: animations/anim_yangjian_wound.bundle
+        Dependency_8: animations/anim_yangjian_run.bundle
+    Info_34:
+      Name: model/huozhu_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_huozhu_attack1.bundle
+        Dependency_1: animations/anim_huozhu_attack2.bundle
+        Dependency_2: animations/anim_huozhu_death.bundle
+        Dependency_3: animations/anim_huozhu_run.bundle
+        Dependency_4: animations/anim_huozhu_fight.bundle
+        Dependency_5: animations/anim_huozhu_walk.bundle
+        Dependency_6: animations/anim_huozhu_idle.bundle
+        Dependency_7: animations/anim_huozhu_wound.bundle
+        Dependency_8: animations/anim_huozhu_attack3.bundle
+    Info_35:
+      Name: model/niutouyao.bundle
+      Dependencies:
+        Dependency_0: animations/anim_niutouyao_run.bundle
+        Dependency_1: animations/anim_niutouyao_idle.bundle
+        Dependency_2: animations/anim_niutouyao_walk.bundle
+        Dependency_3: animations/anim_niutouyao_attack2.bundle
+        Dependency_4: animations/anim_niutouyao_attack1.bundle
+        Dependency_5: animations/anim_niutouyao_wound.bundle
+        Dependency_6: animations/anim_niutouyao_fight.bundle
+        Dependency_7: animations/anim_niutouyao_death.bundle
+        Dependency_8: animations/anim_niutouyao_attack3.bundle
+    Info_36:
+      Name: model/leigong_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_leigong_walk.bundle
+        Dependency_1: animations/anim_leigong_attack2.bundle
+        Dependency_2: animations/anim_leigong_attack3.bundle
+        Dependency_3: animations/anim_leigong_attack1.bundle
+        Dependency_4: animations/anim_leigong_run.bundle
+        Dependency_5: animations/anim_leigong_wound.bundle
+        Dependency_6: animations/anim_leigong_idle.bundle
+        Dependency_7: animations/anim_leigong_death.bundle
+        Dependency_8: animations/anim_leigong_fight.bundle
+    Info_37:
+      Name: model/renshenwa_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_renshenwa_walk.bundle
+        Dependency_1: animations/anim_renshenwa_death.bundle
+        Dependency_2: animations/anim_renshenwa_run.bundle
+        Dependency_3: animations/anim_renshenwa_fight.bundle
+        Dependency_4: animations/anim_renshenwa_attack1.bundle
+        Dependency_5: animations/anim_renshenwa_attack3.bundle
+        Dependency_6: animations/anim_renshenwa_wound.bundle
+        Dependency_7: animations/anim_renshenwa_idle.bundle
+        Dependency_8: animations/anim_renshenwa_attack2.bundle
+    Info_38:
+      Name: model/changhuozhanglao.bundle
+      Dependencies:
+        Dependency_0: animations/anim_changhuozhanglao_idle.bundle
+        Dependency_1: animations/anim_changhuozhanglao_attack2.bundle
+        Dependency_2: animations/anim_changhuozhanglao_walk.bundle
+        Dependency_3: animations/anim_changhuozhanglao_attack1.bundle
+        Dependency_4: animations/anim_changhuozhanglao_run.bundle
+        Dependency_5: animations/anim_changhuozhanglao_wound.bundle
+        Dependency_6: animations/anim_changhuozhanglao_fight.bundle
+        Dependency_7: animations/anim_changhuozhanglao_attack3.bundle
+        Dependency_8: animations/anim_changhuozhanglao_death.bundle
+    Info_39:
+      Name: model/hamajing.bundle
+      Dependencies:
+        Dependency_0: animations/anim_hamajing_run.bundle
+        Dependency_1: animations/anim_hamajing_idle.bundle
+        Dependency_2: animations/anim_hamajing_wound.bundle
+        Dependency_3: animations/anim_hamajing_attack1.bundle
+        Dependency_4: animations/anim_hamajing_attack2.bundle
+        Dependency_5: animations/anim_hamajing_attack3.bundle
+        Dependency_6: animations/anim_hamajing_fight.bundle
+        Dependency_7: animations/anim_hamajing_walk.bundle
+        Dependency_8: animations/anim_hamajing_death.bundle
+    Info_40:
+      Name: model/hamajing_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_hamajing_run.bundle
+        Dependency_1: animations/anim_hamajing_idle.bundle
+        Dependency_2: animations/anim_hamajing_wound.bundle
+        Dependency_3: animations/anim_hamajing_attack1.bundle
+        Dependency_4: animations/anim_hamajing_attack2.bundle
+        Dependency_5: animations/anim_hamajing_attack3.bundle
+        Dependency_6: animations/anim_hamajing_fight.bundle
+        Dependency_7: animations/anim_hamajing_walk.bundle
+        Dependency_8: animations/anim_hamajing_death.bundle
+    Info_41:
+      Name: model/tudigong.bundle
+      Dependencies: {}
+    Info_42:
+      Name: model/jushiguai.bundle
+      Dependencies:
+        Dependency_0: animations/anim_jushiguai_walk.bundle
+        Dependency_1: animations/anim_jushiguai_attack3.bundle
+        Dependency_2: animations/anim_jushiguai_wound.bundle
+        Dependency_3: animations/anim_jushiguai_attack1.bundle
+        Dependency_4: animations/anim_jushiguai_fight.bundle
+        Dependency_5: animations/anim_jushiguai_attack2.bundle
+        Dependency_6: animations/anim_jushiguai_death.bundle
+        Dependency_7: animations/anim_jushiguai_idle.bundle
+        Dependency_8: animations/anim_jushiguai_run.bundle
+    Info_43:
+      Name: model/nezha_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_nezha_fight.bundle
+        Dependency_1: animations/anim_nezha_death.bundle
+        Dependency_2: animations/anim_nezha_run.bundle
+        Dependency_3: animations/anim_nezha_idle.bundle
+        Dependency_4: animations/anim_nezha_walk.bundle
+        Dependency_5: animations/anim_nezha_attack3.bundle
+        Dependency_6: animations/anim_nezha_wound.bundle
+        Dependency_7: animations/anim_nezha_attack1.bundle
+        Dependency_8: animations/anim_nezha_attack2.bundle
+    Info_44:
+      Name: model/changhuozhanglao_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_changhuozhanglao_idle.bundle
+        Dependency_1: animations/anim_changhuozhanglao_attack2.bundle
+        Dependency_2: animations/anim_changhuozhanglao_walk.bundle
+        Dependency_3: animations/anim_changhuozhanglao_attack1.bundle
+        Dependency_4: animations/anim_changhuozhanglao_run.bundle
+        Dependency_5: animations/anim_changhuozhanglao_wound.bundle
+        Dependency_6: animations/anim_changhuozhanglao_fight.bundle
+        Dependency_7: animations/anim_changhuozhanglao_attack3.bundle
+        Dependency_8: animations/anim_changhuozhanglao_death.bundle
+    Info_45:
+      Name: model/changhuozhanglao_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_changhuozhanglao_idle.bundle
+        Dependency_1: animations/anim_changhuozhanglao_attack2.bundle
+        Dependency_2: animations/anim_changhuozhanglao_walk.bundle
+        Dependency_3: animations/anim_changhuozhanglao_attack1.bundle
+        Dependency_4: animations/anim_changhuozhanglao_run.bundle
+        Dependency_5: animations/anim_changhuozhanglao_wound.bundle
+        Dependency_6: animations/anim_changhuozhanglao_fight.bundle
+        Dependency_7: animations/anim_changhuozhanglao_attack3.bundle
+        Dependency_8: animations/anim_changhuozhanglao_death.bundle
+    Info_46:
+      Name: model/huozhu_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_huozhu_attack1.bundle
+        Dependency_1: animations/anim_huozhu_attack2.bundle
+        Dependency_2: animations/anim_huozhu_death.bundle
+        Dependency_3: animations/anim_huozhu_run.bundle
+        Dependency_4: animations/anim_huozhu_fight.bundle
+        Dependency_5: animations/anim_huozhu_walk.bundle
+        Dependency_6: animations/anim_huozhu_idle.bundle
+        Dependency_7: animations/anim_huozhu_wound.bundle
+        Dependency_8: animations/anim_huozhu_attack3.bundle
+    Info_47:
+      Name: model/weiyueyan_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_weiyueyan_idle.bundle
+        Dependency_1: animations/anim_weiyueyan_run.bundle
+        Dependency_2: animations/anim_weiyueyan_attack1.bundle
+        Dependency_3: animations/anim_weiyueyan_attack3.bundle
+        Dependency_4: animations/anim_weiyueyan_death.bundle
+        Dependency_5: animations/anim_weiyueyan_fight.bundle
+        Dependency_6: animations/anim_weiyueyan_walk.bundle
+        Dependency_7: animations/anim_weiyueyan_wound.bundle
+        Dependency_8: animations/anim_weiyueyan_attack2.bundle
+    Info_48:
+      Name: model/hamajing_03.bundle
+      Dependencies:
+        Dependency_0: animations/anim_hamajing_run.bundle
+        Dependency_1: animations/anim_hamajing_idle.bundle
+        Dependency_2: animations/anim_hamajing_wound.bundle
+        Dependency_3: animations/anim_hamajing_attack1.bundle
+        Dependency_4: animations/anim_hamajing_attack2.bundle
+        Dependency_5: animations/anim_hamajing_attack3.bundle
+        Dependency_6: animations/anim_hamajing_fight.bundle
+        Dependency_7: animations/anim_hamajing_walk.bundle
+        Dependency_8: animations/anim_hamajing_death.bundle
+    Info_49:
+      Name: model/nezha_01.bundle
+      Dependencies:
+        Dependency_0: animations/anim_nezha_fight.bundle
+        Dependency_1: animations/anim_nezha_death.bundle
+        Dependency_2: animations/anim_nezha_run.bundle
+        Dependency_3: animations/anim_nezha_idle.bundle
+        Dependency_4: animations/anim_nezha_walk.bundle
+        Dependency_5: animations/anim_nezha_attack3.bundle
+        Dependency_6: animations/anim_nezha_wound.bundle
+        Dependency_7: animations/anim_nezha_attack1.bundle
+        Dependency_8: animations/anim_nezha_attack2.bundle
+    Info_50:
+      Name: model/nezha_02.bundle
+      Dependencies:
+        Dependency_0: animations/anim_nezha_fight.bundle
+        Dependency_1: animations/anim_nezha_death.bundle
+        Dependency_2: animations/anim_nezha_run.bundle
+        Dependency_3: animations/anim_nezha_idle.bundle
+        Dependency_4: animations/anim_nezha_walk.bundle
+        Dependency_5: animations/anim_nezha_attack3.bundle
+        Dependency_6: animations/anim_nezha_wound.bundle
+        Dependency_7: animations/anim_nezha_attack1.bundle
+        Dependency_8: animations/anim_nezha_attack2.bundle
+    Info_51:
+      Name: ui/chessinfo.bundle
+      Dependencies: {}
+    Info_52:
+      Name: ui/rename.bundle
+      Dependencies: {}
+    Info_53:
+      Name: ui/fight.bundle
+      Dependencies: {}
+    Info_54:
+      Name: ui/city.bundle
+      Dependencies: {}
+    Info_55:
+      Name: animations/anim_jushiguai_walk.bundle
+      Dependencies: {}
+    Info_56:
+      Name: animations/anim_hamajing_run.bundle
+      Dependencies: {}
+    Info_57:
+      Name: animations/anim_renshenwa_walk.bundle
+      Dependencies: {}
+    Info_58:
+      Name: animations/anim_huozhu_attack1.bundle
+      Dependencies: {}
+    Info_59:
+      Name: animations/anim_weiyueyan_idle.bundle
+      Dependencies: {}
+    Info_60:
+      Name: animations/anim_niutouyao_run.bundle
+      Dependencies: {}
+    Info_61:
+      Name: animations/anim_leigong_walk.bundle
+      Dependencies: {}
+    Info_62:
+      Name: animations/anim_changhuozhanglao_idle.bundle
+      Dependencies: {}
+    Info_63:
+      Name: animations/anim_weiyueyan_run.bundle
+      Dependencies: {}
+    Info_64:
+      Name: animations/anim_niutouyao_idle.bundle
+      Dependencies: {}
+    Info_65:
+      Name: animations/anim_changhuozhanglao_attack2.bundle
+      Dependencies: {}
+    Info_66:
+      Name: animations/anim_yangjian_death.bundle
+      Dependencies: {}
+    Info_67:
+      Name: animations/anim_huozhu_attack2.bundle
+      Dependencies: {}
+    Info_68:
+      Name: animations/anim_yangjian_attack2.bundle
+      Dependencies: {}
+    Info_69:
+      Name: animations/anim_renshenwa_death.bundle
+      Dependencies: {}
+    Info_70:
+      Name: animations/anim_niutouyao_walk.bundle
+      Dependencies: {}
+    Info_71:
+      Name: animations/anim_jushiguai_attack3.bundle
+      Dependencies: {}
+    Info_72:
+      Name: animations/anim_renshenwa_run.bundle
+      Dependencies: {}
+    Info_73:
+      Name: animations/anim_weiyueyan_attack1.bundle
+      Dependencies: {}
+    Info_74:
+      Name: animations/anim_jushiguai_wound.bundle
+      Dependencies: {}
+    Info_75:
+      Name: animations/anim_changhuozhanglao_walk.bundle
+      Dependencies: {}
+    Info_76:
+      Name: animations/anim_nezha_fight.bundle
+      Dependencies: {}
+    Info_77:
+      Name: animations/anim_nezha_death.bundle
+      Dependencies: {}
+    Info_78:
+      Name: animations/anim_weiyueyan_attack3.bundle
+      Dependencies: {}
+    Info_79:
+      Name: animations/anim_leigong_attack2.bundle
+      Dependencies: {}
+    Info_80:
+      Name: animations/anim_huozhu_death.bundle
+      Dependencies: {}
+    Info_81:
+      Name: animations/anim_huozhu_run.bundle
+      Dependencies: {}
+    Info_82:
+      Name: animations/anim_renshenwa_fight.bundle
+      Dependencies: {}
+    Info_83:
+      Name: animations/anim_niutouyao_attack2.bundle
+      Dependencies: {}
+    Info_84:
+      Name: animations/anim_huozhu_fight.bundle
+      Dependencies: {}
+    Info_85:
+      Name: animations/anim_nezha_run.bundle
+      Dependencies: {}
+    Info_86:
+      Name: animations/anim_niutouyao_attack1.bundle
+      Dependencies: {}
+    Info_87:
+      Name: animations/anim_nezha_idle.bundle
+      Dependencies: {}
+    Info_88:
+      Name: animations/anim_renshenwa_attack1.bundle
+      Dependencies: {}
+    Info_89:
+      Name: animations/anim_nezha_walk.bundle
+      Dependencies: {}
+    Info_90:
+      Name: animations/anim_niutouyao_wound.bundle
+      Dependencies: {}
+    Info_91:
+      Name: animations/anim_hamajing_idle.bundle
+      Dependencies: {}
+    Info_92:
+      Name: animations/anim_weiyueyan_death.bundle
+      Dependencies: {}
+    Info_93:
+      Name: animations/anim_jushiguai_attack1.bundle
+      Dependencies: {}
+    Info_94:
+      Name: animations/anim_changhuozhanglao_attack1.bundle
+      Dependencies: {}
+    Info_95:
+      Name: animations/anim_niutouyao_fight.bundle
+      Dependencies: {}
+    Info_96:
+      Name: animations/anim_leigong_attack3.bundle
+      Dependencies: {}
+    Info_97:
+      Name: animations/anim_jushiguai_fight.bundle
+      Dependencies: {}
+    Info_98:
+      Name: animations/anim_hamajing_wound.bundle
+      Dependencies: {}
+    Info_99:
+      Name: animations/anim_yangjian_idle.bundle
+      Dependencies: {}
+    Info_100:
+      Name: animations/anim_yangjian_attack1.bundle
+      Dependencies: {}
+    Info_101:
+      Name: animations/anim_weiyueyan_fight.bundle
+      Dependencies: {}
+    Info_102:
+      Name: animations/anim_changhuozhanglao_run.bundle
+      Dependencies: {}
+    Info_103:
+      Name: animations/anim_leigong_attack1.bundle
+      Dependencies: {}
+    Info_104:
+      Name: animations/anim_huozhu_walk.bundle
+      Dependencies: {}
+    Info_105:
+      Name: animations/anim_huozhu_idle.bundle
+      Dependencies: {}
+    Info_106:
+      Name: animations/anim_niutouyao_death.bundle
+      Dependencies: {}
+    Info_107:
+      Name: animations/anim_tudigong_specialidle.bundle
+      Dependencies: {}
+    Info_108:
+      Name: animations/anim_nezha_attack3.bundle
+      Dependencies: {}
+    Info_109:
+      Name: animations/anim_renshenwa_attack3.bundle
+      Dependencies: {}
+    Info_110:
+      Name: animations/anim_huozhu_wound.bundle
+      Dependencies: {}
+    Info_111:
+      Name: animations/anim_changhuozhanglao_wound.bundle
+      Dependencies: {}
+    Info_112:
+      Name: animations/anim_renshenwa_wound.bundle
+      Dependencies: {}
+    Info_113:
+      Name: animations/anim_leigong_run.bundle
+      Dependencies: {}
+    Info_114:
+      Name: animations/anim_renshenwa_idle.bundle
+      Dependencies: {}
+    Info_115:
+      Name: animations/anim_hamajing_attack1.bundle
+      Dependencies: {}
+    Info_116:
+      Name: animations/anim_jushiguai_attack2.bundle
+      Dependencies: {}
+    Info_117:
+      Name: animations/anim_hamajing_attack2.bundle
+      Dependencies: {}
+    Info_118:
+      Name: animations/anim_hamajing_attack3.bundle
+      Dependencies: {}
+    Info_119:
+      Name: animations/anim_nezha_wound.bundle
+      Dependencies: {}
+    Info_120:
+      Name: animations/anim_nezha_attack1.bundle
+      Dependencies: {}
+    Info_121:
+      Name: animations/anim_weiyueyan_walk.bundle
+      Dependencies: {}
+    Info_122:
+      Name: animations/anim_jushiguai_death.bundle
+      Dependencies: {}
+    Info_123:
+      Name: animations/anim_niutouyao_attack3.bundle
+      Dependencies: {}
+    Info_124:
+      Name: animations/anim_leigong_wound.bundle
+      Dependencies: {}
+    Info_125:
+      Name: animations/anim_leigong_idle.bundle
+      Dependencies: {}
+    Info_126:
+      Name: animations/anim_weiyueyan_wound.bundle
+      Dependencies: {}
+    Info_127:
+      Name: animations/anim_leigong_death.bundle
+      Dependencies: {}
+    Info_128:
+      Name: animations/anim_changhuozhanglao_fight.bundle
+      Dependencies: {}
+    Info_129:
+      Name: animations/anim_weiyueyan_attack2.bundle
+      Dependencies: {}
+    Info_130:
+      Name: animations/anim_leigong_fight.bundle
+      Dependencies: {}
+    Info_131:
+      Name: animations/anim_huozhu_attack3.bundle
+      Dependencies: {}
+    Info_132:
+      Name: animations/anim_hamajing_fight.bundle
+      Dependencies: {}
+    Info_133:
+      Name: animations/anim_nezha_attack2.bundle
+      Dependencies: {}
+    Info_134:
+      Name: animations/anim_tudigong_idle.bundle
+      Dependencies: {}
+    Info_135:
+      Name: animations/anim_yangjian_fight.bundle
+      Dependencies: {}
+    Info_136:
+      Name: animations/anim_yangjian_attack3.bundle
+      Dependencies: {}
+    Info_137:
+      Name: animations/anim_jushiguai_idle.bundle
+      Dependencies: {}
+    Info_138:
+      Name: animations/anim_renshenwa_attack2.bundle
+      Dependencies: {}
+    Info_139:
+      Name: animations/anim_yangjian_walk.bundle
+      Dependencies: {}
+    Info_140:
+      Name: animations/anim_changhuozhanglao_attack3.bundle
+      Dependencies: {}
+    Info_141:
+      Name: animations/anim_changhuozhanglao_death.bundle
+      Dependencies: {}
+    Info_142:
+      Name: animations/anim_yangjian_wound.bundle
+      Dependencies: {}
+    Info_143:
+      Name: animations/anim_jushiguai_run.bundle
+      Dependencies: {}
+    Info_144:
+      Name: animations/anim_yangjian_run.bundle
+      Dependencies: {}
+    Info_145:
+      Name: animations/anim_hamajing_walk.bundle
+      Dependencies: {}
+    Info_146:
+      Name: animations/anim_hamajing_death.bundle
+      Dependencies: {}
+    Info_147:
+      Name: controller/controller_zhubajie.bundle
+      Dependencies:
+        Dependency_0: animations/anim_huozhu_attack1.bundle
+        Dependency_1: animations/anim_huozhu_attack2.bundle
+        Dependency_2: animations/anim_huozhu_death.bundle
+        Dependency_3: animations/anim_huozhu_run.bundle
+        Dependency_4: animations/anim_huozhu_idle.bundle
+        Dependency_5: animations/anim_huozhu_wound.bundle
+        Dependency_6: animations/anim_huozhu_attack3.bundle
+    Info_148:
+      Name: controller/controller_niutouyao.bundle
+      Dependencies:
+        Dependency_0: animations/anim_niutouyao_run.bundle
+        Dependency_1: animations/anim_niutouyao_idle.bundle
+        Dependency_2: animations/anim_niutouyao_attack2.bundle
+        Dependency_3: animations/anim_niutouyao_attack1.bundle
+        Dependency_4: animations/anim_niutouyao_wound.bundle
+        Dependency_5: animations/anim_niutouyao_death.bundle
+        Dependency_6: animations/anim_niutouyao_attack3.bundle
+    Info_149:
+      Name: controller/controller_leigong.bundle
+      Dependencies:
+        Dependency_0: animations/anim_leigong_attack2.bundle
+        Dependency_1: animations/anim_leigong_attack3.bundle
+        Dependency_2: animations/anim_leigong_attack1.bundle
+        Dependency_3: animations/anim_leigong_run.bundle
+        Dependency_4: animations/anim_leigong_wound.bundle
+        Dependency_5: animations/anim_leigong_idle.bundle
+        Dependency_6: animations/anim_leigong_death.bundle
+    Info_150:
+      Name: controller/controller_jushiguai.bundle
+      Dependencies:
+        Dependency_0: animations/anim_jushiguai_attack3.bundle
+        Dependency_1: animations/anim_jushiguai_wound.bundle
+        Dependency_2: animations/anim_jushiguai_attack1.bundle
+        Dependency_3: animations/anim_jushiguai_attack2.bundle
+        Dependency_4: animations/anim_jushiguai_death.bundle
+        Dependency_5: animations/anim_jushiguai_idle.bundle
+        Dependency_6: animations/anim_jushiguai_run.bundle
+    Info_151:
+      Name: controller/controller_nezha.bundle
+      Dependencies:
+        Dependency_0: animations/anim_nezha_death.bundle
+        Dependency_1: animations/anim_nezha_run.bundle
+        Dependency_2: animations/anim_nezha_idle.bundle
+        Dependency_3: animations/anim_nezha_attack3.bundle
+        Dependency_4: animations/anim_nezha_wound.bundle
+        Dependency_5: animations/anim_nezha_attack1.bundle
+        Dependency_6: animations/anim_nezha_attack2.bundle
+    Info_152:
+      Name: controller/controller_yangjian.bundle
+      Dependencies:
+        Dependency_0: animations/anim_yangjian_death.bundle
+        Dependency_1: animations/anim_yangjian_attack2.bundle
+        Dependency_2: animations/anim_yangjian_idle.bundle
+        Dependency_3: animations/anim_yangjian_attack1.bundle
+        Dependency_4: animations/anim_yangjian_attack3.bundle
+        Dependency_5: animations/anim_yangjian_wound.bundle
+        Dependency_6: animations/anim_yangjian_run.bundle
+    Info_153:
+      Name: controller/controller_hamaguai.bundle
+      Dependencies:
+        Dependency_0: animations/anim_hamajing_run.bundle
+        Dependency_1: animations/anim_hamajing_idle.bundle
+        Dependency_2: animations/anim_hamajing_wound.bundle
+        Dependency_3: animations/anim_hamajing_attack1.bundle
+        Dependency_4: animations/anim_hamajing_attack2.bundle
+        Dependency_5: animations/anim_hamajing_attack3.bundle
+        Dependency_6: animations/anim_hamajing_death.bundle
+    Info_154:
+      Name: controller/controller_renshenwa.bundle
+      Dependencies:
+        Dependency_0: animations/anim_renshenwa_death.bundle
+        Dependency_1: animations/anim_renshenwa_run.bundle
+        Dependency_2: animations/anim_renshenwa_attack1.bundle
+        Dependency_3: animations/anim_renshenwa_attack3.bundle
+        Dependency_4: animations/anim_renshenwa_wound.bundle
+        Dependency_5: animations/anim_renshenwa_idle.bundle
+        Dependency_6: animations/anim_renshenwa_attack2.bundle

@@ -43,7 +43,6 @@ public class SceneManager : ManagerTemplateBase<SceneManager>
         UnLoadLastSceneAsset();
 
         SceneCamera = null;
-        
         yield return ChangeSceneInternal(sceneId);
     }
 
@@ -60,7 +59,7 @@ public class SceneManager : ManagerTemplateBase<SceneManager>
 
         var m_operation = AssetLoadManager.LoadLevelAsync(sceneBundleName, sceneName, false);
 
-        Progress = 0f;
+		Progress = 0f;
 
         while (!m_operation.IsDone())
         {

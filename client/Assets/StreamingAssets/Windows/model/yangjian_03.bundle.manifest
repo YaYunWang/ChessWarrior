@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 1235517856
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bc44909c8063fd1d59ac7295e378b2de
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 75bcef9584a6c307ccfefb63bca2cbd3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/YangJian/YangJian_03.prefab
+Dependencies:
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_death.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_attack2.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_idle.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_attack1.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_fight.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_attack3.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_walk.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_wound.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_yangjian_run.bundle

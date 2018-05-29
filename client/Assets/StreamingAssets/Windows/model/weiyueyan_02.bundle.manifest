@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 1669312639
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 09ba2f3a1dbc33468013626e0cf94231
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1ee259d6e3dd78cda820ae6fb730339c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Model/Chess/WeiYueYan/WeiYueYan_02.prefab
+Dependencies:
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_idle.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_run.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_attack1.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_attack3.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_death.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_fight.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_walk.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_wound.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_weiyueyan_attack2.bundle

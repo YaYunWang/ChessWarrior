@@ -122,11 +122,26 @@ namespace KBEngine
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), property(spaceID / 40002).");
 
+			Property pAccount_CampType = new Property();
+			pAccount_CampType.name = "CampType";
+			pAccount_CampType.properUtype = 5;
+			pAccount_CampType.properFlags = 32;
+			pAccount_CampType.aliasID = 4;
+			Int16 Account_CampType_defval;
+			Int16.TryParse("0", out Account_CampType_defval);
+			pAccount_CampType.defaultVal = Account_CampType_defval;
+			pAccountModule.propertys["CampType"] = pAccount_CampType; 
+
+			pAccountModule.usePropertyDescrAlias = true;
+			pAccountModule.idpropertys[(UInt16)pAccount_CampType.aliasID] = pAccount_CampType;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), property(CampType / 5).");
+
 			Property pAccount_MineChess = new Property();
 			pAccount_MineChess.name = "MineChess";
 			pAccount_MineChess.properUtype = 3;
 			pAccount_MineChess.properFlags = 32;
-			pAccount_MineChess.aliasID = 4;
+			pAccount_MineChess.aliasID = 5;
 			pAccount_MineChess.defaultVal = EntityDef.id2datatypes[23].parseDefaultValStr("");
 			pAccountModule.propertys["MineChess"] = pAccount_MineChess; 
 
@@ -139,7 +154,7 @@ namespace KBEngine
 			pAccount_RoleName.name = "RoleName";
 			pAccount_RoleName.properUtype = 2;
 			pAccount_RoleName.properFlags = 32;
-			pAccount_RoleName.aliasID = 5;
+			pAccount_RoleName.aliasID = 6;
 			string Account_RoleName_defval = "";
 			pAccount_RoleName.defaultVal = Account_RoleName_defval;
 			pAccountModule.propertys["RoleName"] = pAccount_RoleName; 
@@ -153,7 +168,7 @@ namespace KBEngine
 			pAccount_RoleType.name = "RoleType";
 			pAccount_RoleType.properUtype = 1;
 			pAccount_RoleType.properFlags = 32;
-			pAccount_RoleType.aliasID = 6;
+			pAccount_RoleType.aliasID = 7;
 			Int16 Account_RoleType_defval;
 			Int16.TryParse("0", out Account_RoleType_defval);
 			pAccount_RoleType.defaultVal = Account_RoleType_defval;
@@ -168,7 +183,7 @@ namespace KBEngine
 
 			Method pAccount_EntryFB = new Method();
 			pAccount_EntryFB.name = "EntryFB";
-			pAccount_EntryFB.methodUtype = 14;
+			pAccount_EntryFB.methodUtype = 17;
 			pAccount_EntryFB.aliasID = 1;
 			pAccount_EntryFB.args = pAccount_EntryFB_args;
 
@@ -176,7 +191,7 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_EntryFB.aliasID] = pAccount_EntryFB;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFB / 14).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFB / 17).");
 
 			List<DATATYPE_BASE> pAccount_OnAttack_args = new List<DATATYPE_BASE>();
 			pAccount_OnAttack_args.Add(EntityDef.id2datatypes[8]);
@@ -184,7 +199,7 @@ namespace KBEngine
 
 			Method pAccount_OnAttack = new Method();
 			pAccount_OnAttack.name = "OnAttack";
-			pAccount_OnAttack.methodUtype = 17;
+			pAccount_OnAttack.methodUtype = 20;
 			pAccount_OnAttack.aliasID = 2;
 			pAccount_OnAttack.args = pAccount_OnAttack_args;
 
@@ -192,13 +207,13 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_OnAttack.aliasID] = pAccount_OnAttack;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnAttack / 17).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnAttack / 20).");
 
 			List<DATATYPE_BASE> pAccount_OnExitFb_args = new List<DATATYPE_BASE>();
 
 			Method pAccount_OnExitFb = new Method();
 			pAccount_OnExitFb.name = "OnExitFb";
-			pAccount_OnExitFb.methodUtype = 18;
+			pAccount_OnExitFb.methodUtype = 21;
 			pAccount_OnExitFb.aliasID = 3;
 			pAccount_OnExitFb.args = pAccount_OnExitFb_args;
 
@@ -206,7 +221,7 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_OnExitFb.aliasID] = pAccount_OnExitFb;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnExitFb / 18).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnExitFb / 21).");
 
 			List<DATATYPE_BASE> pAccount_OnMove_args = new List<DATATYPE_BASE>();
 			pAccount_OnMove_args.Add(EntityDef.id2datatypes[8]);
@@ -215,7 +230,7 @@ namespace KBEngine
 
 			Method pAccount_OnMove = new Method();
 			pAccount_OnMove.name = "OnMove";
-			pAccount_OnMove.methodUtype = 16;
+			pAccount_OnMove.methodUtype = 19;
 			pAccount_OnMove.aliasID = 4;
 			pAccount_OnMove.args = pAccount_OnMove_args;
 
@@ -223,7 +238,7 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_OnMove.aliasID] = pAccount_OnMove;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnMove / 16).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnMove / 19).");
 
 			List<DATATYPE_BASE> pAccount_OnStartRound_args = new List<DATATYPE_BASE>();
 			pAccount_OnStartRound_args.Add(EntityDef.id2datatypes[7]);
@@ -231,7 +246,7 @@ namespace KBEngine
 
 			Method pAccount_OnStartRound = new Method();
 			pAccount_OnStartRound.name = "OnStartRound";
-			pAccount_OnStartRound.methodUtype = 15;
+			pAccount_OnStartRound.methodUtype = 18;
 			pAccount_OnStartRound.aliasID = 5;
 			pAccount_OnStartRound.args = pAccount_OnStartRound_args;
 
@@ -239,14 +254,14 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_OnStartRound.aliasID] = pAccount_OnStartRound;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnStartRound / 15).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(OnStartRound / 18).");
 
 			List<DATATYPE_BASE> pAccount_ReNameResult_args = new List<DATATYPE_BASE>();
 			pAccount_ReNameResult_args.Add(EntityDef.id2datatypes[7]);
 
 			Method pAccount_ReNameResult = new Method();
 			pAccount_ReNameResult.name = "ReNameResult";
-			pAccount_ReNameResult.methodUtype = 13;
+			pAccount_ReNameResult.methodUtype = 16;
 			pAccount_ReNameResult.aliasID = 6;
 			pAccount_ReNameResult.args = pAccount_ReNameResult_args;
 
@@ -254,7 +269,7 @@ namespace KBEngine
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_ReNameResult.aliasID] = pAccount_ReNameResult;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 13).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReNameResult / 16).");
 
 			List<DATATYPE_BASE> pAccount_AttackChess_args = new List<DATATYPE_BASE>();
 			pAccount_AttackChess_args.Add(EntityDef.id2datatypes[8]);
@@ -372,6 +387,21 @@ namespace KBEngine
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReCreateAccountRequest / 1).");
 
+			List<DATATYPE_BASE> pAccount_StartMatch_args = new List<DATATYPE_BASE>();
+
+			Method pAccount_StartMatch = new Method();
+			pAccount_StartMatch.name = "StartMatch";
+			pAccount_StartMatch.methodUtype = 14;
+			pAccount_StartMatch.aliasID = -1;
+			pAccount_StartMatch.args = pAccount_StartMatch_args;
+
+			pAccountModule.methods["StartMatch"] = pAccount_StartMatch; 
+			pAccountModule.base_methods["StartMatch"] = pAccount_StartMatch;
+
+			pAccountModule.idbase_methods[pAccount_StartMatch.methodUtype] = pAccount_StartMatch;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(StartMatch / 14).");
+
 			List<DATATYPE_BASE> pAccount_TestChessEntity_args = new List<DATATYPE_BASE>();
 			pAccount_TestChessEntity_args.Add(EntityDef.id2datatypes[5]);
 
@@ -387,6 +417,21 @@ namespace KBEngine
 			pAccountModule.idbase_methods[pAccount_TestChessEntity.methodUtype] = pAccount_TestChessEntity;
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(TestChessEntity / 2).");
+
+			List<DATATYPE_BASE> pAccount_UnStartMatch_args = new List<DATATYPE_BASE>();
+
+			Method pAccount_UnStartMatch = new Method();
+			pAccount_UnStartMatch.name = "UnStartMatch";
+			pAccount_UnStartMatch.methodUtype = 15;
+			pAccount_UnStartMatch.aliasID = -1;
+			pAccount_UnStartMatch.args = pAccount_UnStartMatch_args;
+
+			pAccountModule.methods["UnStartMatch"] = pAccount_UnStartMatch; 
+			pAccountModule.base_methods["UnStartMatch"] = pAccount_UnStartMatch;
+
+			pAccountModule.idbase_methods[pAccount_UnStartMatch.methodUtype] = pAccount_UnStartMatch;
+
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(UnStartMatch / 15).");
 
 			ScriptModule pChessModule = new ScriptModule("Chess");
 			EntityDef.moduledefs["Chess"] = pChessModule;
@@ -437,7 +482,7 @@ namespace KBEngine
 
 			Property pChess_chess_attack = new Property();
 			pChess_chess_attack.name = "chess_attack";
-			pChess_chess_attack.properUtype = 10;
+			pChess_chess_attack.properUtype = 11;
 			pChess_chess_attack.properFlags = 4;
 			pChess_chess_attack.aliasID = 4;
 			UInt64 Chess_chess_attack_defval;
@@ -448,11 +493,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_attack.aliasID] = pChess_chess_attack;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_attack / 10).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_attack / 11).");
 
 			Property pChess_chess_defense = new Property();
 			pChess_chess_defense.name = "chess_defense";
-			pChess_chess_defense.properUtype = 11;
+			pChess_chess_defense.properUtype = 12;
 			pChess_chess_defense.properFlags = 4;
 			pChess_chess_defense.aliasID = 5;
 			UInt64 Chess_chess_defense_defval;
@@ -463,11 +508,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_defense.aliasID] = pChess_chess_defense;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_defense / 11).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_defense / 12).");
 
 			Property pChess_chess_id = new Property();
 			pChess_chess_id.name = "chess_id";
-			pChess_chess_id.properUtype = 5;
+			pChess_chess_id.properUtype = 6;
 			pChess_chess_id.properFlags = 4;
 			pChess_chess_id.aliasID = 6;
 			UInt64 Chess_chess_id_defval;
@@ -478,11 +523,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_id.aliasID] = pChess_chess_id;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_id / 5).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_id / 6).");
 
 			Property pChess_chess_index_x = new Property();
 			pChess_chess_index_x.name = "chess_index_x";
-			pChess_chess_index_x.properUtype = 8;
+			pChess_chess_index_x.properUtype = 9;
 			pChess_chess_index_x.properFlags = 4;
 			pChess_chess_index_x.aliasID = 7;
 			UInt64 Chess_chess_index_x_defval;
@@ -493,11 +538,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_index_x.aliasID] = pChess_chess_index_x;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_index_x / 8).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_index_x / 9).");
 
 			Property pChess_chess_index_z = new Property();
 			pChess_chess_index_z.name = "chess_index_z";
-			pChess_chess_index_z.properUtype = 9;
+			pChess_chess_index_z.properUtype = 10;
 			pChess_chess_index_z.properFlags = 4;
 			pChess_chess_index_z.aliasID = 8;
 			UInt64 Chess_chess_index_z_defval;
@@ -508,11 +553,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_index_z.aliasID] = pChess_chess_index_z;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_index_z / 9).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_index_z / 10).");
 
 			Property pChess_chess_level = new Property();
 			pChess_chess_level.name = "chess_level";
-			pChess_chess_level.properUtype = 6;
+			pChess_chess_level.properUtype = 7;
 			pChess_chess_level.properFlags = 4;
 			pChess_chess_level.aliasID = 9;
 			UInt64 Chess_chess_level_defval;
@@ -523,11 +568,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_level.aliasID] = pChess_chess_level;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_level / 6).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_level / 7).");
 
 			Property pChess_chess_name = new Property();
 			pChess_chess_name.name = "chess_name";
-			pChess_chess_name.properUtype = 7;
+			pChess_chess_name.properUtype = 8;
 			pChess_chess_name.properFlags = 4;
 			pChess_chess_name.aliasID = 10;
 			string Chess_chess_name_defval = "";
@@ -537,11 +582,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_name.aliasID] = pChess_chess_name;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_name / 7).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_name / 8).");
 
 			Property pChess_chess_owner_player = new Property();
 			pChess_chess_owner_player.name = "chess_owner_player";
-			pChess_chess_owner_player.properUtype = 12;
+			pChess_chess_owner_player.properUtype = 13;
 			pChess_chess_owner_player.properFlags = 4;
 			pChess_chess_owner_player.aliasID = 11;
 			UInt64 Chess_chess_owner_player_defval;
@@ -552,11 +597,11 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_chess_owner_player.aliasID] = pChess_chess_owner_player;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_owner_player / 12).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(chess_owner_player / 13).");
 
 			Property pChess_max_hp = new Property();
 			pChess_max_hp.name = "max_hp";
-			pChess_max_hp.properUtype = 13;
+			pChess_max_hp.properUtype = 14;
 			pChess_max_hp.properFlags = 4;
 			pChess_max_hp.aliasID = 12;
 			UInt64 Chess_max_hp_defval;
@@ -567,7 +612,7 @@ namespace KBEngine
 			pChessModule.usePropertyDescrAlias = true;
 			pChessModule.idpropertys[(UInt16)pChess_max_hp.aliasID] = pChess_max_hp;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(max_hp / 13).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Chess), property(max_hp / 14).");
 
 		}
 

@@ -13,7 +13,8 @@ public class ConfigImportProcessor : AssetPostprocessor
 			var importer = AssetImporter.GetAtPath(str);
 			if (importer == null)
 				continue;
-			if (!str.StartsWithNonAlloc("Assets/Config/"))
+			
+			if (!str.StartsWith("Assets/Config/"))
 				continue;
 
 			importer.assetBundleName = "config.bundle";

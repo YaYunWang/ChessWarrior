@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 605177196
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4bffac0bafe7046d020b196f4c91ffff
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4381b8d24d7546af2f9b5d2b1de238
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Controller/leigong.controller
+Dependencies:
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_leigong_attack2.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_leigong_attack3.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_leigong_attack1.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_leigong_run.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_leigong_wound.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_leigong_idle.bundle
+- D:/noah/ChessWarrior/client/AssetBundles/Windows/animations/anim_leigong_death.bundle
