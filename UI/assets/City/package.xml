@@ -3,6 +3,9 @@
   <resources>
     <component id="uwm10" name="CityUIPanel.xml" path="/" exported="true"/>
     <component id="uwm12" name="EntryGameButtom.xml" path="/"/>
+    <component id="h74q3" name="Button1.xml" path="/"/>
+    <component id="h74q4" name="PiPeiUIPanel.xml" path="/" exported="true"/>
+    <component id="h74q5" name="Button2.xml" path="/"/>
   </resources>
   <publish name="City"/>
 </packageDescription>
