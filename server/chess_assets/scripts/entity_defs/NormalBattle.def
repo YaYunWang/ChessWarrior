@@ -5,15 +5,22 @@
 	    <yaw/>                <!-- 总是同步 -->
 	    <pitch>999999</pitch>     <!-- 相距20米或以内同步     -->
 	    <optimized> true </optimized>   
-	</Volatile>               <!-- roll未指明则总是同步  -->
+	</Volatile>  
 
 	<Properties>
-		<player>
-			<Type>	ENTITYCALL	</Type>
-			<Flags>	BASE	</Flags>
-			<Default>		</Default>
+		<player1>
+			<Type> ENTITYCALL </Type>
+			<Default>	</Default>
+			<Flags> BASE </Flags>
 			<Persistent>	false	</Persistent>
-		</player>
+		</player1>
+
+		<player2>
+			<Type> ENTITYCALL </Type>
+			<Default>	</Default>
+			<Flags> BASE </Flags>
+			<Persistent>	false	</Persistent>
+		</player2>
 	</Properties>
 
 	<ClientMethods>

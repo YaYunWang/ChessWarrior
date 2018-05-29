@@ -9,4 +9,6 @@
 	<Account hasClient="true"></Account><!-- <Account hasCell="true" hasBase="true" hasClient="true"></Account> -->
 	<Chess hasClient="true"></Chess>
 	<NormalFB></NormalFB>
+	<NormalBattle></NormalBattle>
+	<RoomMsg></RoomMsg>
 </root>

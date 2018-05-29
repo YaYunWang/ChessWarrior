@@ -1,0 +1,21 @@
+<root>
+	<Properties>
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+		<StartMatch>
+			<Arg> ENTITYCALL </Arg>
+		</StartMatch>
+
+		<UnStartMatch>
+			<Arg> ENTITYCALL </Arg>
+		</UnStartMatch>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

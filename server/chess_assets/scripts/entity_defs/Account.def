@@ -27,6 +27,13 @@
 			<Flags> BASE </Flags>
 			<Persistent>	false	</Persistent>
 		</CurrentFB>
+
+		<CampType>
+			<Type>	INT16	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</CampType>
 	</Properties>
 
 	<ClientMethods>
@@ -121,6 +128,18 @@
 			<Arg> INT32 </Arg>
 			<Exposed/>
 		</ExitFBScene>
+
+		<CampTypeSet>
+			<Arg> INT32 </Arg>
+		</CampTypeSet>
+
+		<StartMatch>
+			<Exposed/>
+		</StartMatch>
+		
+		<UnStartMatch>
+			<Exposed/>
+		</UnStartMatch>
 	</BaseMethods>
 
 	<CellMethods>

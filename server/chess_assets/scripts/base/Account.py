@@ -9,9 +9,6 @@ class Account(KBEngine.Proxy):
 	def __init__(self):
 		KBEngine.Proxy.__init__(self)
 
-		#dataDict = {"id":1, "name":"test", "level":1}
-		#self.MineChess = TChessInfo().createFromDict(dataDict)
-
 	def onTimer(self, id, userArg):
 		"""
 		KBEngine method.
@@ -115,7 +112,7 @@ class Account(KBEngine.Proxy):
 		self.client.EntryFB()
 
 	def ClientReady(self):
-		self.CurrentFB.ClientReady()
+		self.CurrentFB.ClientReady(self)
 
 	def StartRound(self, type):
 		self.client.OnStartRound(type, 30)
@@ -153,3 +150,12 @@ class Account(KBEngine.Proxy):
 			self.destroyCellEntity()
 
 		self.client.OnExitFb()
+
+	def CampTypeSet(self, type):
+		self.CampType = type
+
+	def StartMatch(self):
+		KBEngine.globalData["RoomMsg"].StartMatch(self)
+
+	def UnStartMatch(self):
+		KBEngine.globalData["RoomMsg"].UnStartMatch(self)

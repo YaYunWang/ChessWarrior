@@ -3,15 +3,12 @@ import KBEngine
 from KBEDebug import *
 import d_chess
 
-class NormalFB(KBEngine.Entity):
+class NormalBattle(KBEngine.Entity):
 	def __init__(self):
 		KBEngine.Entity.__init__(self)
-
 		# 创建cell
 		self.createCellEntityInNewSpace(None)
-
-		INFO_MSG("NormalFB is create.")
-
+		self.readyIndex = 0
 		self.create_chess_index = 0
 
 	def onTimer(self, id, userArg):
@@ -21,51 +18,45 @@ class NormalFB(KBEngine.Entity):
 		@param id		: addTimer 的返回值ID
 		@param userArg	: addTimer 最后一个参数所给入的数据
 		"""
-		INFO_MSG("time %d " % (userArg))
 		# 开始创建棋子
 		if userArg == 1:
-			temp_chess_len = len(d_chess.test_chess)
-			INFO_MSG("========= %d   %d" % (self.create_chess_index, temp_chess_len))
+			temp_chess_len = len(d_chess.test_chess2)
 			if self.create_chess_index >= temp_chess_len:
-				INFO_MSG("creat chess finish...")
 				self.startRound(1)
 				self.delTimer(1)
 			else:
-				INFO_MSG("creat chess ")
-				param = d_chess.test_chess[self.create_chess_index]
+				param = d_chess.test_chess2[self.create_chess_index]
+
+				if self.create_chess_index <= 15:
+					param["chess_owner_player"] = 1
+				else:
+					param["chess_owner_player"] = 2
 
 				temp = KBEngine.createEntityLocally("Chess", param)
 				temp.CreateCell(self, self.cell)
 
 				self.create_chess_index = self.create_chess_index + 1
-		elif userArg == 2:
-			# 强制走一步，这里暂时不做处理
-			self.nextRound()
-
+	
 	def nextRound(self):
 		self.delTimer(self.state_id)
 		if self.current_round_type == 1:
-			self.startRound(0)
+			self.startRound(2)
 		else:
 			self.startRound(1)
-	"""
-		开启回合
-		1 自己回合
-		0 电脑回合
-	"""
+
 	def startRound(self, type):
-		if self.player is None:
+		if self.player1 is None:
+			INFO_MSG("start round , but player is none.")
+			return
+		if self.player2 is None:
 			INFO_MSG("start round , but player is none.")
 			return
 
-		INFO_MSG("round begin ....")
 		self.current_round_type = type
-		self.player.StartRound(type)
+		self.player1.StartRound(type)
+		self.player2.StartRound(type)
 
-		if self.current_round_type == 1:
-			self.state_id = self.addTimer(30, 30, 2)
-		else:
-			self.state_id = self.addTimer(5, 5, 2)
+		self.state_id = self.addTimer(30, 30, 2)
 
 	def onClientEnabled(self):
 		"""
@@ -73,7 +64,7 @@ class NormalFB(KBEngine.Entity):
 		该entity被正式激活为可使用， 此时entity已经建立了client对应实体， 可以在此创建它的
 		cell部分。
 		"""
-		INFO_MSG("NormalFB[%i] entities enable. entityCall:%s" % (self.id, self.client))
+		INFO_MSG("account[%i] entities enable. entityCall:%s" % (self.id, self.client))
 			
 	def onLogOnAttempt(self, ip, port, password):
 		"""
@@ -88,30 +79,23 @@ class NormalFB(KBEngine.Entity):
 		KBEngine method.
 		客户端对应实体已经销毁
 		"""
-		DEBUG_MSG("NormalFB[%i].onClientDeath:" % self.id)
+		DEBUG_MSG("Account[%i].onClientDeath:" % self.id)
 		self.destroy()
 
 	def onGetCell(self):
-		if self.player is not None:
-			INFO_MSG("normal fb cell create. player is not none.")
-		else:
-			INFO_MSG("normal fb cell create. player is none.")
-
-		# account 创建cell
-
-		self.player.CreateCell(self, self.cell)
-
-	def onLoseCell(self):
-		self.destroy()
-
-	def ClientDeath(self):
-		if self.cell is not None:
-			self.destroyCellEntity()
+		if self.player1 is not None:
+			self.player1.CreateCell(self, self.cell)
+		if self.player2 is not None:
+			self.player2.CreateCell(self, self.cell)
 
 	def ClientReady(self, player):
 		INFO_MSG("client ready.")
-		self.create_chess_index = 0
-		self.addTimer(0, 0.5, 1)
+		self.readyIndex = self.readyIndex + 1
+		if self.readyIndex >= 2:
+			self.player1.CampTypeSet(1)
+			self.player2.CampTypeSet(2)
+
+			self.addTimer(0, 0.5, 1)
 
 	def ChessMove(self, chess_id, index_x, index_z):
 		chess = KBEngine.entities[chess_id]
@@ -121,7 +105,8 @@ class NormalFB(KBEngine.Entity):
 
 		chess.Move(index_x, index_z)
 
-		self.player.Move(chess_id, index_x, index_z)
+		self.player1.Move(chess_id, index_x, index_z)
+		self.player2.Move(chess_id, index_x, index_z)
 
 		self.nextRound()
 
@@ -137,7 +122,8 @@ class NormalFB(KBEngine.Entity):
 			return
 
 		chess.Move(index_x, index_z)
-		self.player.Attack(chess_id, be_chess_id)
+		self.player1.Attack(chess_id, be_chess_id)
+		self.player2.Attack(chess_id, be_chess_id)
 
 	def KillChess(self, chess_id):
 		# 干掉这个棋子
@@ -147,3 +133,7 @@ class NormalFB(KBEngine.Entity):
 			return
 
 		self.nextRound()
+
+	def ClientDeath(self):
+		if self.cell is not None:
+			self.destroyCellEntity()
