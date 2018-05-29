@@ -27,15 +27,17 @@ public class ChessJu : ChessEntity
 				}
 				else
 				{
-					if (tempChess)
-						break;
 					tempChess = true;
 				}
 			}
 			
 			SetIndexPath(idx, index_z);
+
+			if (tempChess)
+				break;
 		}
 
+		tempChess = false;
 		for (int idx = index_x; idx >= 0; idx--)
 		{
 			ChessEntity entity = ChessManager.Instance.FindChessByIndex(idx, index_z);
@@ -50,15 +52,17 @@ public class ChessJu : ChessEntity
 				}
 				else
 				{
-					if (tempChess)
-						break;
 					tempChess = true;
 				}
 			}
 
 			SetIndexPath(idx, index_z);
+
+			if (tempChess)
+				break;
 		}
 
+		tempChess = false;
 		for (int idx = index_z; idx <= 9; idx++)
 		{
 			ChessEntity entity = ChessManager.Instance.FindChessByIndex(index_x, idx);
@@ -73,15 +77,17 @@ public class ChessJu : ChessEntity
 				}
 				else
 				{
-					if (tempChess)
-						break;
 					tempChess = true;
 				}
 			}
 
 			SetIndexPath(index_x, idx);
+
+			if (tempChess)
+				break;
 		}
 
+		tempChess = false;
 		for (int idx = index_z; idx >= 0; idx--)
 		{
 			ChessEntity entity = ChessManager.Instance.FindChessByIndex(index_x, idx);
@@ -96,13 +102,14 @@ public class ChessJu : ChessEntity
 				}
 				else
 				{
-					if (tempChess)
-						break;
 					tempChess = true;
 				}
 			}
 
 			SetIndexPath(index_x, idx);
+
+			if (tempChess)
+				break;
 		}
 	}
 
